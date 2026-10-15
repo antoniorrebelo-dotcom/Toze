@@ -1,0 +1,182 @@
+/* ---------- Grelha do Cocoloto ---------- */
+.raffle-root {
+  --cell-bg: #fff;
+  --head-bg: #a0f589;
+  --head-hl: #6f2761;
+  --changed: #f5dab4;
+  --cross: #e6f9db;
+  padding: 8px;
+  color: #1d1d1d;
+}
+
+.raffle-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 4px 4px 8px;
+}
+.bar-logo {
+  height: 56px;
+  width: auto;
+}
+.raffle-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  flex: 1;
+  font-family: var(--font-body);
+}
+.raffle-controls > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.raffle-controls label {
+  white-space: nowrap;
+}
+.raffle-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.raffle-loading {
+  padding: 8px;
+  font-weight: 600;
+}
+
+.saving-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.saving-overlay > div {
+  background: #a0f589;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* tabela normal: scroll horizontal dentro da página */
+.raffle-table-wrap {
+  overflow: auto;
+  max-height: calc(100vh - 160px);
+  border: 1px solid #c9c9c9;
+  background: var(--cell-bg);
+}
+.raffle-table {
+  border-collapse: collapse;
+  font-family: "Roboto", var(--font-body);
+  font-variant-numeric: tabular-nums;
+}
+.raffle-table th,
+.raffle-table td {
+  min-width: 44px;
+  height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #c9c9c9;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0 2px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.raffle-table thead th {
+  background: var(--head-bg);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.raffle-table .row-label {
+  background: var(--head-bg);
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+.raffle-table thead th:first-child {
+  left: 0;
+  z-index: 3;
+}
+.raffle-table th.hl {
+  background: var(--head-hl);
+  color: #fff;
+}
+.raffle-table tbody tr:nth-child(even) td {
+  background: #f6f6f6;
+}
+.raffle-table td.cross {
+  background: var(--cross) !important;
+}
+.raffle-table td.changed {
+  background: var(--changed) !important;
+}
+.raffle-table td.winner {
+  outline: 4px solid;
+  outline-offset: -4px;
+}
+.raffle-table td.winner-1 { outline-color: var(--p1); background: color-mix(in srgb, var(--p1) 25%, white) !important; }
+.raffle-table td.winner-2 { outline-color: var(--p2); background: color-mix(in srgb, var(--p2) 25%, white) !important; }
+.raffle-table td.winner-3 { outline-color: var(--p3); background: color-mix(in srgb, var(--p3) 25%, white) !important; }
+.raffle-table td:focus {
+  outline: 3px solid #36a9ae;
+  outline-offset: -3px;
+}
+
+/* ---------- Modo ecrã grande (monitor 75") ---------- */
+.raffle-root.big-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  background: #fff;
+  padding: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.big-screen .raffle-bar {
+  padding: 0 0 6px;
+  gap: 24px;
+}
+.big-screen .bar-logo {
+  height: 64px;
+}
+.big-screen .raffle-controls label,
+.big-screen .raffle-controls input {
+  font-size: 26px !important;
+}
+.big-screen .raffle-table-wrap {
+  max-height: none;
+  overflow: hidden;
+  border: none;
+  flex: 1;
+}
+.big-screen .raffle-table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.big-screen .raffle-table th,
+.big-screen .raffle-table td {
+  border-width: 1px;
+  border-color: #9a9a9a;
+}
+.big-screen .raffle-table td.winner {
+  outline-width: 0.3em;
+  outline-offset: -0.3em;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse {
+  50% { filter: brightness(1.15); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .big-screen .raffle-table td.winner { animation: none; }
+}
