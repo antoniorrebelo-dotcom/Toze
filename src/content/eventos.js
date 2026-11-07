@@ -24,7 +24,7 @@ export const EVENTOS = [
     text:
       "O sorteio mais imprevisível de Salreu! Compra-se um número, a vaca entra no " +
       "campo dividido em quadrados e o primeiro quadrado onde ela fizer cocó dita " +
-      "o vencedor. Em 2025 foi a 12.ª edição.",
+      "o vencedor. Em 2026 realiza-se a 13.ª edição.",
     when: "",
     where: "Salreu",
     color: "#0a8a3c",
