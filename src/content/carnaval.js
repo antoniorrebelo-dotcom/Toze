@@ -6,8 +6,19 @@
 import Kanal from "../assets/carnaval-2023-kanal.png";
 import ZeDaTripla from "../assets/carnaval-2023-ze-da-tripla.png";
 import Surrascar from "../assets/carnaval-2024-surrascar.png";
+import OlhoVisconde from "../assets/carnaval-2026-olho-visconde.png";
 
 export const CARNAVAL = [
+  {
+    year: 2026,
+    theme: "Olhó Visconde do nosso Maire",
+    text:
+      "Em 2026 o Visconde fez-se ao mar: canastra de peixe à cabeça, camisa " +
+      "vermelha e bigode ao vento, a apregoar \u201cOlhó Visconde do nosso Maire!\u201d " +
+      "pelas ruas do Carnaval.",
+    images: [{ src: OlhoVisconde, alt: "Logótipo \u201cOlhó Visconde do nosso Maire\u201d" }],
+    accent: "#0b8fa8",
+  },
   {
     year: 2025, // TODO: confirmar o ano
     theme: "A Turbinar",
@@ -43,7 +54,7 @@ export const CARNAVAL = [
   // Exemplo para acrescentar mais anos:
   // {
   //   year: 2022,
-  //   theme: "Olhó Visconde do nosso Maire",
+  //   theme: "Tema desse ano",
   //   text: "Escreva aqui um pequeno texto sobre esse ano.",
   //   images: [],
   //   accent: "#5b2a75",
