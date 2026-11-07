@@ -152,6 +152,27 @@ a { color: var(--purple); }
   font-size: 0.95rem;
 }
 .site-footer p { margin: 0; }
+.social {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+.social a:hover { background: rgba(255, 255, 255, 0.12); }
+.social svg { width: 22px; height: 22px; fill: var(--orange); flex: none; }
 
 /* ---------- Títulos ---------- */
 .page-title, .section-title, .hero-title {
