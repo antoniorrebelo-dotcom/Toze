@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useAuth } from "../auth";
 import Logo from "../assets/logo-viscondes.png";
+import Letras from "../assets/os-viscondes-letras.png";
 import ErrorBoundary from "./ErrorBoundary";
 
 const LINKS = [
@@ -23,7 +24,7 @@ export default function Layout() {
         <div className="header-inner">
           <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
             <img src={Logo} alt="" />
-            <span>Os Viscondes</span>
+            <img className="brand-letras" src={Letras} alt="Os Viscondes" />
           </NavLink>
           <button
             className="menu-toggle"
