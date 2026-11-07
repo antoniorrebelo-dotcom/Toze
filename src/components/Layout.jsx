@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useAuth } from "../auth";
 import Logo from "../assets/logo-viscondes.png";
+import ErrorBoundary from "./ErrorBoundary";
 
 const LINKS = [
   { to: "/", label: "Início", end: true },
@@ -48,7 +49,9 @@ export default function Layout() {
       </header>
 
       <main className={wide ? "main main-wide" : "main"}>
-        <Outlet />
+        <ErrorBoundary resetKey={pathname}>
+          <Outlet />
+        </ErrorBoundary>
       </main>
 
       <footer className="site-footer">

@@ -352,3 +352,16 @@ a { color: var(--purple); }
 /* ---------- Área do Cocoloto ---------- */
 .main-wide { background: #fff; }
 .cocoloto-app { padding: 8px 0 24px; }
+
+/* ---------- Erro ---------- */
+.error-box pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #fff3f2;
+  border: 1px solid #f0c4c0;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.85rem;
+  max-height: 320px;
+  overflow: auto;
+}
