@@ -28,7 +28,7 @@ export const EVENTOS = [
     when: "",
     where: "Salreu",
     color: "#0a8a3c",
-    link: { to: "/cocoloto", label: "Gestão do sorteio" },
+    link: { to: "/cocoloto", label: "Regras e sorteio" },
   },
   {
     id: "biketour",

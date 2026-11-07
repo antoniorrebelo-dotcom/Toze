@@ -16,7 +16,7 @@ export default function Layout() {
   const [open, setOpen] = useState(false);
   const { user, logout } = useAuth();
   const { pathname } = useLocation();
-  const wide = pathname === "/cocoloto" && user;
+  const wide = pathname === "/cocoloto/gestao" && user;
 
   return (
     <div className="page">

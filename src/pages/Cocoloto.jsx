@@ -1,9 +1,67 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useAuth } from "../auth";
 import RaffleGridSetup from "../cocoloto/RaffleGridSetup";
 import CocolotoLogo from "../assets/Logo_cocoloto.png";
+import { REGRAS } from "../content/regras";
+import { PRIZES } from "../content/premios";
 
-export default function Cocoloto() {
+// /cocoloto — escolher entre as regras (público) e a gestão (com login)
+export function CocolotoHome() {
+  return (
+    <section className="container section coco-home">
+      <img src={CocolotoLogo} alt="13.º Cócóloto Os Viscondes, Salreu 2026" className="coco-logo" />
+      <div className="coco-choices">
+        <Link to="/cocoloto/regras" className="coco-choice" style={{ "--c": "var(--green-dark)" }}>
+          <span className="coco-icon" aria-hidden="true">📜</span>
+          <span className="coco-title">Regras</span>
+          <span className="coco-sub">Como funciona o Cocoloto e quais são os prémios</span>
+        </Link>
+        <Link to="/cocoloto/gestao" className="coco-choice" style={{ "--c": "var(--purple)" }}>
+          <span className="coco-icon" aria-hidden="true">🔒</span>
+          <span className="coco-title">Gestão do sorteio</span>
+          <span className="coco-sub">Área reservada à organização</span>
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+// /cocoloto/regras — público
+export function CocolotoRegras() {
+  return (
+    <section className="container section coco-regras">
+      <p className="back-link">
+        <Link to="/cocoloto">← Cocoloto</Link>
+      </p>
+      <h1 className="page-title">Regras do Cocoloto</h1>
+
+      {REGRAS.video && (
+        <div className="video-wrap">
+          <video src={REGRAS.video} controls playsInline preload="metadata" />
+        </div>
+      )}
+
+      <ol className="regras-lista">
+        {REGRAS.itens.map((r) => (
+          <li key={r}>{r}</li>
+        ))}
+      </ol>
+
+      <h2 className="section-title">Prémios</h2>
+      <ol className="premios-lista">
+        {PRIZES.map((p, i) => (
+          <li key={p.name} style={{ "--c": p.color }}>
+            <span className="premio-pos">{i + 1}.º</span> {p.name}
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
+// /cocoloto/gestao — com login
+export function CocolotoGestao() {
   const { user } = useAuth();
 
   if (user === undefined) {
@@ -18,6 +76,7 @@ export default function Cocoloto() {
 }
 
 function Login() {
+
   const { login } = useAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -35,6 +94,9 @@ function Login() {
 
   return (
     <section className="container section login-wrap">
+      <p className="back-link">
+        <Link to="/cocoloto">← Cocoloto</Link>
+      </p>
       <img src={CocolotoLogo} alt="Cocoloto Os Viscondes" className="login-logo" />
       <form className="login-card" onSubmit={submit}>
         <h1>Área reservada</h1>
