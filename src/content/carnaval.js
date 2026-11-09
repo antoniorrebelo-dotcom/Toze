@@ -27,6 +27,7 @@ import PicNic from "../assets/carnaval-2013-pic-nic.webp";
 import DesCobridores from "../assets/carnaval-2012-des-cobridores.webp";
 import EscacarPedra from "../assets/carnaval-2015-escacar-pedra.webp";
 import Dakar from "../assets/carnaval-2014-dakar.webp";
+import NoQuarto from "../assets/carnaval-2009-no-quarto.webp";
 
 export const CARNAVAL = [
   {
@@ -161,6 +162,7 @@ export const CARNAVAL = [
   {
     year: 2009,
     corso: { tema: "No Quarto com Os Viscondes", lugar: 4 },
+    images: [{ src: NoQuarto, alt: "Desenho do carro alegórico: um beliche com escorrega, assinado Viscondes 2008" }],
     marcha: { tema: "Dasse Comigo", lugar: null },
     publico: false,
   },
