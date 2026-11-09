@@ -68,4 +68,17 @@ export const EVENTOS = [
     where: "",
     color: "#e2231a",
   },
+  {
+    id: "rally-carrinhos",
+    name: "Rally de Carrinhos de Mão",
+    resumo: "1.ª edição em 2026. Equipas, carrinhos e muita força de braços.",
+    icon: "🛒",
+    text:
+      "Em 2026 Os Viscondes organizaram o 1.º Rally de Carrinhos de Mão: equipas a " +
+      "empurrar carrinhos de mão por um percurso com obstáculos, entre gargalhadas " +
+      "e alguns tombos.",
+    when: "",
+    where: "",
+    color: "#5b2a75",
+  },
 ];

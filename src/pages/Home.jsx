@@ -19,7 +19,8 @@ export default function Home() {
             </h1>
             <p className="papel lema">
               Os Viscondes saem no Carnaval de Salreu desde 2007 e organizam o Cocoloto, a
-              Comedy Session, o BikeTour, o Passeio TT e o Sunset.
+              Comedy Session, o BikeTour, o Passeio TT, o Sunset e o Rally de Carrinhos de
+              Mão.
             </p>
           </div>
           <div className="colagem" aria-hidden="true">
