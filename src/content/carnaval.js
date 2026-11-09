@@ -22,6 +22,8 @@ import BotaQuimica from "../assets/carnaval-2019-bota-quimica.webp";
 import Decanos from "../assets/carnaval-2017-decanos.webp";
 import Escociamos from "../assets/carnaval-2016-escociamos.webp";
 import AfundaMos from "../assets/carnaval-2018-afunda-mos.webp";
+import PicNic from "../assets/carnaval-2013-pic-nic.webp";
+import DesCobridores from "../assets/carnaval-2012-des-cobridores.webp";
 
 export const CARNAVAL = [
   {
@@ -125,12 +127,14 @@ export const CARNAVAL = [
   {
     year: 2013,
     corso: { tema: "Pic-Nic d'Os Viscondes", lugar: 2 },
+    images: [{ src: PicNic, alt: "Logótipo Pic-Nic d'Os Viscondes" }],
     marcha: { tema: "Ultras Viscondes", lugar: 2 },
     publico: true,
   },
   {
     year: 2012,
     corso: { tema: "Os Des-Cobridores", lugar: 1 },
+    images: [{ src: DesCobridores, alt: "Logótipo Os Des-Cobridores: o Visconde rei, com coroa, orbe e cetro" }],
     marcha: { tema: "Eleição Miss Fanny", lugar: 3 },
     publico: false,
   },
