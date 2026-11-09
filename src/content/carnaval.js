@@ -17,6 +17,10 @@ import ZeDaTripla from "../assets/carnaval-2023-ze-da-tripla.png";
 import Surrascar from "../assets/carnaval-2024-surrascar.png";
 import OlhoVisconde from "../assets/carnaval-2026-olho-visconde.png";
 import Turbinar from "../assets/carnaval-2025-turbinar.webp";
+import SalreuWinterGames from "../assets/carnaval-2020-salreu-winter-games.webp";
+import BotaQuimica from "../assets/carnaval-2019-bota-quimica.webp";
+import Decanos from "../assets/carnaval-2017-decanos.webp";
+import Escociamos from "../assets/carnaval-2016-escociamos.webp";
 
 export const CARNAVAL = [
   {
@@ -73,12 +77,14 @@ export const CARNAVAL = [
   {
     year: 2020,
     corso: { tema: "Salreu 2020", lugar: 1 },
+    images: [{ src: SalreuWinterGames, alt: "Logótipo Salreu 2020 Winter Games" }],
     marcha: { tema: "Música atrás das Grades", lugar: 1 },
     publico: false,
   },
   {
     year: 2019,
     corso: { tema: "Bota Química 2.0", lugar: 3 },
+    images: [{ src: BotaQuimica, alt: "Logótipo Bota Química 2.0" }],
     marcha: { tema: "Somos todos Zé Firminio", lugar: 1 },
     publico: true,
   },
@@ -91,12 +97,14 @@ export const CARNAVAL = [
   {
     year: 2017,
     corso: { tema: "Viscondes Decanos", lugar: 1 },
+    images: [{ src: Decanos, alt: "Logótipo Viscondes Decanos" }],
     marcha: { tema: "Põe-te Fino, Os Viscondes estão no São Firmino", lugar: 1 },
     publico: true,
   },
   {
     year: 2016,
     corso: { tema: "Escocia-mos, Bravo Coração de Visconde", lugar: 1 },
+    images: [{ src: Escociamos, alt: "Logótipo Escociamos, Bravo Visconde" }],
     marcha: { tema: "Folclore in Rio Antuã", lugar: null },
     publico: true,
   },
