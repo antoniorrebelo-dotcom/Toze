@@ -12,11 +12,11 @@ export const EVENTOS = [
     resumo: "Noite de stand-up com humoristas convidados.",
     icon: "🎤",
     image: ComedyCartaz,
-    imageAlt: "Cartaz da Os Viscondes Comedy Session",
+    imageAlt: "Os Viscondes Comedy Session",
     text:
-      "Uma noite de stand-up e boa disposição organizada pelos Viscondes. " +
-      "Abertura de portas às 19h, espetáculo às 21h. Entrada: 7 sardinhas sexy.",
-    when: "25 de abril",
+      "Uma noite de stand-up e boa disposição organizada pelos Viscondes, com " +
+      "humoristas convidados e plateia cheia.",
+    when: "",
     where: "Associação Cultural de Salreu",
     color: "#5b2a75",
   },
