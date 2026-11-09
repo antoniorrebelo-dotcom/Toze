@@ -27,6 +27,7 @@ import DesCobridores from "../assets/carnaval-2012-des-cobridores.webp";
 import EscacarPedra from "../assets/carnaval-2015-escacar-pedra.webp";
 import Dakar from "../assets/carnaval-2014-dakar.webp";
 import NoQuarto from "../assets/carnaval-2009-no-quarto.webp";
+import Rodeo from "../assets/carnaval-2008-rodeo.webp";
 
 export const CARNAVAL = [
   {
@@ -165,6 +166,7 @@ export const CARNAVAL = [
   {
     year: 2008,
     corso: { tema: "Rodeo d'Os Viscondes", lugar: 6 },
+    images: [{ src: Rodeo, alt: "Desenho do carro alegórico do Rodeo d'Os Viscondes, com um touro, assinado Viscondes 2007" }],
     marcha: { tema: "Pescadores", lugar: null },
     publico: false,
   },
