@@ -1,6 +1,26 @@
 # Os Viscondes — site
 
-Site d'Os Viscondes (Salreu, desde 2007), alojado no **Netlify** (plano gratuito).
+Site d'Os Viscondes (Salreu, desde 2007).
+
+O mesmo site corre em dois alojamentos:
+
+- **Hostinger (principal):** PHP + MySQL, em `osviscondes.com`. Ver "Publicar na Hostinger" abaixo.
+- **Netlify (alternativa):** Netlify Functions + Blobs, em `osviscondes.netlify.app`.
+
+Em ambos, o site chama os mesmos endereços (`/api/rifas`, `/api/login`, ...).
+
+## Publicar na Hostinger
+
+1. Copie `hostinger/api/config.example.php` para `hostinger/api/config.php` e preencha:
+   - os dados da base de dados MySQL;
+   - o hash da palavra-passe (`npm run hash-password -- "palavra-passe"`).
+
+   Este ficheiro nunca vai para o GitHub.
+2. Corra `npm run build:hostinger`. Isto gera a pasta `dist-hostinger/`.
+3. No Gestor de Ficheiros da Hostinger, apague o conteúdo antigo do `public_html` e envie para lá o conteúdo de `dist-hostinger/`, incluindo os ficheiros `.htaccess`.
+4. A base de dados precisa da tabela `rifas`. Numa base de dados nova, corra `hostinger/database/schema.sql` no phpMyAdmin.
+
+Para publicar uma alteração ao site, repita os passos 2 e 3.
 
 O site tem quatro secções:
 

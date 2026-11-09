@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "hash-password": "node scripts/hash-password.mjs",
     "dev:api": "node scripts/dev-api.mjs",
-    "new-secret": "node scripts/new-secret.mjs"
+    "new-secret": "node scripts/new-secret.mjs",
+    "build:hostinger": "node scripts/build-hostinger.mjs"
   },
   "dependencies": {
     "@netlify/blobs": "11.1.4",

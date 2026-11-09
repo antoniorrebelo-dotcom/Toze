@@ -3,3 +3,5 @@ dist
 .env
 .netlify
 *.zip
+dist-hostinger
+hostinger/api/config.php

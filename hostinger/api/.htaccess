@@ -1,0 +1,5 @@
+# Bloqueia o acesso direto à configuração e ao código comum
+<FilesMatch "^(config|config\.example|_bootstrap)\.php$">
+  Require all denied
+</FilesMatch>
+Options -Indexes
