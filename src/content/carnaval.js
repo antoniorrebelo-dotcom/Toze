@@ -25,6 +25,7 @@ import AfundaMos from "../assets/carnaval-2018-afunda-mos.webp";
 import PicNic from "../assets/carnaval-2013-pic-nic.webp";
 import DesCobridores from "../assets/carnaval-2012-des-cobridores.webp";
 import EscacarPedra from "../assets/carnaval-2015-escacar-pedra.webp";
+import Dakar from "../assets/carnaval-2014-dakar.webp";
 
 export const CARNAVAL = [
   {
@@ -123,6 +124,7 @@ export const CARNAVAL = [
   {
     year: 2014,
     corso: { tema: "Salreu - Dakar - Até colas o Piston", lugar: 5 },
+    images: [{ src: Dakar, alt: "Logótipo Salreu-Dakar: o Visconde piloto, de capacete e com duas taças" }],
     marcha: { tema: "Discoteca Panteão - Entra Tudo", lugar: null },
     publico: true,
   },
