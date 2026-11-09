@@ -22,7 +22,7 @@ Os textos estão todos na pasta **`src/content/`**:
 
 | Quero mudar…                         | Ficheiro                    |
 |--------------------------------------|-----------------------------|
-| Os anos do Carnaval (tema, texto)    | `src/content/carnaval.js`   |
+| Carnaval: Corsos, Marchas, lugares   | `src/content/carnaval.js`   |
 | Os eventos (texto, data, local)      | `src/content/eventos.js`    |
 | As regras do Cocoloto                | `src/content/regras.js`     |
 | Os prémios do Cocoloto               | `src/content/premios.js`    |
@@ -65,14 +65,21 @@ Passo a passo:
    ```js
      {
        year: 2027,
-       theme: "Nome do tema",
+       corso: { tema: "Nome do tema do Corso", lugar: 1 },
+       marcha: { tema: "Nome da Marcha Luminosa", lugar: null },
+       publico: false,
        text: "Um pequeno texto sobre o desfile deste ano.",
        images: [{ src: Tema2027, alt: "Logótipo do tema 2027" }],
        accent: "#5b2a75",
      },
    ```
-   - `accent` é a cor do ano. Pode usar qualquer cor no formato `#rrggbb`.
-   - Se ainda não houver imagem, ponha `images: [],` e salte os passos 1 e 3.
+   - `lugar`: a classificação (`1`, `2`, `3`…). Use `null` se não houver.
+   - `publico`: `true` se ganharam o Prémio do Público nesse ano, `false` se não.
+   - `text` e `images` são opcionais. Sem imagem, ponha `images: [],` e salte os passos 1 e 3.
+   - `accent` é a cor do ano, no formato `#rrggbb`.
+   - O resumo das vitórias no topo da página atualiza-se sozinho.
+
+**Só saiu a classificação mais tarde?** Mude apenas o `lugar` desse ano, por exemplo de `null` para `1`.
 
 ## Mudar a data e o local de um evento
 

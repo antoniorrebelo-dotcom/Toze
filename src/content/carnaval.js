@@ -1,7 +1,16 @@
 // ============================================================
-//  CARNAVAL — um bloco por ano em que Os Viscondes participaram.
-//  Para acrescentar um ano: copie um bloco, mude o ano, o tema e o texto.
-//  Imagens: coloque o ficheiro em src/assets/ e importe-o aqui em cima.
+//  CARNAVAL — um bloco por ano.
+//
+//  corso:   o desfile principal do Carnaval (tema e classificação)
+//  marcha:  a Marcha Luminosa, na quarta-feira antes do Carnaval
+//  lugar:   1, 2, 3... ou null se não houver classificação
+//  publico: true se ganharam o Prémio do Público nesse ano
+//  text:    (opcional) um pequeno texto sobre esse ano
+//  images:  (opcional) logótipos/fotos; coloque o ficheiro em src/assets/
+//           e importe-o aqui em cima, como os que já existem
+//  accent:  (opcional) cor do ano, no formato "#rrggbb"
+//
+//  O resumo de vitórias no topo da página é calculado sozinho a partir daqui.
 // ============================================================
 import Kanal from "../assets/carnaval-2023-kanal.png";
 import ZeDaTripla from "../assets/carnaval-2023-ze-da-tripla.png";
@@ -11,52 +20,141 @@ import OlhoVisconde from "../assets/carnaval-2026-olho-visconde.png";
 export const CARNAVAL = [
   {
     year: 2026,
-    theme: "Olhó Visconde do nosso Maire",
+    corso: { tema: "Olhó Visconde do nosso Maire", lugar: null },
+    marcha: { tema: "Olhá Lomba", lugar: 1 },
+    publico: false,
     text:
-      "Em 2026 o Visconde fez-se ao mar: canastra de peixe à cabeça, camisa " +
-      "vermelha e bigode ao vento, a apregoar \u201cOlhó Visconde do nosso Maire!\u201d " +
-      "pelas ruas do Carnaval.",
-    images: [{ src: OlhoVisconde, alt: "Logótipo \u201cOlhó Visconde do nosso Maire\u201d" }],
+      "O Visconde fez-se ao mar: canastra de peixe à cabeça, camisa vermelha e " +
+      "bigode ao vento, a apregoar “Olhó Visconde do nosso Maire!”.",
+    images: [{ src: OlhoVisconde, alt: "Logótipo “Olhó Visconde do nosso Maire”" }],
     accent: "#0b8fa8",
   },
   {
-    year: 2025, // TODO: confirmar o ano
-    theme: "A Turbinar",
+    year: 2025,
+    corso: { tema: "Os Viscondes a Turbinar", lugar: 2 },
+    marcha: { tema: "Avenida São Paio", lugar: null },
+    publico: false,
     text:
-      "Boia, chapéu de palha e escorrega aquático: o Visconde trocou a cartola pelo " +
-      "parque aquático, acompanhado de uma foca e de um papagaio. Os Viscondes " +
-      "foram a turbinar até ao fim do desfile.",
-    images: [], // TODO: adicionar o logótipo "A Turbinar"
+      "Boia, chapéu de palha e escorrega aquático: o Visconde trocou a cartola " +
+      "pelo parque aquático, com uma foca e um papagaio.",
+    images: [], // falta o logótipo "A Turbinar"
     accent: "#ef7d00",
   },
   {
     year: 2024,
-    theme: "A Surrascar",
-    text:
-      "Crista vermelha, cara amarela e um galo musculado ao colo: em 2024 o Visconde " +
-      "foi para a brasa. Um ano de churrasco, de galos e de muita animação.",
+    corso: { tema: "Os Viscondes a Surrascar", lugar: 1 },
+    marcha: { tema: "Os Viscondes a Magicar", lugar: null },
+    publico: false,
+    text: "Crista vermelha, cara amarela e um galo musculado ao colo: um ano de brasa.",
     images: [{ src: Surrascar, alt: "Logótipo Os Viscondes “A Surrascar”" }],
     accent: "#e2231a",
   },
   {
     year: 2023,
-    theme: "Os Viscondes no Kanal",
-    text:
-      "Em 2023 o Visconde fez-se ao canal, de caneca na mão e com a proa colorida de " +
-      "um barco como pano de fundo. Com ele veio o Zé da Tripla, de avental e " +
-      "tripa na mão.",
+    corso: { tema: "Os Viscondes no K'anal", lugar: 2 },
+    marcha: { tema: "Babyshower d'Os Viscondes", lugar: null },
+    publico: false,
+    text: "De caneca na mão, com a proa de um barco e o Zé da Tripla ao lado.",
     images: [
-      { src: Kanal, alt: "Logótipo Os Viscondes no Kanal" },
+      { src: Kanal, alt: "Logótipo Os Viscondes no K'anal" },
       { src: ZeDaTripla, alt: "Personagem Zé da Tripla" },
     ],
     accent: "#1e8fd6",
   },
-  // Exemplo para acrescentar mais anos:
-  // {
-  //   year: 2022,
-  //   theme: "Tema desse ano",
-  //   text: "Escreva aqui um pequeno texto sobre esse ano.",
-  //   images: [],
-  //   accent: "#5b2a75",
-  // },
+  {
+    year: 2022,
+    pausa: "Sem Carnaval (pandemia)",
+  },
+  {
+    year: 2021,
+    pausa: "Sem Carnaval (pandemia)",
+  },
+  {
+    year: 2020,
+    corso: { tema: "Salreu 2020", lugar: 1 },
+    marcha: { tema: "Música atrás das Grades", lugar: 1 },
+    publico: false,
+  },
+  {
+    year: 2019,
+    corso: { tema: "Bota Química 2.0", lugar: 3 },
+    marcha: { tema: "Somos todos Zé Firminio", lugar: 1 },
+    publico: true,
+  },
+  {
+    year: 2018,
+    corso: { tema: "Afunda-mos", lugar: 2 },
+    marcha: { tema: "Baile na Favela", lugar: null },
+    publico: true,
+  },
+  {
+    year: 2017,
+    corso: { tema: "Viscondes Decanos", lugar: 1 },
+    marcha: { tema: "Põe-te Fino, Os Viscondes estão no São Firmino", lugar: 1 },
+    publico: true,
+  },
+  {
+    year: 2016,
+    corso: { tema: "Escocia-mos, Bravo Coração de Visconde", lugar: 1 },
+    marcha: { tema: "Folclore in Rio Antuã", lugar: null },
+    publico: true,
+  },
+  {
+    year: 2015,
+    corso: { tema: "Viscondes a Escacar Pedra", lugar: 2 },
+    marcha: { tema: "Apresentação do Samba Enredo d'Os Viscondes", lugar: 2 },
+    publico: false,
+  },
+  {
+    year: 2014,
+    corso: { tema: "Salreu - Dakar - Até colas o Piston", lugar: 5 },
+    marcha: { tema: "Discoteca Panteão - Entra Tudo", lugar: null },
+    publico: true,
+  },
+  {
+    year: 2013,
+    corso: { tema: "Pic-Nic d'Os Viscondes", lugar: 2 },
+    marcha: { tema: "Ultras Viscondes", lugar: 2 },
+    publico: true,
+  },
+  {
+    year: 2012,
+    corso: { tema: "Os Des-Cobridores", lugar: 1 },
+    marcha: { tema: "Eleição Miss Fanny", lugar: 3 },
+    publico: false,
+  },
+  {
+    year: 2011,
+    corso: { tema: "Greda, Semeia e Bota Química", lugar: 1 },
+    marcha: { tema: "Chegada do Visconde (Ontem e Hoje)", lugar: 2 },
+    publico: false,
+  },
+  {
+    year: 2010,
+    corso: { tema: "Game Over Insert Coin", lugar: 8 },
+    marcha: { tema: "Casamento Gay", lugar: null },
+    publico: false,
+  },
+  {
+    year: 2009,
+    corso: { tema: "No Quarto com Os Viscondes", lugar: 4 },
+    marcha: { tema: "Dasse Comigo", lugar: null },
+    publico: false,
+  },
+  {
+    year: 2008,
+    corso: { tema: "Rodeo d'Os Viscondes", lugar: 6 },
+    marcha: { tema: "Pescadores", lugar: null },
+    publico: false,
+  },
 ];
+
+// Anos com desfile (sem os anos de pausa), do mais recente para o mais antigo.
+export const DESFILES = CARNAVAL.filter((c) => c.corso);
+
+// Contagens para o resumo no topo da página.
+export const PALMARES = {
+  corso: DESFILES.filter((c) => c.corso?.lugar === 1).length,
+  marcha: DESFILES.filter((c) => c.marcha?.lugar === 1).length,
+  publico: DESFILES.filter((c) => c.publico).length,
+};

@@ -205,22 +205,62 @@ a { color: inherit; }
 .cabecalho { padding: 48px 0 8px; }
 
 /* ---------- Carnaval ---------- */
-.anos { display: flex; flex-direction: column; gap: 48px; }
-.ano-cartaz {
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 28px; align-items: center;
-  background: var(--papel); border: var(--borda); box-shadow: var(--sombra); padding: 28px;
+.palmares-bloco { padding: 24px 0 8px; }
+.palmares { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.palmares-item {
+  background: var(--tinta); color: var(--papel); padding: 18px 20px;
+  display: flex; align-items: baseline; gap: 14px;
 }
-.ano-cartaz:nth-child(even) { transform: rotate(.6deg); }
-.ano-cartaz:nth-child(odd) { transform: rotate(-.6deg); }
-.ano-cartaz .ano { font-size: 96px; color: var(--c, var(--roxo)); }
-.ano-cartaz h2 { font: 900 44px/1 var(--font-display); text-transform: uppercase; margin: 6px 0 12px; }
-.ano-cartaz p { margin: 0; max-width: 34em; }
+.palmares-item strong { font: 900 84px/.85 var(--font-display); color: var(--laranja); }
+.palmares-item span { font: 900 24px/1 var(--font-display); text-transform: uppercase; }
+.palmares-item:nth-child(2) { transform: rotate(-1deg); }
+@media (max-width: 760px) { .palmares { grid-template-columns: 1fr; } }
+
+.anos-grelha { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 28px; align-items: start; }
+.ano-cartaz { background: var(--papel); border: var(--borda); box-shadow: var(--sombra); padding: 20px; }
+.ano-cartaz:nth-child(3n + 2) { transform: rotate(.7deg); }
+.ano-cartaz:nth-child(3n) { transform: rotate(-.6deg); }
+.ano-cartaz .ano { color: var(--c, var(--roxo)); }
+.ano-cartaz.recente { grid-column: 1 / -1; padding: 28px; }
+.ano-cartaz.recente .ano { font-size: 96px; }
+.ano-cartaz.recente .desfiles .tema { font-size: 40px; }
+.ano-cartaz.com-imagem {
+  grid-column: 1 / -1;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 28px; align-items: center;
+  padding: 28px;
+}
+.ano-cartaz.com-imagem .ano { font-size: 96px; }
 .ano-imagens { display: flex; gap: 16px; justify-content: center; align-items: flex-end; flex-wrap: wrap; }
-.ano-imagens img { max-height: 300px; width: auto; }
-.ano-imagens .sem-imagem { max-height: 160px; opacity: .3; filter: grayscale(1); }
+.ano-imagens { flex-wrap: nowrap; }
+.ano-imagens img { max-height: 300px; width: auto; min-width: 0; max-width: 100%; }
+.ano-imagens img + img { max-width: 48%; }
+.ano-imagens img:has(+ img) { max-width: 48%; }
+
+.desfiles { margin: 10px 0 0; display: flex; flex-direction: column; gap: 12px; }
+.desfiles dt { font: 900 18px/1 var(--font-display); text-transform: uppercase; color: var(--cinza); }
+.desfiles dd { margin: 3px 0 0; }
+.desfiles .tema { font: 900 30px/1 var(--font-display); text-transform: uppercase; }
+.com-imagem .desfiles .tema { font-size: 40px; }
+.lugar {
+  display: inline-block; vertical-align: middle; margin-left: 4px;
+  font: 800 14px/1 var(--font-body); padding: 5px 8px; border: 2px solid var(--tinta); white-space: nowrap;
+}
+.lugar-1 { background: var(--laranja); }
+.publico {
+  display: inline-block; margin: 14px 0 0; padding: 5px 10px;
+  background: var(--roxo); color: var(--papel); font: 900 18px/1 var(--font-display); text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+.ano-descricao { margin: 14px 0 0; max-width: 36em; }
+.ano-pausa {
+  border: 3px dashed var(--tinta); padding: 20px; display: flex; align-items: baseline; gap: 16px;
+}
+.ano-pausa .ano { color: var(--tinta); opacity: .55; }
+.ano-pausa p { margin: 0; font-weight: 800; }
 @media (max-width: 720px) {
-  .ano-cartaz { grid-template-columns: 1fr; padding: 20px; }
-  .ano-cartaz .ano { font-size: 72px; }
+  .anos-grelha { grid-template-columns: 1fr; }
+  .ano-cartaz.com-imagem { grid-template-columns: 1fr; padding: 20px; }
+  .ano-cartaz.com-imagem .ano { font-size: 72px; }
   .ano-imagens img { max-height: 220px; }
 }
 

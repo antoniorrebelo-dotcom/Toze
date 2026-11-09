@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/logo-viscondes.png";
 import CocolotoLogo from "../assets/Logo_cocoloto.png";
 import { EVENTOS } from "../content/eventos";
-import { CARNAVAL } from "../content/carnaval";
+import { DESFILES } from "../content/carnaval";
 
 export default function Home() {
-  const recentes = CARNAVAL.slice(0, 3);
+  const recentes = DESFILES.slice(0, 3);
+  const temas = DESFILES.slice(0, 8).map((c) => c.corso.tema);
   return (
     <>
       <section className="hero">
@@ -36,8 +37,8 @@ export default function Home() {
 
       <div className="faixa" aria-hidden="true">
         <div className="faixa-texto">
-          {[...CARNAVAL, ...CARNAVAL].map((c, i) => (
-            <span key={i}>{c.theme}</span>
+          {[...temas, ...temas].map((t, i) => (
+            <span key={i}>{t}</span>
           ))}
         </div>
       </div>
@@ -55,7 +56,7 @@ export default function Home() {
               <Link key={c.year} to="/carnaval" className="cartaz-ano">
                 <span className="ano">{c.year}</span>
                 <img src={c.images[0]?.src || Logo} alt="" loading="lazy" />
-                <h3>{c.theme}</h3>
+                <h3>{c.corso.tema}</h3>
               </Link>
             ))}
           </div>
