@@ -28,6 +28,7 @@ import EscacarPedra from "../assets/carnaval-2015-escacar-pedra.webp";
 import Dakar from "../assets/carnaval-2014-dakar.webp";
 import NoQuarto from "../assets/carnaval-2009-no-quarto.webp";
 import Rodeo from "../assets/carnaval-2008-rodeo.webp";
+import GredaSemeia from "../assets/carnaval-2011-greda-semeia.webp";
 
 export const CARNAVAL = [
   {
@@ -147,6 +148,7 @@ export const CARNAVAL = [
   {
     year: 2011,
     corso: { tema: "Greda, Semeia e Bota Química", lugar: 1 },
+    images: [{ src: GredaSemeia, alt: "Desenho a aguarela do carro alegórico: uma máquina agrícola laranja e verde" }],
     marcha: { tema: "Chegada do Visconde (Ontem e Hoje)", lugar: 2 },
     publico: false,
   },
