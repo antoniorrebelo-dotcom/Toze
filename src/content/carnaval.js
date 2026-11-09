@@ -27,6 +27,7 @@ import DesCobridores from "../assets/carnaval-2012-des-cobridores.webp";
 import EscacarPedra from "../assets/carnaval-2015-escacar-pedra.webp";
 import Dakar from "../assets/carnaval-2014-dakar.webp";
 import NoQuarto from "../assets/carnaval-2009-no-quarto.webp";
+import NoQuartoLogo from "../assets/carnaval-2009-no-quarto-logo.webp";
 import Rodeo from "../assets/carnaval-2008-rodeo.webp";
 import GredaSemeia from "../assets/carnaval-2011-greda-semeia.webp";
 import GameOver from "../assets/carnaval-2010-game-over.webp";
@@ -163,7 +164,10 @@ export const CARNAVAL = [
   {
     year: 2009,
     corso: { tema: "No Quarto com Os Viscondes", lugar: 4 },
-    images: [{ src: NoQuarto, alt: "Desenho do carro alegórico: um beliche com escorrega, assinado Viscondes 2008" }],
+    images: [
+      { src: NoQuartoLogo, alt: "Logótipo No Quarto com Os Viscondes: o Visconde vestido de soldadinho de plástico verde, com uma espingarda e uma boneca loura, num quarto de brinquedos" },
+      { src: NoQuarto, alt: "Desenho do carro alegórico: um beliche com escorrega, assinado Viscondes 2008" },
+    ],
     marcha: { tema: "Dasse Comigo", lugar: null },
     publico: false,
   },
