@@ -21,7 +21,6 @@ import SalreuWinterGames from "../assets/carnaval-2020-salreu-winter-games.webp"
 import BotaQuimica from "../assets/carnaval-2019-bota-quimica.webp";
 import Decanos from "../assets/carnaval-2017-decanos.webp";
 import Escociamos from "../assets/carnaval-2016-escociamos.webp";
-import AfundaMos from "../assets/carnaval-2018-afunda-mos.webp";
 import AfundaMosBasket from "../assets/carnaval-2018-basquetebol.webp";
 import PicNic from "../assets/carnaval-2013-pic-nic.webp";
 import DesCobridores from "../assets/carnaval-2012-des-cobridores.webp";
@@ -98,10 +97,7 @@ export const CARNAVAL = [
   {
     year: 2018,
     corso: { tema: "Afunda-mos", lugar: 2 },
-    images: [
-      { src: AfundaMos, alt: "Logótipo Afunda-mos 2018" },
-      { src: AfundaMosBasket, alt: "Logótipo Salreu Os Viscondes: o Visconde jogador de basquetebol" },
-    ],
+    images: [{ src: AfundaMosBasket, alt: "Logótipo Salreu Os Viscondes: o Visconde jogador de basquetebol" }],
     marcha: { tema: "Baile na Favela", lugar: null },
     publico: true,
   },
