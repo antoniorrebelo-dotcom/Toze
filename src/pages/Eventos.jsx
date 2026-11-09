@@ -39,6 +39,15 @@ export default function Eventos() {
                       {e.where && <span>Onde: {e.where}</span>}
                     </p>
                   )}
+                  {e.fotos?.length > 0 && (
+                    <div className="fotos">
+                      {e.fotos.map((f) => (
+                        <a key={f.src} href={f.src} target="_blank" rel="noopener noreferrer">
+                          <img src={f.src} alt={f.alt} loading="lazy" />
+                        </a>
+                      ))}
+                    </div>
+                  )}
                   {e.link && (
                     <Link className="btn" to={e.link.to}>
                       {e.link.label}

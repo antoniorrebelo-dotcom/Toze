@@ -16,6 +16,7 @@ import Kanal from "../assets/carnaval-2023-kanal.png";
 import ZeDaTripla from "../assets/carnaval-2023-ze-da-tripla.png";
 import Surrascar from "../assets/carnaval-2024-surrascar.png";
 import OlhoVisconde from "../assets/carnaval-2026-olho-visconde.png";
+import Turbinar from "../assets/carnaval-2025-turbinar.webp";
 
 export const CARNAVAL = [
   {
@@ -37,7 +38,7 @@ export const CARNAVAL = [
     text:
       "Boia, chapéu de palha e escorrega aquático: o Visconde trocou a cartola " +
       "pelo parque aquático, com uma foca e um papagaio.",
-    images: [], // falta o logótipo "A Turbinar"
+    images: [{ src: Turbinar, alt: "Logótipo Os Viscondes \u201cA Turbinar\u201d" }],
     accent: "#ef7d00",
   },
   {

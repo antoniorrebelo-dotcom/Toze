@@ -292,6 +292,12 @@ a { color: inherit; }
 .evento-corpo p { margin: 0 0 14px; max-width: 40em; font-size: 19px; }
 .evento-meta { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 800; }
 .evento-corpo img.cartaz-evento { width: 320px; padding: 0; background: none; }
+.fotos { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin: 18px 0; }
+.fotos a { display: block; background: var(--papel); border: var(--borda); padding: 8px 8px 22px; box-shadow: 4px 4px 0 var(--tinta); }
+.fotos a:nth-child(odd) { transform: rotate(-1.5deg); }
+.fotos a:nth-child(even) { transform: rotate(1.2deg); }
+.fotos img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.evento-corpo > div { min-width: 0; flex: 1; }
 @media (max-width: 600px) {
   .evento-corpo { flex-direction: column; }
   .evento-corpo img.cartaz-evento { width: min(320px, 100%); }

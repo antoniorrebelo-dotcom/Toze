@@ -93,6 +93,23 @@ where: "",      // ex.: "Largo de Salreu"
 
 Escreva entre as aspas. Se ficar vazio, não aparece no site.
 
+## Pôr fotos num evento
+
+1. Envie as fotos para `src/assets/` (nomes simples, ex.: `sunset-2027-1.jpg`).
+2. Em `src/content/eventos.js`, importe-as lá em cima:
+   ```js
+   import SunsetFoto1 from "../assets/sunset-2027-1.jpg";
+   ```
+3. No evento, acrescente (ou complete) a lista `fotos`:
+   ```js
+   fotos: [
+     { src: SunsetFoto1, alt: "O pôr do sol na Sunset 2027" },
+   ],
+   ```
+   `alt` é uma frase curta a descrever a foto, para quem não a consegue ver.
+
+Fotos muito grandes tornam o site lento. Antes de as enviar, reduza-as para cerca de 1200 píxeis de largura.
+
 ## Pôr o vídeo das regras
 
 1. Envie o vídeo (`.mp4`) para a pasta `public/`, por exemplo `public/regras-cocoloto.mp4`.
