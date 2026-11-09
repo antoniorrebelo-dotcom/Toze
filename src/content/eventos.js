@@ -8,6 +8,7 @@ export const EVENTOS = [
   {
     id: "comedy",
     name: "Os Viscondes Comedy Session",
+    resumo: "Noite de stand-up com humoristas convidados.",
     icon: "🎤",
     text:
       "Uma noite de stand-up e boa disposição organizada pelos Viscondes. " +
@@ -19,6 +20,7 @@ export const EVENTOS = [
   {
     id: "cocoloto",
     name: "Cocoloto",
+    resumo: "A vaca decide quem ganha. 13.ª edição em 2026.",
     icon: "🐄",
     image: CocolotoLogo,
     text:
@@ -33,6 +35,7 @@ export const EVENTOS = [
   {
     id: "biketour",
     name: "BikeTour",
+    resumo: "Passeio de bicicleta para todos.",
     icon: "🚴",
     text:
       "Passeio de bicicleta aberto a todos, em ritmo de convívio, pelos caminhos da " +
@@ -44,6 +47,7 @@ export const EVENTOS = [
   {
     id: "tt",
     name: "Passeio TT",
+    resumo: "Jipes, motos e lama.",
     icon: "🚙",
     text:
       "Lama, trilhos e muita adrenalina. O passeio todo-o-terreno dos Viscondes " +
@@ -55,6 +59,7 @@ export const EVENTOS = [
   {
     id: "sunset",
     name: "Sunset",
+    resumo: "Música e pôr do sol.",
     icon: "🌅",
     text:
       "Fim de tarde com música, bebidas frescas e o pôr do sol. A festa de verão " +

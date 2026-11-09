@@ -27,7 +27,7 @@ export default class ErrorBoundary extends React.Component {
     if (!error) return this.props.children;
     return (
       <section className="container section error-box" role="alert">
-        <h1 className="page-title">Ups, algo correu mal</h1>
+        <h1 className="titulo-pagina">Ups, algo correu mal</h1>
         <p>Recarregue a página. Se voltar a acontecer, envie esta mensagem a quem gere o site:</p>
         <pre>{String(error?.stack || error?.message || error)}</pre>
         <button className="btn" onClick={() => window.location.reload()}>

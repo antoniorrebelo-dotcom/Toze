@@ -556,7 +556,7 @@ class RaffleGrid extends React.Component {
         <div>
           <label
             style={{
-              fontFamily: "Roboto",
+              fontFamily: "var(--font-body)",
               fontSize: "20px",
               color: PRIZES[0].color,
               fontWeight: "bold",
@@ -565,7 +565,7 @@ class RaffleGrid extends React.Component {
             {PRIZES[0].name}{" "}
             <input
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "var(--font-body)",
                 fontSize: "20px",
                 margin: "auto",
                 textAlign: "center",
@@ -614,7 +614,7 @@ class RaffleGrid extends React.Component {
         <div>
           <label
             style={{
-              fontFamily: "Roboto",
+              fontFamily: "var(--font-body)",
               fontSize: "20px",
               color: PRIZES[1].color,
               fontWeight: "bold",
@@ -623,7 +623,7 @@ class RaffleGrid extends React.Component {
             {PRIZES[1].name}{" "}
             <input
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "var(--font-body)",
                 fontSize: "20px",
                 margin: "auto",
                 textAlign: "center",
@@ -673,7 +673,7 @@ class RaffleGrid extends React.Component {
         <div>
           <label
             style={{
-              fontFamily: "Roboto",
+              fontFamily: "var(--font-body)",
               fontSize: "20px",
               color: PRIZES[2].color,
               fontWeight: "bold",
@@ -682,7 +682,7 @@ class RaffleGrid extends React.Component {
             {PRIZES[2].name}{" "}
             <input
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "var(--font-body)",
                 fontSize: "20px",
                 margin: "auto",
                 textAlign: "center",
@@ -754,7 +754,7 @@ class RaffleGrid extends React.Component {
         <div>
           <label
             style={{
-              fontFamily: "Roboto",
+              fontFamily: "var(--font-body)",
               fontSize: "20px",
               color: PRIZES[0].color,
               fontWeight: "bold",
@@ -763,7 +763,7 @@ class RaffleGrid extends React.Component {
             {PRIZES[0].name}{" "}
             <input
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "var(--font-body)",
                 fontSize: "20px",
                 margin: "auto",
                 textAlign: "center",
@@ -790,7 +790,7 @@ class RaffleGrid extends React.Component {
           ) : (
             <label
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "var(--font-body)",
                 fontSize: "20px",
                 margin: "auto",
                 textAlign: "center",
@@ -810,7 +810,7 @@ class RaffleGrid extends React.Component {
         <div>
           <label
             style={{
-              fontFamily: "Roboto",
+              fontFamily: "var(--font-body)",
               fontSize: "20px",
               color: PRIZES[1].color,
               fontWeight: "bold",
@@ -819,7 +819,7 @@ class RaffleGrid extends React.Component {
             {PRIZES[1].name}{" "}
             <input
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "var(--font-body)",
                 fontSize: "20px",
                 margin: "auto",
                 textAlign: "center",
@@ -847,7 +847,7 @@ class RaffleGrid extends React.Component {
           ) : (
             <label
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "var(--font-body)",
                 fontSize: "20px",
                 margin: "auto",
                 textAlign: "center",
@@ -867,7 +867,7 @@ class RaffleGrid extends React.Component {
         <div>
           <label
             style={{
-              fontFamily: "Roboto",
+              fontFamily: "var(--font-body)",
               fontSize: "20px",
               color: PRIZES[2].color,
               fontWeight: "bold",
@@ -876,7 +876,7 @@ class RaffleGrid extends React.Component {
             {PRIZES[2].name}{" "}
             <input
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "var(--font-body)",
                 fontSize: "20px",
                 margin: "auto",
                 textAlign: "center",
@@ -904,7 +904,7 @@ class RaffleGrid extends React.Component {
           ) : (
             <label
               style={{
-                fontFamily: "Roboto",
+                fontFamily: "var(--font-body)",
                 fontSize: "20px",
                 margin: "auto",
                 textAlign: "center",
@@ -1007,7 +1007,7 @@ class RaffleGrid extends React.Component {
     const cellW = (window.innerWidth - pad * 2) / cols;
     const cellH = (window.innerHeight - bar - pad * 2) / rows;
     // números até 4 dígitos ("1500") têm de caber na largura
-    const font = Math.max(8, Math.min(cellW / 2.5, cellH * 0.62));
+    const font = Math.max(8, Math.min(cellW / 2.1, cellH * 0.66));
     this.setState({ fit: { cellW, cellH, font } });
   };
 

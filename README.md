@@ -2,6 +2,8 @@
 
 Site d'Os Viscondes (Salreu, desde 2007).
 
+**Para mudar textos, imagens, prémios ou regras, veja o [COMO-EDITAR.md](COMO-EDITAR.md).**
+
 O mesmo site corre em dois alojamentos:
 
 - **Hostinger (principal):** PHP + MySQL, em `osviscondes.com`. Ver "Publicar na Hostinger" abaixo.

@@ -12,13 +12,11 @@ export function CocolotoHome() {
     <section className="container section coco-home">
       <img src={CocolotoLogo} alt="13.º Cócóloto Os Viscondes, Salreu 2026" className="coco-logo" />
       <div className="coco-choices">
-        <Link to="/cocoloto/regras" className="coco-choice" style={{ "--c": "var(--green-dark)" }}>
-          <span className="coco-icon" aria-hidden="true">📜</span>
+        <Link to="/cocoloto/regras" className="coco-choice" style={{ "--c": "var(--laranja)" }}>
           <span className="coco-title">Regras</span>
           <span className="coco-sub">Como funciona o Cocoloto e quais são os prémios</span>
         </Link>
-        <Link to="/cocoloto/gestao" className="coco-choice" style={{ "--c": "var(--purple)" }}>
-          <span className="coco-icon" aria-hidden="true">🔒</span>
+        <Link to="/cocoloto/gestao" className="coco-choice" style={{ "--c": "var(--papel)" }}>
           <span className="coco-title">Gestão do sorteio</span>
           <span className="coco-sub">Área reservada à organização</span>
         </Link>
@@ -34,7 +32,7 @@ export function CocolotoRegras() {
       <p className="back-link">
         <Link to="/cocoloto">← Cocoloto</Link>
       </p>
-      <h1 className="page-title">Regras do Cocoloto</h1>
+      <h1 className="titulo-pagina">Regras do Cocoloto</h1>
 
       {REGRAS.video && (
         <div className="video-wrap">
@@ -48,7 +46,7 @@ export function CocolotoRegras() {
         ))}
       </ol>
 
-      <h2 className="section-title">Prémios</h2>
+      <h2 className="titulo">Prémios</h2>
       <ol className="premios-lista">
         {PRIZES.map((p, i) => (
           <li key={p.name} style={{ "--c": p.color }}>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useAuth } from "../auth";
-import Logo from "../assets/logo-viscondes.png";
 import Letras from "../assets/os-viscondes-letras.png";
 import ErrorBoundary from "./ErrorBoundary";
 import { CONTACTOS } from "../content/contactos";
@@ -24,7 +23,6 @@ export default function Layout() {
       <header className="site-header">
         <div className="header-inner">
           <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
-            <img src={Logo} alt="" />
             <img className="brand-letras" src={Letras} alt="Os Viscondes" />
           </NavLink>
           <button

@@ -75,7 +75,7 @@
 }
 .raffle-table {
   border-collapse: collapse;
-  font-family: "Roboto", var(--font-body);
+  font-family: var(--font-display);
   font-variant-numeric: tabular-nums;
 }
 .raffle-table th,
@@ -86,7 +86,7 @@
   vertical-align: middle;
   border: 1px solid #c9c9c9;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0 2px;
   white-space: nowrap;
   overflow: hidden;
@@ -163,6 +163,7 @@
 .big-screen .raffle-table {
   table-layout: fixed;
   border-collapse: collapse;
+  width: 100%;
 }
 .big-screen .raffle-table th,
 .big-screen .raffle-table td {

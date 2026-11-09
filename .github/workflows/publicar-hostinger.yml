@@ -1,0 +1,65 @@
+# Publica o site na Hostinger sempre que há alterações no GitHub.
+#
+# 1) Compila o site (npm run build:hostinger).
+# 2) Guarda um ZIP pronto a enviar (separador "Actions" -> execução -> "Artifacts").
+# 3) Se os segredos FTP estiverem configurados, envia tudo por FTP para a Hostinger.
+#    O ficheiro api/config.php (palavras-passe) NUNCA é enviado nem apagado:
+#    fica o que já está no servidor.
+#
+# Segredos (GitHub -> Settings -> Secrets and variables -> Actions):
+#   FTP_SERVER    ex.: ftp.osviscondes.com   (hPanel -> Ficheiros -> Contas FTP)
+#   FTP_USERNAME  ex.: u726147567.osviscondes.com
+#   FTP_PASSWORD  a palavra-passe FTP
+name: Publicar na Hostinger
+
+on:
+  push:
+    branches: [main, site-netlify]
+    paths-ignore: ["**.md"]
+  workflow_dispatch:
+
+concurrency:
+  group: publicar-hostinger
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    env:
+      # (o GitHub não deixa usar "secrets" diretamente num "if")
+      TEM_FTP: ${{ secrets.FTP_SERVER != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar
+        run: npm ci
+
+      - name: Compilar
+        run: npm run build:hostinger
+
+      - name: Guardar ZIP (para enviar à mão, se preferir)
+        uses: actions/upload-artifact@v4
+        with:
+          name: osviscondes-hostinger
+          path: dist-hostinger/
+          include-hidden-files: true
+          retention-days: 14
+
+      - name: Enviar por FTP para a Hostinger
+        if: env.TEM_FTP == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist-hostinger/
+          server-dir: ./public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            api/config.php

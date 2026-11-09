@@ -9,37 +9,40 @@ export default function Eventos() {
   }, [hash]);
 
   return (
-    <section className="container section">
-      <h1 className="page-title">Eventos</h1>
-      <p className="lead">Ao longo do ano, Os Viscondes organizam:</p>
-      <div className="event-grid">
-        {EVENTOS.map((e) => (
-          <article key={e.id} id={e.id} className="event-card" style={{ "--c": e.color }}>
-            <div className="event-visual">
-              {e.image ? (
-                <img src={e.image} alt="" loading="lazy" />
-              ) : (
-                <span aria-hidden="true">{e.icon}</span>
-              )}
-            </div>
-            <div className="event-body">
+    <>
+      <section className="cabecalho">
+        <div className="container">
+          <h1 className="titulo-pagina">Eventos</h1>
+          <p className="papel">Ao longo do ano, Os Viscondes organizam isto tudo.</p>
+        </div>
+      </section>
+
+      <section className="bloco">
+        <div className="container eventos">
+          {EVENTOS.map((e) => (
+            <article key={e.id} id={e.id} className="evento">
               <h2>{e.name}</h2>
-              <p>{e.text}</p>
-              {(e.when || e.where) && (
-                <p className="event-meta">
-                  {e.when && <span>📅 {e.when}</span>}
-                  {e.where && <span>📍 {e.where}</span>}
-                </p>
-              )}
-              {e.link && (
-                <Link className="btn" to={e.link.to}>
-                  {e.link.label}
-                </Link>
-              )}
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
+              <div className="evento-corpo">
+                {e.image && <img src={e.image} alt="" loading="lazy" />}
+                <div>
+                  <p>{e.text}</p>
+                  {(e.when || e.where) && (
+                    <p className="evento-meta">
+                      {e.when && <span>Quando: {e.when}</span>}
+                      {e.where && <span>Onde: {e.where}</span>}
+                    </p>
+                  )}
+                  {e.link && (
+                    <Link className="btn" to={e.link.to}>
+                      {e.link.label}
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
