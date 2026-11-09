@@ -33,7 +33,7 @@ import GredaSemeia from "../assets/carnaval-2011-greda-semeia.webp";
 export const CARNAVAL = [
   {
     year: 2026,
-    corso: { tema: "Olhó Visconde do nosso Maire", lugar: null },
+    corso: { tema: "Olhó Visconde do nosso Maire", lugar: 3 },
     marcha: { tema: "Olhá Lomba", lugar: 1 },
     publico: false,
     text:
