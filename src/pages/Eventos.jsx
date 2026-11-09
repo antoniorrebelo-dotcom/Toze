@@ -26,7 +26,7 @@ export default function Eventos() {
               <div className="evento-corpo">
                 {e.image && (
                   <img
-                    className={e.imageAlt ? "cartaz-evento" : ""}
+                    className={(e.imageAlt ? "cartaz-evento" : "") + (e.imagePequena ? " pequena" : "")}
                     src={e.image}
                     alt={e.imageAlt || ""}
                     loading="lazy"

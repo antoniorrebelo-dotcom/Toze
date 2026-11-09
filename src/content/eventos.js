@@ -56,20 +56,6 @@ export const EVENTOS = [
     color: "#ef7d00",
   },
   {
-    id: "sunset",
-    name: "Sunset",
-    resumo: "Música e pôr do sol.",
-    icon: "🌅",
-    image: SunsetLogo,
-    imageAlt: "Logótipo da Sunset \u201cA Turbinar\u201d: o Visconde e a foca a fazer de DJ",
-    text:
-      "Fim de tarde com música, bebidas frescas e o pôr do sol. A festa de verão " +
-      "dos Viscondes.",
-    when: "",
-    where: "",
-    color: "#e2231a",
-  },
-  {
     id: "rally-carrinhos",
     name: "Rally de Carrinhos de Mão",
     resumo: "1.ª edição em 2026, na Festa Náutica de Salreu.",
@@ -87,5 +73,20 @@ export const EVENTOS = [
       { src: RallyFoto2, alt: "Partida de um carrinho de mão com passageira mascarada" },
     ],
     color: "#5b2a75",
+  },
+  {
+    id: "sunset",
+    name: "Sunset",
+    resumo: "Música e pôr do sol.",
+    icon: "🌅",
+    image: SunsetLogo,
+    imagePequena: true,
+    imageAlt: "Logótipo da Sunset \u201cA Turbinar\u201d: o Visconde e a foca a fazer de DJ",
+    text:
+      "Fim de tarde com música, bebidas frescas e o pôr do sol. A festa de verão " +
+      "dos Viscondes.",
+    when: "",
+    where: "",
+    color: "#e2231a",
   },
 ];

@@ -305,6 +305,7 @@ a { color: inherit; }
   .evento-corpo { flex-direction: column; }
   .evento-corpo img.cartaz-evento { width: min(320px, 100%); }
 }
+.evento-corpo img.cartaz-evento.pequena { width: 190px; }
 
 /* ---------- Cocoloto: escolha, regras, login ---------- */
 .coco-home { display: flex; flex-direction: column; align-items: center; gap: 28px; }
