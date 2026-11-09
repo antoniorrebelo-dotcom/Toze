@@ -24,6 +24,7 @@ import Escociamos from "../assets/carnaval-2016-escociamos.webp";
 import AfundaMos from "../assets/carnaval-2018-afunda-mos.webp";
 import PicNic from "../assets/carnaval-2013-pic-nic.webp";
 import DesCobridores from "../assets/carnaval-2012-des-cobridores.webp";
+import EscacarPedra from "../assets/carnaval-2015-escacar-pedra.webp";
 
 export const CARNAVAL = [
   {
@@ -115,6 +116,7 @@ export const CARNAVAL = [
   {
     year: 2015,
     corso: { tema: "Viscondes a Escacar Pedra", lugar: 2 },
+    images: [{ src: EscacarPedra, alt: "Logótipo Viscondes a Escacar Pedra: o Visconde mineiro" }],
     marcha: { tema: "Apresentação do Samba Enredo d'Os Viscondes", lugar: 2 },
     publico: false,
   },
