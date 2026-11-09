@@ -93,22 +93,32 @@ where: "",      // ex.: "Largo de Salreu"
 
 Escreva entre as aspas. Se ficar vazio, não aparece no site.
 
-## Pôr fotos num evento
+## Pôr fotos num evento ou num ano de Carnaval
 
-1. Envie as fotos para `src/assets/` (nomes simples, ex.: `sunset-2027-1.jpg`).
-2. Em `src/content/eventos.js`, importe-as lá em cima:
+Cada evento e cada ano de Carnaval pode ter uma **galeria** própria. No cartão aparecem as
+primeiras fotos e um botão "Ver galeria". Sem fotos, o botão não aparece.
+
+1. Envie as fotos para `src/assets/`, com nomes simples (ex.: `carnaval-2024-1.jpg`, `sunset-2027-1.jpg`).
+2. Abra o ficheiro certo:
+   - eventos: `src/content/eventos.js`
+   - Carnaval: `src/content/carnaval.js`
+3. Importe as fotos lá em cima:
    ```js
-   import SunsetFoto1 from "../assets/sunset-2027-1.jpg";
+   import Corso2024a from "../assets/carnaval-2024-1.jpg";
+   import Corso2024b from "../assets/carnaval-2024-2.jpg";
    ```
-3. No evento, acrescente (ou complete) a lista `fotos`:
+4. No evento ou no ano certo, acrescente (ou complete) a lista `fotos`:
    ```js
    fotos: [
-     { src: SunsetFoto1, alt: "O pôr do sol na Sunset 2027" },
+     { src: Corso2024a, alt: "O carro do Surrascar no Corso" },
+     { src: Corso2024b, alt: "Os Viscondes de crista vermelha a desfilar" },
    ],
    ```
-   `alt` é uma frase curta a descrever a foto, para quem não a consegue ver.
+   `alt` é uma frase curta a descrever a foto. Aparece por baixo da foto ampliada e ajuda
+   quem não consegue ver a imagem.
 
 Fotos muito grandes tornam o site lento. Antes de as enviar, reduza-as para cerca de 1200 píxeis de largura.
+Também pode simplesmente enviar as fotos ao Claude e dizer de que ano ou evento são.
 
 ## Pôr o vídeo das regras
 

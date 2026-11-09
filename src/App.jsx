@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Carnaval from "./pages/Carnaval";
 import Grupo from "./pages/Grupo";
+import GaleriaPagina from "./pages/GaleriaPagina";
 import Eventos from "./pages/Eventos";
 import { CocolotoHome, CocolotoRegras, CocolotoGestao } from "./pages/Cocoloto";
 import NotFound from "./pages/NotFound";
@@ -24,6 +25,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="grupo" element={<Grupo />} />
+          <Route path="galeria/:tipo/:id" element={<GaleriaPagina />} />
           <Route path="carnaval" element={<Carnaval />} />
           <Route path="eventos" element={<Eventos />} />
           <Route path="cocoloto" element={<CocolotoHome />} />

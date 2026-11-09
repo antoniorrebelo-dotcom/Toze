@@ -292,11 +292,6 @@ a { color: inherit; }
 .evento-corpo p { margin: 0 0 14px; max-width: 40em; font-size: 19px; }
 .evento-meta { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 800; }
 .evento-corpo img.cartaz-evento { width: 320px; padding: 0; background: none; }
-.fotos { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin: 18px 0; }
-.fotos a { display: block; background: var(--papel); border: var(--borda); padding: 8px 8px 22px; box-shadow: 4px 4px 0 var(--tinta); }
-.fotos a:nth-child(odd) { transform: rotate(-1.5deg); }
-.fotos a:nth-child(even) { transform: rotate(1.2deg); }
-.fotos img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
 .evento-corpo > div { min-width: 0; flex: 1; }
 @media (max-width: 600px) {
   .evento-corpo { flex-direction: column; }
@@ -347,6 +342,51 @@ a { color: inherit; }
 /* ---------- Gestão do Cocoloto ---------- */
 .main-wide { background: var(--papel); }
 .cocoloto-app { padding: 8px 0 24px; }
+
+/* ---------- Galerias ---------- */
+.previa-galeria { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; margin: 18px 0 4px; }
+.previa-fotos { list-style: none; margin: 0; padding: 0; display: flex; gap: 12px; flex-wrap: wrap; }
+.previa-fotos a { display: block; width: 150px; background: var(--papel); border: var(--borda); padding: 6px 6px 16px; box-shadow: 3px 3px 0 var(--tinta); }
+.previa-fotos li:nth-child(odd) a { transform: rotate(-2deg); }
+.previa-fotos li:nth-child(even) a { transform: rotate(1.5deg); }
+.previa-fotos img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+
+.galeria-titulo { font-size: clamp(56px, 9vw, 120px); }
+.galeria { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 22px; }
+.galeria button {
+  display: block; width: 100%; padding: 8px 8px 22px; cursor: zoom-in;
+  background: var(--papel); border: var(--borda); box-shadow: 4px 4px 0 var(--tinta);
+}
+.galeria li:nth-child(3n + 1) button { transform: rotate(-1.2deg); }
+.galeria li:nth-child(3n + 2) button { transform: rotate(.8deg); }
+.galeria button:hover { transform: rotate(0) scale(1.02); }
+.galeria img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.galeria-vazia { margin-top: 24px; }
+
+.visor {
+  position: fixed; inset: 0; z-index: 9000; background: rgba(0, 0, 0, .92);
+  display: flex; align-items: center; justify-content: center; padding: 56px 64px;
+}
+.visor figure { margin: 0; max-width: 100%; max-height: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.visor figure img { max-width: 100%; max-height: calc(100vh - 150px); border: 6px solid var(--papel); }
+.visor figcaption { color: var(--papel); font-weight: 600; text-align: center; display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+.visor-contador { color: var(--laranja); font-weight: 800; }
+.visor-seta {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 52px; height: 72px; border: var(--borda); background: var(--laranja); color: var(--tinta);
+  font: 900 48px/1 var(--font-display); cursor: pointer;
+}
+.visor-ant { left: 8px; }
+.visor-seg { right: 8px; }
+.visor-fechar {
+  position: absolute; top: 10px; right: 10px;
+  font: 900 22px/1 var(--font-display); text-transform: uppercase;
+  background: var(--papel); border: var(--borda); padding: 10px 14px; cursor: pointer;
+}
+@media (max-width: 600px) {
+  .visor { padding: 56px 8px 24px; }
+  .visor-seta { top: auto; bottom: 10px; transform: none; width: 46px; height: 46px; font-size: 38px; }
+}
 
 /* ---------- Erro ---------- */
 .error-box pre {

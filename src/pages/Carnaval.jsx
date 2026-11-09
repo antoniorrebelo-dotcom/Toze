@@ -1,4 +1,5 @@
 import { CARNAVAL, PALMARES } from "../content/carnaval";
+import PreviaGaleria from "../components/PreviaGaleria";
 
 function Lugar({ lugar }) {
   if (!lugar) return null;
@@ -78,6 +79,7 @@ export default function Carnaval() {
                   </dl>
                   {c.publico && <p className="publico">Prémio do Público</p>}
                   {c.text && <p className="ano-descricao">{c.text}</p>}
+                  <PreviaGaleria fotos={c.fotos} para={`/galeria/carnaval/${c.year}`} />
                 </div>
               </article>
             )

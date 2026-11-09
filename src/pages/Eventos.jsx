@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { EVENTOS } from "../content/eventos";
+import PreviaGaleria from "../components/PreviaGaleria";
 
 export default function Eventos() {
   const { hash } = useLocation();
@@ -39,15 +40,7 @@ export default function Eventos() {
                       {e.where && <span>Onde: {e.where}</span>}
                     </p>
                   )}
-                  {e.fotos?.length > 0 && (
-                    <div className="fotos">
-                      {e.fotos.map((f) => (
-                        <a key={f.src} href={f.src} target="_blank" rel="noopener noreferrer">
-                          <img src={f.src} alt={f.alt} loading="lazy" />
-                        </a>
-                      ))}
-                    </div>
-                  )}
+                  <PreviaGaleria fotos={e.fotos} para={`/galeria/evento/${e.id}`} />
                   {e.link && (
                     <Link className="btn" to={e.link.to}>
                       {e.link.label}
