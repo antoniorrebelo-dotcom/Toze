@@ -7,6 +7,7 @@ import CocolotoLogo from "../assets/Logo_cocoloto.png";
 import ComedyCartaz from "../assets/evento-comedy-session.jpg";
 import RallyPlaca from "../assets/evento-rally-carrinhos.webp";
 import SunsetLogo from "../assets/evento-sunset.webp";
+import BikeTourLogo from "../assets/evento-biketour.webp";
 import RallyFoto1 from "../assets/rally-carrinhos-1.jpg";
 import RallyFoto2 from "../assets/rally-carrinhos-2.jpg";
 
@@ -42,12 +43,14 @@ export const EVENTOS = [
   },
   {
     id: "biketour",
-    name: "BikeTour",
-    resumo: "Passeio de bicicleta para todos.",
+    name: "BikeTour dos Viscondes",
+    resumo: "Salreu de bicicleta, tasca a tasca.",
     icon: "🚴",
+    image: BikeTourLogo,
+    imageAlt: "Logótipo do BikeTour dos Viscondes: o Visconde de bicicleta, de caneca de cerveja na mão, ao lado de um barril",
     text:
-      "Passeio de bicicleta aberto a todos, em ritmo de convívio, pelos caminhos da " +
-      "nossa terra. No fim há sempre petiscos.",
+      "Passeio de bicicleta aberto a todos, em ritmo de convívio, por Salreu, " +
+      "de tasca em tasca. Pedala-se pouco e brinda-se muito.",
     when: "",
     where: "",
     color: "#ef7d00",
