@@ -23,7 +23,14 @@ export default function Eventos() {
             <article key={e.id} id={e.id} className="evento">
               <h2>{e.name}</h2>
               <div className="evento-corpo">
-                {e.image && <img src={e.image} alt="" loading="lazy" />}
+                {e.image && (
+                  <img
+                    className={e.imageAlt ? "cartaz-evento" : ""}
+                    src={e.image}
+                    alt={e.imageAlt || ""}
+                    loading="lazy"
+                  />
+                )}
                 <div>
                   <p>{e.text}</p>
                   {(e.when || e.where) && (

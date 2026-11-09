@@ -3,6 +3,7 @@
 //  "when" e "where" são opcionais (deixe "" para esconder).
 // ============================================================
 import CocolotoLogo from "../assets/Logo_cocoloto.png";
+import ComedyCartaz from "../assets/evento-comedy-session.jpg";
 
 export const EVENTOS = [
   {
@@ -10,11 +11,13 @@ export const EVENTOS = [
     name: "Os Viscondes Comedy Session",
     resumo: "Noite de stand-up com humoristas convidados.",
     icon: "🎤",
+    image: ComedyCartaz,
+    imageAlt: "Cartaz da Os Viscondes Comedy Session",
     text:
       "Uma noite de stand-up e boa disposição organizada pelos Viscondes. " +
-      "Humoristas, plateia cheia e gargalhadas garantidas.",
-    when: "",
-    where: "",
+      "Abertura de portas às 19h, espetáculo às 21h. Entrada: 7 sardinhas sexy.",
+    when: "25 de abril",
+    where: "Associação Cultural de Salreu",
     color: "#5b2a75",
   },
   {
@@ -43,18 +46,6 @@ export const EVENTOS = [
     when: "",
     where: "",
     color: "#ef7d00",
-  },
-  {
-    id: "tt",
-    name: "Passeio TT",
-    resumo: "Jipes, motos e lama.",
-    icon: "🚙",
-    text:
-      "Lama, trilhos e muita adrenalina. O passeio todo-o-terreno dos Viscondes " +
-      "junta jipes, motos e amigos para um dia fora de estrada.",
-    when: "",
-    where: "",
-    color: "#7a4e0a",
   },
   {
     id: "sunset",

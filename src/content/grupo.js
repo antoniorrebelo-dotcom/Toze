@@ -41,7 +41,7 @@ export const HISTORIA = [
   {
     titulo: "Muito mais do que Carnaval",
     paragrafos: [
-      "Ao longo dos anos organizámos o Raid TT, torneios de Sueca e de Futsal, " +
+      "Ao longo dos anos organizámos o Passeio TT, torneios de Sueca e de Futsal, " +
         "festas e arraiais, Sunsets, espetáculos de stand-up comedy e até o incrível " +
         "e original Cocoloto, que acontece todos os anos nas festas de São Martinho.",
     ],
