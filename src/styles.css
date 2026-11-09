@@ -290,7 +290,7 @@ a { color: inherit; }
 .evento-corpo img { width: 180px; flex: none; background: var(--papel); border: var(--borda); padding: 8px; transform: rotate(-3deg); }
 .evento-corpo p { margin: 0 0 14px; max-width: 40em; font-size: 19px; }
 .evento-meta { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 800; }
-.evento-corpo img.cartaz-evento { width: 320px; padding: 0; background: none; }
+.evento-corpo img.cartaz-evento { width: 320px; padding: 10px; background: var(--papel); }
 .evento-corpo > div { min-width: 0; flex: 1; }
 @media (max-width: 600px) {
   .evento-corpo { flex-direction: column; }

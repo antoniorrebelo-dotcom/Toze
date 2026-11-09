@@ -6,6 +6,7 @@
 import CocolotoLogo from "../assets/Logo_cocoloto.png";
 import ComedyCartaz from "../assets/evento-comedy-session.jpg";
 import RallyPlaca from "../assets/evento-rally-carrinhos.webp";
+import SunsetLogo from "../assets/evento-sunset.webp";
 import RallyFoto1 from "../assets/rally-carrinhos-1.jpg";
 import RallyFoto2 from "../assets/rally-carrinhos-2.jpg";
 
@@ -56,6 +57,8 @@ export const EVENTOS = [
     name: "Sunset",
     resumo: "Música e pôr do sol.",
     icon: "🌅",
+    image: SunsetLogo,
+    imageAlt: "Logótipo da Sunset \u201cA Turbinar\u201d: o Visconde e a foca a fazer de DJ",
     text:
       "Fim de tarde com música, bebidas frescas e o pôr do sol. A festa de verão " +
       "dos Viscondes.",
