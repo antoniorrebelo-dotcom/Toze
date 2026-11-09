@@ -206,7 +206,7 @@ a { color: inherit; }
 
 /* ---------- Carnaval ---------- */
 .palmares-bloco { padding: 24px 0 8px; }
-.palmares { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.palmares { display: grid; grid-template-columns: 1.4fr 1.4fr 1fr; gap: 20px; }
 .palmares-item {
   background: var(--tinta); color: var(--papel); padding: 18px 20px;
   display: flex; align-items: baseline; gap: 14px;
@@ -214,6 +214,15 @@ a { color: inherit; }
 .palmares-item strong { font: 900 84px/.85 var(--font-display); color: var(--laranja); }
 .palmares-item span { font: 900 24px/1 var(--font-display); text-transform: uppercase; }
 .palmares-item:nth-child(2) { transform: rotate(-1deg); }
+.palmares-podio { flex-direction: column; align-items: stretch; gap: 12px; }
+.palmares-podio h2 { margin: 0; font: 900 28px/1 var(--font-display); text-transform: uppercase; color: var(--relva); }
+.palmares-podio ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.palmares-podio li { display: flex; flex-direction: column; gap: 6px; }
+.palmares-podio li strong { font-size: 72px; }
+.palmares-podio li.podio-2 strong, .palmares-podio li.podio-3 strong { color: var(--papel); }
+.palmares-podio li span { font-size: 18px; }
+.palmares-podio li.podio-1 span { color: var(--laranja); }
+.palmares-publico { align-self: stretch; align-items: center; }
 @media (max-width: 760px) { .palmares { grid-template-columns: 1fr; } }
 
 .anos-grelha { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 28px; align-items: start; }

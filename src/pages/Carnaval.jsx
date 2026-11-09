@@ -6,6 +6,22 @@ function Lugar({ lugar }) {
   return <span className={lugar === 1 ? "lugar lugar-1" : "lugar"}>{lugar}.º lugar</span>;
 }
 
+function Podio({ titulo, contas }) {
+  return (
+    <div className="palmares-item palmares-podio">
+      <h2>{titulo}</h2>
+      <ol>
+        {contas.map((n, i) => (
+          <li key={i} className={"podio-" + (i + 1)}>
+            <strong>{n}</strong>
+            <span>{i + 1}.º lugar</span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
 export default function Carnaval() {
   return (
     <>
@@ -22,15 +38,9 @@ export default function Carnaval() {
 
       <section className="bloco palmares-bloco">
         <div className="container palmares">
-          <div className="palmares-item">
-            <strong>{PALMARES.corso}</strong>
-            <span>vitórias no Corso</span>
-          </div>
-          <div className="palmares-item">
-            <strong>{PALMARES.marcha}</strong>
-            <span>vitórias na Marcha Luminosa</span>
-          </div>
-          <div className="palmares-item">
+          <Podio titulo="Corso" contas={PALMARES.corso} />
+          <Podio titulo="Marcha Luminosa" contas={PALMARES.marcha} />
+          <div className="palmares-item palmares-publico">
             <strong>{PALMARES.publico}</strong>
             <span>Prémios do Público</span>
           </div>

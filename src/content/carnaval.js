@@ -174,8 +174,12 @@ export const CARNAVAL = [
 export const DESFILES = CARNAVAL.filter((c) => c.corso);
 
 // Contagens para o resumo no topo da página.
+// Para cada desfile: quantas vezes ficaram em 1.º, 2.º e 3.º lugar.
+const lugares = (desfile) =>
+  [1, 2, 3].map((n) => DESFILES.filter((c) => c[desfile]?.lugar === n).length);
+
 export const PALMARES = {
-  corso: DESFILES.filter((c) => c.corso?.lugar === 1).length,
-  marcha: DESFILES.filter((c) => c.marcha?.lugar === 1).length,
+  corso: lugares("corso"),
+  marcha: lugares("marcha"),
   publico: DESFILES.filter((c) => c.publico).length,
 };
