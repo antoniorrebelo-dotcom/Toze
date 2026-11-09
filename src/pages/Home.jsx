@@ -3,6 +3,7 @@ import Logo from "../assets/logo-viscondes.png";
 import CocolotoLogo from "../assets/Logo_cocoloto.png";
 import { EVENTOS } from "../content/eventos";
 import { DESFILES } from "../content/carnaval";
+import { LEMA } from "../content/grupo";
 
 export default function Home() {
   const recentes = DESFILES.slice(0, 3);
@@ -17,10 +18,11 @@ export default function Home() {
               <span className="roxo">bigode</span>
               <span>e folia.</span>
             </h1>
-            <p className="papel lema">
-              Os Viscondes saem no Carnaval de Salreu desde 2007 e organizam o Cocoloto, a
-              Comedy Session, o BikeTour, o Passeio TT, o Sunset e o Rally de Carrinhos de
-              Mão.
+            <p className="papel lema">{LEMA}</p>
+            <p className="hero-links">
+              <Link className="btn" to="/grupo">
+                Conhecer o grupo
+              </Link>
             </p>
           </div>
           <div className="colagem" aria-hidden="true">

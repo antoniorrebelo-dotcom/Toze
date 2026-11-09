@@ -22,6 +22,7 @@ Os textos estão todos na pasta **`src/content/`**:
 
 | Quero mudar…                         | Ficheiro                    |
 |--------------------------------------|-----------------------------|
+| História do grupo e frase do início  | `src/content/grupo.js`      |
 | Carnaval: Corsos, Marchas, lugares   | `src/content/carnaval.js`   |
 | Os eventos (texto, data, local)      | `src/content/eventos.js`    |
 | As regras do Cocoloto                | `src/content/regras.js`     |

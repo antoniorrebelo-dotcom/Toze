@@ -264,6 +264,24 @@ a { color: inherit; }
   .ano-imagens img { max-height: 220px; }
 }
 
+/* ---------- O Grupo ---------- */
+.grupo-topo { display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; align-items: center; }
+.grupo-retrato { position: relative; width: min(320px, 80%); justify-self: center; transform: rotate(4deg); }
+.historia { display: flex; flex-direction: column; gap: 0; }
+.historia-parte {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 28px;
+  padding: 28px 0; border-top: var(--borda);
+}
+.historia-parte h2 { font: 900 clamp(40px, 6vw, 64px)/.92 var(--font-display); text-transform: uppercase; margin: 0; }
+.historia-parte p { margin: 0 0 14px; font-size: 19px; max-width: 40em; }
+.historia-parte:nth-child(even) h2 { color: var(--roxo); }
+.historia-fim { margin: 24px 0 0; }
+.hero-links { margin: 22px 0 0; }
+@media (max-width: 760px) {
+  .grupo-topo, .historia-parte { grid-template-columns: 1fr; gap: 12px; }
+  .grupo-retrato { width: 220px; }
+}
+
 /* ---------- Eventos ---------- */
 .eventos { display: flex; flex-direction: column; gap: 0; }
 .evento:first-child { border-top: var(--borda); }

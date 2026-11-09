@@ -7,6 +7,7 @@ import { CONTACTOS } from "../content/contactos";
 
 const LINKS = [
   { to: "/", label: "Início", end: true },
+  { to: "/grupo", label: "O Grupo" },
   { to: "/carnaval", label: "Carnaval" },
   { to: "/eventos", label: "Eventos" },
   { to: "/cocoloto", label: "Cocoloto" },
