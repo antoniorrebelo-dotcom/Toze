@@ -29,6 +29,7 @@ import Dakar from "../assets/carnaval-2014-dakar.webp";
 import NoQuarto from "../assets/carnaval-2009-no-quarto.webp";
 import Rodeo from "../assets/carnaval-2008-rodeo.webp";
 import GredaSemeia from "../assets/carnaval-2011-greda-semeia.webp";
+import GameOver from "../assets/carnaval-2010-game-over.webp";
 
 export const CARNAVAL = [
   {
@@ -155,6 +156,7 @@ export const CARNAVAL = [
   {
     year: 2010,
     corso: { tema: "Game Over Insert Coin", lugar: 8 },
+    images: [{ src: GameOver, alt: "Logótipo Game Over Insert Coin: o Visconde musculado, com um Pac-Man numa mão e uma peça de Tetris na outra" }],
     marcha: { tema: "Casamento Gay", lugar: null },
     publico: false,
   },
