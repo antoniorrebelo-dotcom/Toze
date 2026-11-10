@@ -30,10 +30,9 @@ export default function Carnaval() {
         <div className="container">
           <h1 className="titulo-pagina">Carnaval</h1>
           <p className="papel">
-            Desde 2008 Os Viscondes saem à rua no Carnaval de Estarreja. Há os desfiles
-            principais, o Corso de domingo, e há as Marchas Luminosas, mais trapalhonas, que
-            abrem a festa com a Chegada dos Reis. Nem sempre o tempo deixa, e já houve desfiles
-            adiados e cancelados, mas a vontade de sair é sempre a mesma.
+            Em 2027 Os Viscondes fazem 20 anos de Corsos e Marchas Luminosas. Cada Carnaval pede
+            muita criatividade e muito trabalho; a animação e o orgulho de ser Visconde fazem o
+            resto, a desfilar no Teatro a Céu Aberto.
           </p>
         </div>
       </section>
