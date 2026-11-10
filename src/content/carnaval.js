@@ -42,6 +42,11 @@ import Corso2020_2 from "../assets/carnaval-2020-2.jpg";
 import Corso2020_3 from "../assets/carnaval-2020-3.jpg";
 import Corso2020_4 from "../assets/carnaval-2020-4.jpg";
 import Corso2020_5 from "../assets/carnaval-2020-5.jpg";
+import Corso2020_6 from "../assets/carnaval-2020-6.jpg";
+import Corso2020_7 from "../assets/carnaval-2020-7.jpg";
+import Corso2020_8 from "../assets/carnaval-2020-8.jpg";
+import Corso2020_9 from "../assets/carnaval-2020-9.jpg";
+import Corso2020_10 from "../assets/carnaval-2020-10.jpg";
 import BotaQuimica from "../assets/carnaval-2019-bota-quimica.webp";
 import Decanos from "../assets/carnaval-2017-decanos.webp";
 import Escociamos from "../assets/carnaval-2016-escociamos.webp";
@@ -149,6 +154,11 @@ export const CARNAVAL = [
       { src: Corso2020_3, alt: "Carnaval 2020" },
       { src: Corso2020_4, alt: "Carnaval 2020" },
       { src: Corso2020_5, alt: "Carnaval 2020" },
+      { src: Corso2020_6, alt: "Carnaval 2020" },
+      { src: Corso2020_7, alt: "Carnaval 2020" },
+      { src: Corso2020_8, alt: "Carnaval 2020" },
+      { src: Corso2020_9, alt: "Carnaval 2020" },
+      { src: Corso2020_10, alt: "Carnaval 2020" },
     ],
     marcha: { tema: "Música atrás das Grades", lugar: 1 },
     publico: false,
