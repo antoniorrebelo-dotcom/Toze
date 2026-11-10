@@ -25,6 +25,11 @@ import Corso2024b from "../assets/carnaval-2024-2.jpg";
 import Corso2024c from "../assets/carnaval-2024-1.jpg";
 import Corso2024d from "../assets/carnaval-2024-4.jpg";
 import Corso2024e from "../assets/carnaval-2024-5.jpg";
+import Corso2024_6 from "../assets/carnaval-2024-6.jpg";
+import Corso2024_7 from "../assets/carnaval-2024-7.jpg";
+import Corso2024_8 from "../assets/carnaval-2024-8.jpg";
+import Corso2024_9 from "../assets/carnaval-2024-9.jpg";
+import Corso2024_10 from "../assets/carnaval-2024-10.jpg";
 import Video2024 from "../assets/carnaval-2024-video.mp4";
 import Video2024Capa from "../assets/carnaval-2024-video-capa.jpg";
 import OlhoVisconde from "../assets/carnaval-2026-olho-visconde.png";
@@ -84,13 +89,18 @@ export const CARNAVAL = [
     text: "Crista vermelha, cara amarela e um galo musculado ao colo: um ano de brasa.",
     images: [{ src: Surrascar, alt: "Logótipo Os Viscondes “A Surrascar”" }],
     fotos: [
-      { src: Corso2024a, alt: "O carro do Corso: um galo gigante em cima de um galinheiro de palha" },
-      { src: Corso2024b, alt: "Os Viscondes vestidos de galos, agachados em frente à bancada" },
-      { src: Corso2024c, alt: "Um galo de capacete militar com o nome Os Viscondes" },
-      { src: Corso2024d, alt: "A carrinha VisconAves de transporte de animais vivos, a caminho do Abate Night Club" },
-      { src: Corso2024e, alt: "Um Visconde sorridente dentro da cabeça de galo" },
+      { src: Corso2024a, alt: "Carnaval 2024" },
+      { src: Corso2024b, alt: "Carnaval 2024" },
+      { src: Corso2024c, alt: "Carnaval 2024" },
+      { src: Corso2024d, alt: "Carnaval 2024" },
+      { src: Corso2024e, alt: "Carnaval 2024" },
+      { src: Corso2024_6, alt: "Carnaval 2024" },
+      { src: Corso2024_7, alt: "Carnaval 2024" },
+      { src: Corso2024_8, alt: "Carnaval 2024" },
+      { src: Corso2024_9, alt: "Carnaval 2024" },
+      { src: Corso2024_10, alt: "Carnaval 2024" },
     ],
-    videos: [{ src: Video2024, capa: Video2024Capa, alt: "O carro do galo a passar em frente à bancada" }],
+    videos: [{ src: Video2024, capa: Video2024Capa, alt: "Vídeo do Carnaval 2024" }],
     accent: "#e2231a",
   },
   {

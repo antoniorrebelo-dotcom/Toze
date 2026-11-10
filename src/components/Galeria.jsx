@@ -57,7 +57,6 @@ export default function Galeria({ fotos }) {
           <figure>
             <img src={fotos[aberta].src} alt={fotos[aberta].alt} />
             <figcaption>
-              {fotos[aberta].alt}
               <span className="visor-contador">
                 {aberta + 1} / {fotos.length}
               </span>

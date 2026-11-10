@@ -40,8 +40,7 @@ export default function GaleriaPagina() {
         <div className="galeria-videos">
           {videos.map((v) => (
             <figure key={v.src}>
-              <video src={v.src} poster={v.capa} controls playsInline preload="none" />
-              {v.alt && <figcaption>{v.alt}</figcaption>}
+              <video src={v.src} poster={v.capa} controls playsInline preload="none" aria-label={v.alt} />
             </figure>
           ))}
         </div>
