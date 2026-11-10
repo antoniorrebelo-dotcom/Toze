@@ -30,6 +30,8 @@ import Corso2024_7 from "../assets/carnaval-2024-7.jpg";
 import Corso2024_8 from "../assets/carnaval-2024-8.jpg";
 import Corso2024_9 from "../assets/carnaval-2024-9.jpg";
 import Corso2024_10 from "../assets/carnaval-2024-10.jpg";
+import Corso2024_11 from "../assets/carnaval-2024-11.jpg";
+import Corso2024_12 from "../assets/carnaval-2024-12.jpg";
 import Video2024 from "../assets/carnaval-2024-video.mp4";
 import Video2024Capa from "../assets/carnaval-2024-video-capa.jpg";
 import OlhoVisconde from "../assets/carnaval-2026-olho-visconde.png";
@@ -99,6 +101,8 @@ export const CARNAVAL = [
       { src: Corso2024_8, alt: "Carnaval 2024" },
       { src: Corso2024_9, alt: "Carnaval 2024" },
       { src: Corso2024_10, alt: "Carnaval 2024" },
+      { src: Corso2024_11, alt: "Carnaval 2024" },
+      { src: Corso2024_12, alt: "Carnaval 2024" },
     ],
     videos: [{ src: Video2024, capa: Video2024Capa, alt: "Vídeo do Carnaval 2024" }],
     accent: "#e2231a",
