@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo-viscondes.png";
-import CocolotoLogo from "../assets/Logo_cocoloto.png";
+import LogoAntigo from "../assets/logo-viscondes-antigo.webp";
 import { EVENTOS } from "../content/eventos";
 import { DESFILES } from "../content/carnaval";
 import { LEMA } from "../content/grupo";
@@ -30,10 +30,10 @@ export default function Home() {
               <span className="fita" />
               <img src={Logo} alt="" />
             </div>
-            <Link to="/cocoloto" className="cartaz cartaz-2" tabIndex={-1}>
+            <div className="cartaz cartaz-2">
               <span className="fita" />
-              <img src={CocolotoLogo} alt="" />
-            </Link>
+              <img src={LogoAntigo} alt="" />
+            </div>
           </div>
         </div>
       </section>
