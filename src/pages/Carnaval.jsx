@@ -101,7 +101,7 @@ export default function Carnaval() {
                   </dl>
                   {c.publico && <p className="publico">Prémio do Público</p>}
                   {c.text && <p className="ano-descricao">{c.text}</p>}
-                  <PreviaGaleria fotos={c.fotos} para={`/galeria/carnaval/${c.year}`} />
+                  <PreviaGaleria fotos={c.fotos} videos={c.videos} para={`/galeria/carnaval/${c.year}`} />
                 </div>
               </article>
             )

@@ -437,3 +437,9 @@ a { color: inherit; }
   white-space: pre-wrap; word-break: break-word; background: var(--papel); border: var(--borda);
   padding: 12px; font-size: .85rem; max-height: 320px; overflow: auto;
 }
+
+/* Vídeos nas galerias */
+.galeria-videos { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0 28px; }
+.galeria-videos figure { margin: 0; background: var(--papel); border: var(--borda); box-shadow: var(--sombra); padding: 10px; max-width: 100%; }
+.galeria-videos video { display: block; height: min(70vh, 560px); max-width: 100%; background: var(--tinta); }
+.galeria-videos figcaption { margin-top: 8px; font-weight: 600; max-width: 32ch; }

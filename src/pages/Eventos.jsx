@@ -40,7 +40,7 @@ export default function Eventos() {
                       {e.where && <span>Onde: {e.where}</span>}
                     </p>
                   )}
-                  <PreviaGaleria fotos={e.fotos} para={`/galeria/evento/${e.id}`} />
+                  <PreviaGaleria fotos={e.fotos} videos={e.videos} para={`/galeria/evento/${e.id}`} />
                   {e.link && (
                     <Link className="btn" to={e.link.to}>
                       {e.link.label}

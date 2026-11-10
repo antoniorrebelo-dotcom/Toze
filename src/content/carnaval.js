@@ -8,6 +8,8 @@
 //  text:    (opcional) um pequeno texto sobre esse ano
 //  images:  (opcional) logótipos/fotos; coloque o ficheiro em src/assets/
 //           e importe-o aqui em cima, como os que já existem
+//  fotos:   (opcional) fotos para a galeria desse ano
+//  videos:  (opcional) vídeos para a galeria: { src, capa, alt }
 //  accent:  (opcional) cor do ano, no formato "#rrggbb"
 //  brevemente: (opcional) texto como "Em breve" para um Carnaval que ainda não aconteceu.
 //           Esse ano aparece na página, mas não conta para o resumo nem para os anos desfilados.
@@ -18,6 +20,13 @@
 import Kanal from "../assets/carnaval-2023-kanal.png";
 import ZeDaTripla from "../assets/carnaval-2023-ze-da-tripla.png";
 import Surrascar from "../assets/carnaval-2024-surrascar.png";
+import Corso2024a from "../assets/carnaval-2024-3.jpg";
+import Corso2024b from "../assets/carnaval-2024-2.jpg";
+import Corso2024c from "../assets/carnaval-2024-1.jpg";
+import Corso2024d from "../assets/carnaval-2024-4.jpg";
+import Corso2024e from "../assets/carnaval-2024-5.jpg";
+import Video2024 from "../assets/carnaval-2024-video.mp4";
+import Video2024Capa from "../assets/carnaval-2024-video-capa.jpg";
 import OlhoVisconde from "../assets/carnaval-2026-olho-visconde.png";
 import Turbinar from "../assets/carnaval-2025-turbinar.webp";
 import SalreuWinterGames from "../assets/carnaval-2020-salreu-winter-games.webp";
@@ -74,6 +83,14 @@ export const CARNAVAL = [
     publico: false,
     text: "Crista vermelha, cara amarela e um galo musculado ao colo: um ano de brasa.",
     images: [{ src: Surrascar, alt: "Logótipo Os Viscondes “A Surrascar”" }],
+    fotos: [
+      { src: Corso2024a, alt: "O carro do Corso: um galo gigante em cima de um galinheiro de palha" },
+      { src: Corso2024b, alt: "Os Viscondes vestidos de galos, agachados em frente à bancada" },
+      { src: Corso2024c, alt: "Um galo de capacete militar com o nome Os Viscondes" },
+      { src: Corso2024d, alt: "A carrinha VisconAves de transporte de animais vivos, a caminho do Abate Night Club" },
+      { src: Corso2024e, alt: "Um Visconde sorridente dentro da cabeça de galo" },
+    ],
+    videos: [{ src: Video2024, capa: Video2024Capa, alt: "O carro do galo a passar em frente à bancada" }],
     accent: "#e2231a",
   },
   {
