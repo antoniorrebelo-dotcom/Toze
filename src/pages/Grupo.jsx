@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo-viscondes.png";
 import { HISTORIA } from "../content/grupo";
-import { DESFILES, PALMARES } from "../content/carnaval";
+import { PALMARES } from "../content/carnaval";
 
 export default function Grupo() {
   return (
@@ -11,7 +11,7 @@ export default function Grupo() {
           <div>
             <h1 className="titulo-pagina">O Grupo</h1>
             <p className="papel">
-              Fundados em 2007 em Salreu, com {DESFILES.length} Carnavais desfilados desde 2008.
+              Fundados em 2007 em Salreu, e a desfilar no Carnaval de Estarreja desde 2008.
             </p>
           </div>
           <div className="cartaz grupo-retrato" aria-hidden="true">

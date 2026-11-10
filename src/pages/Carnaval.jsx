@@ -30,9 +30,10 @@ export default function Carnaval() {
         <div className="container">
           <h1 className="titulo-pagina">Carnaval</h1>
           <p className="papel">
-            Desde 2008 Os Viscondes saem duas vezes por Carnaval. Na quarta-feira antes do
-            Carnaval há as Marchas Luminosas, um desfile mais trapalhão que marca o início da
-            festa e a Chegada dos Reis. Depois vem o Corso, o desfile a sério.
+            Desde 2008 Os Viscondes saem à rua no Carnaval de Estarreja. Há os desfiles
+            principais, o Corso de domingo, e há as Marchas Luminosas, mais trapalhonas, que
+            abrem a festa com a Chegada dos Reis. Nem sempre o tempo deixa, e já houve desfiles
+            adiados e cancelados, mas a vontade de sair é sempre a mesma.
           </p>
         </div>
       </section>

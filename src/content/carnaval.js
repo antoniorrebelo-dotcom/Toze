@@ -40,9 +40,9 @@ export const CARNAVAL = [
     brevemente: "Em breve",
     corso: { tema: "No melhor Visconde cai a nódoa", lugar: null },
     text:
-      "Em 2027 Os Viscondes fazem 20 anos e saem para o 18.º Corso de Carnaval, com outras " +
-      "tantas Marchas Luminosas. Cada ano pede muita criatividade e muito trabalho; a animação " +
-      "e o orgulho de ser Visconde fazem o resto, a desfilar no Teatro a Céu Aberto.",
+      "Em 2027 Os Viscondes fazem 20 anos de Corsos e Marchas Luminosas. Cada Carnaval pede " +
+      "muita criatividade e muito trabalho; a animação e o orgulho de ser Visconde fazem o " +
+      "resto, a desfilar no Teatro a Céu Aberto.",
     animacao: "nodoa",
     accent: "#2a9fb8",
   },
