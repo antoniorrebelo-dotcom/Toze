@@ -37,6 +37,11 @@ import Video2024Capa from "../assets/carnaval-2024-video-capa.jpg";
 import OlhoVisconde from "../assets/carnaval-2026-olho-visconde.png";
 import Turbinar from "../assets/carnaval-2025-turbinar.webp";
 import SalreuWinterGames from "../assets/carnaval-2020-salreu-winter-games.webp";
+import Corso2020_1 from "../assets/carnaval-2020-1.jpg";
+import Corso2020_2 from "../assets/carnaval-2020-2.jpg";
+import Corso2020_3 from "../assets/carnaval-2020-3.jpg";
+import Corso2020_4 from "../assets/carnaval-2020-4.jpg";
+import Corso2020_5 from "../assets/carnaval-2020-5.jpg";
 import BotaQuimica from "../assets/carnaval-2019-bota-quimica.webp";
 import Decanos from "../assets/carnaval-2017-decanos.webp";
 import Escociamos from "../assets/carnaval-2016-escociamos.webp";
@@ -131,6 +136,13 @@ export const CARNAVAL = [
     year: 2020,
     corso: { tema: "Salreu 2020", lugar: 1 },
     images: [{ src: SalreuWinterGames, alt: "Logótipo Salreu 2020 Winter Games" }],
+    fotos: [
+      { src: Corso2020_1, alt: "Carnaval 2020" },
+      { src: Corso2020_2, alt: "Carnaval 2020" },
+      { src: Corso2020_3, alt: "Carnaval 2020" },
+      { src: Corso2020_4, alt: "Carnaval 2020" },
+      { src: Corso2020_5, alt: "Carnaval 2020" },
+    ],
     marcha: { tema: "Música atrás das Grades", lugar: 1 },
     publico: false,
   },
