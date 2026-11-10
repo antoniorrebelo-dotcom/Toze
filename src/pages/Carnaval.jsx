@@ -38,8 +38,8 @@ export default function Carnaval() {
 
       <section className="bloco palmares-bloco">
         <div className="container palmares">
-          <Podio titulo="Corso" contas={PALMARES.corso} />
-          <Podio titulo="Marcha Luminosa" contas={PALMARES.marcha} />
+          <Podio titulo="Corso" contas={PALMARES.corsoLugares} />
+          <Podio titulo="Marcha Luminosa" contas={PALMARES.marchaLugares} />
           <div className="palmares-item palmares-publico">
             <strong>{PALMARES.publico}</strong>
             <span>Prémios do Público</span>

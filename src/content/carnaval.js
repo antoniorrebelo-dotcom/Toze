@@ -185,7 +185,9 @@ const lugares = (desfile) =>
   [1, 2, 3].map((n) => DESFILES.filter((c) => c[desfile]?.lugar === n).length);
 
 export const PALMARES = {
-  corso: lugares("corso"),
-  marcha: lugares("marcha"),
+  corso: lugares("corso")[0], // vitórias no Corso
+  marcha: lugares("marcha")[0], // vitórias na Marcha Luminosa
+  corsoLugares: lugares("corso"), // [1.º, 2.º, 3.º]
+  marchaLugares: lugares("marcha"),
   publico: DESFILES.filter((c) => c.publico).length,
 };
