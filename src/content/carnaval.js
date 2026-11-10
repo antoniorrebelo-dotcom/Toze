@@ -2,13 +2,16 @@
 //  CARNAVAL — um bloco por ano.
 //
 //  corso:   o desfile principal do Carnaval (tema e classificação)
-//  marcha:  a Marcha Luminosa, na quarta-feira antes do Carnaval
+//  marcha:  as Marchas Luminosas, na quarta-feira antes do Carnaval
 //  lugar:   1, 2, 3... ou null se não houver classificação
 //  publico: true se ganharam o Prémio do Público nesse ano
 //  text:    (opcional) um pequeno texto sobre esse ano
 //  images:  (opcional) logótipos/fotos; coloque o ficheiro em src/assets/
 //           e importe-o aqui em cima, como os que já existem
 //  accent:  (opcional) cor do ano, no formato "#rrggbb"
+//  brevemente: (opcional) texto como "Em breve" para um Carnaval que ainda não aconteceu.
+//           Esse ano aparece na página, mas não conta para o resumo nem para os anos desfilados.
+//  animacao: (opcional) "nodoa" mostra o logótipo animado da máquina de lavar
 //
 //  O resumo de vitórias no topo da página é calculado sozinho a partir daqui.
 // ============================================================
@@ -32,6 +35,16 @@ import GredaSemeia from "../assets/carnaval-2011-greda-semeia-logo.webp";
 import GameOver from "../assets/carnaval-2010-game-over.webp";
 
 export const CARNAVAL = [
+  {
+    year: 2027,
+    brevemente: "Em breve",
+    corso: { tema: "No melhor Visconde cai a nódoa", lugar: null },
+    text:
+      "O Visconde foi parar à máquina de lavar: cartola, bigode, caneca e coxa de frango, " +
+      "tudo a rodar no tambor. Uma nódoa na casaca e muita espuma. Vem aí!",
+    animacao: "nodoa",
+    accent: "#2a9fb8",
+  },
   {
     year: 2026,
     corso: { tema: "Olhó Visconde do nosso Maire", lugar: 3 },
@@ -176,8 +189,8 @@ export const CARNAVAL = [
   },
 ];
 
-// Anos com desfile (sem os anos de pausa), do mais recente para o mais antigo.
-export const DESFILES = CARNAVAL.filter((c) => c.corso);
+// Anos com desfile (sem pausas nem o Carnaval que aí vem), do mais recente para o mais antigo.
+export const DESFILES = CARNAVAL.filter((c) => c.corso && !c.brevemente);
 
 // Contagens para o resumo no topo da página.
 // Para cada desfile: quantas vezes ficaram em 1.º, 2.º e 3.º lugar.
@@ -186,7 +199,7 @@ const lugares = (desfile) =>
 
 export const PALMARES = {
   corso: lugares("corso")[0], // vitórias no Corso
-  marcha: lugares("marcha")[0], // vitórias na Marcha Luminosa
+  marcha: lugares("marcha")[0], // vitórias nas Marchas Luminosas
   corsoLugares: lugares("corso"), // [1.º, 2.º, 3.º]
   marchaLugares: lugares("marcha"),
   publico: DESFILES.filter((c) => c.publico).length,

@@ -1,5 +1,6 @@
 import { CARNAVAL, PALMARES } from "../content/carnaval";
 import PreviaGaleria from "../components/PreviaGaleria";
+import MaquinaNodoa from "../components/MaquinaNodoa";
 
 function Lugar({ lugar }) {
   if (!lugar) return null;
@@ -30,7 +31,7 @@ export default function Carnaval() {
           <h1 className="titulo-pagina">Carnaval</h1>
           <p className="papel">
             Desde 2008 Os Viscondes saem duas vezes por Carnaval. Na quarta-feira antes do
-            Carnaval há a Marcha Luminosa, um desfile mais trapalhão que marca o início da
+            Carnaval há as Marchas Luminosas, um desfile mais trapalhão que marca o início da
             festa e a Chegada dos Reis. Depois vem o Corso, o desfile a sério.
           </p>
         </div>
@@ -39,7 +40,7 @@ export default function Carnaval() {
       <section className="bloco palmares-bloco">
         <div className="container palmares">
           <Podio titulo="Corso" contas={PALMARES.corsoLugares} />
-          <Podio titulo="Marcha Luminosa" contas={PALMARES.marchaLugares} />
+          <Podio titulo="Marchas Luminosas" contas={PALMARES.marchaLugares} />
           <div className="palmares-item palmares-publico">
             <strong>{PALMARES.publico}</strong>
             <span>Prémios do Público</span>
@@ -58,9 +59,19 @@ export default function Carnaval() {
             ) : (
               <article
                 key={c.year}
-                className={"ano-cartaz" + (c.year >= 2023 ? " recente" : "") + (c.images?.length ? " com-imagem" : "")}
+                className={
+                  "ano-cartaz" +
+                  (c.year >= 2023 ? " recente" : "") +
+                  (c.images?.length || c.animacao ? " com-imagem" : "") +
+                  (c.brevemente ? " brevemente" : "")
+                }
                 style={{ "--c": c.accent || "var(--roxo)" }}
               >
+                {c.animacao === "nodoa" && (
+                  <div className="ano-imagens">
+                    <MaquinaNodoa />
+                  </div>
+                )}
                 {c.images?.length > 0 && (
                   <div className="ano-imagens">
                     {c.images.map((img) => (
@@ -70,6 +81,7 @@ export default function Carnaval() {
                 )}
                 <div className="ano-texto">
                   <span className="ano">{c.year}</span>
+                  {c.brevemente && <span className="carimbo-breve">{c.brevemente}</span>}
                   <dl className="desfiles">
                     <div>
                       <dt>Corso</dt>
@@ -79,7 +91,7 @@ export default function Carnaval() {
                     </div>
                     {c.marcha && (
                       <div>
-                        <dt>Marcha Luminosa</dt>
+                        <dt>Marchas Luminosas</dt>
                         <dd>
                           <span className="tema">{c.marcha.tema}</span>{" "}
                           <Lugar lugar={c.marcha.lugar} />

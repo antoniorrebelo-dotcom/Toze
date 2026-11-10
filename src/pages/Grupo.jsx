@@ -29,7 +29,7 @@ export default function Grupo() {
           </div>
           <div className="palmares-item">
             <strong>{PALMARES.marcha}</strong>
-            <span>vitórias na Marcha Luminosa</span>
+            <span>vitórias nas Marchas Luminosas</span>
           </div>
           <div className="palmares-item">
             <strong>{PALMARES.publico}</strong>

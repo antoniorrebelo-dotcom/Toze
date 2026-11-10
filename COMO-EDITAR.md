@@ -67,7 +67,7 @@ Passo a passo:
      {
        year: 2027,
        corso: { tema: "Nome do tema do Corso", lugar: 1 },
-       marcha: { tema: "Nome da Marcha Luminosa", lugar: null },
+       marcha: { tema: "Nome da Marcha (Marchas Luminosas)", lugar: null },
        publico: false,
        text: "Um pequeno texto sobre o desfile deste ano.",
        images: [{ src: Tema2027, alt: "Logótipo do tema 2027" }],
