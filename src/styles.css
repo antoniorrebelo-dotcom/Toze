@@ -154,8 +154,8 @@ a { color: inherit; }
 .colagem { position: relative; min-height: 520px; }
 .cartaz { position: absolute; display: block; background: var(--papel); border: var(--borda); padding: 14px; box-shadow: var(--sombra); }
 .cartaz img { display: block; width: 100%; }
-.cartaz-1 { width: 62%; top: 0; left: 6%; transform: rotate(-5deg); }
-.cartaz-2 { width: 46%; top: 46%; left: 48%; transform: rotate(6deg); background: var(--laranja); }
+.cartaz-1 { width: 52%; top: 16%; left: 0; transform: rotate(-5deg); }
+.cartaz-2 { width: 58%; top: 0; left: 42%; transform: rotate(5deg); background: var(--laranja); }
 .fita {
   position: absolute; width: 90px; height: 26px; top: -13px; left: 50%;
   background: rgba(239, 125, 0, .85); transform: translateX(-50%) rotate(-4deg);
@@ -163,8 +163,7 @@ a { color: inherit; }
 .cartaz-2 .fita { background: rgba(255, 255, 255, .8); }
 @media (max-width: 820px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .colagem { min-height: 0; height: 330px; max-width: 420px; }
-  .cartaz-2 { top: 38%; }
+  .colagem { min-height: 0; height: 360px; max-width: 420px; }
 }
 
 .faixa { background: var(--tinta); color: var(--laranja); overflow: hidden; padding: 14px 0; }
