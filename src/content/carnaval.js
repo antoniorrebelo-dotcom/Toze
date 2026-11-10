@@ -135,6 +135,13 @@ export const CARNAVAL = [
   {
     year: 2020,
     corso: { tema: "Salreu 2020", lugar: 1 },
+    text:
+      "Nesse ano Salreu enfrentou uma frente fria de proporções gigantescas, com nevões " +
+      "constantes: as alterações climáticas aqueciam o mundo, mas arrefeciam Salreu. Houve quem " +
+      "dissesse que era “fake news”; Os Viscondes preferiram aproveitar a realidade e levaram ao " +
+      "Carnaval de Estarreja os Grandiosos Jogos Olímpicos de Inverno Salreu 2020. A Estância de " +
+      "Desportos de Neve da Nossa Senhora do Monte recebeu os espectadores do Teatro a Céu Aberto " +
+      "com modalidades pouco comuns por cá. Houve percalços, mas tudo acabou bem, com muita folia e diversão.",
     images: [{ src: SalreuWinterGames, alt: "Logótipo Salreu 2020 Winter Games" }],
     fotos: [
       { src: Corso2020_1, alt: "Carnaval 2020" },
