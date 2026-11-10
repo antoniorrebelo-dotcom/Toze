@@ -189,6 +189,8 @@ a { color: inherit; }
 .ano { display: block; font: 900 58px/1 var(--font-display); color: var(--roxo); }
 .cartaz-ano img { width: 100%; height: 230px; object-fit: contain; margin: 8px 0; }
 .cartaz-ano h3 { font: 800 20px/1.25 var(--font-body); margin: 0; }
+.cartaz-ano .maquina-nodoa { height: 230px; width: auto; margin: 8px auto; }
+.cartaz-ano .carimbo-breve { font-size: 20px; margin: 14px 0 0 12px; }
 
 .bloco-roxo { background: var(--roxo); color: var(--papel); }
 .lista-eventos { list-style: none; margin: 0; padding: 0; border-top: 3px solid var(--papel); }
@@ -270,7 +272,7 @@ a { color: inherit; }
 
 /* Logótipo animado da máquina de lavar (2027) */
 .maquina-nodoa { position: relative; width: min(100%, 380px); aspect-ratio: 765 / 1024; }
-.maquina-nodoa img { display: block; max-height: none !important; max-width: none !important; min-width: 0; }
+.maquina-nodoa img { display: block; max-height: none !important; max-width: none !important; min-width: 0; margin: 0 !important; object-fit: fill !important; }
 .maquina-nodoa img.maquina-fundo { position: absolute; inset: 0; width: 100%; height: 100%; }
 .maquina-vidro {
   position: absolute; left: 20.26%; top: 28.42%; width: 60.13%; height: 44.92%;

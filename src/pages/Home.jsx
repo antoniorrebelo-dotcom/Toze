@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/logo-viscondes.png";
 import LogoAntigo from "../assets/logo-viscondes-antigo.webp";
 import { EVENTOS } from "../content/eventos";
-import { DESFILES } from "../content/carnaval";
+import { CARNAVAL } from "../content/carnaval";
+import MaquinaNodoa from "../components/MaquinaNodoa";
 import { LEMA } from "../content/grupo";
 
 export default function Home() {
-  const recentes = DESFILES.slice(0, 3);
-  const temas = DESFILES.slice(0, 8).map((c) => c.corso.tema);
+  // Os três Carnavais mais recentes, incluindo o que aí vem ("Em breve").
+  const comCorso = CARNAVAL.filter((c) => c.corso);
+  const recentes = comCorso.slice(0, 3);
+  const temas = comCorso.slice(0, 8).map((c) => c.corso.tema);
   return (
     <>
       <section className="hero">
@@ -57,8 +60,15 @@ export default function Home() {
           <div className="cartazes">
             {recentes.map((c) => (
               <Link key={c.year} to="/carnaval" className="cartaz-ano">
-                <span className="ano">{c.year}</span>
-                <img src={c.images[0]?.src || Logo} alt="" loading="lazy" />
+                <span className="ano">
+                  {c.year}
+                  {c.brevemente && <span className="carimbo-breve">{c.brevemente}</span>}
+                </span>
+                {c.animacao === "nodoa" ? (
+                  <MaquinaNodoa />
+                ) : (
+                  <img src={c.images?.[0]?.src || Logo} alt="" loading="lazy" />
+                )}
                 <h3>{c.corso.tema}</h3>
               </Link>
             ))}
