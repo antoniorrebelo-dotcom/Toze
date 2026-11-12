@@ -9,7 +9,9 @@
 //  images:  (opcional) logótipos/fotos; coloque o ficheiro em src/assets/
 //           e importe-o aqui em cima, como os que já existem
 //  fotos:   (opcional) fotos para a galeria desse ano
-//  videos:  (opcional) vídeos para a galeria: { src, capa, alt }
+//  videos:  (opcional) vídeos para a galeria: { src, capa, alt } para um ficheiro,
+//           ou { youtube: "código do vídeo", alt } para um vídeo do YouTube
+//           (o código é o que vem depois de "v=" no endereço do vídeo)
 //  accent:  (opcional) cor do ano, no formato "#rrggbb"
 //  brevemente: (opcional) texto como "Em breve" para um Carnaval que ainda não aconteceu.
 //           Esse ano aparece na página, mas não conta para o resumo nem para os anos desfilados.
@@ -119,7 +121,10 @@ export const CARNAVAL = [
       { src: Corso2024_11, alt: "Carnaval 2024" },
       { src: Corso2024_12, alt: "Carnaval 2024" },
     ],
-    videos: [{ src: Video2024, capa: Video2024Capa, alt: "Vídeo do Carnaval 2024" }],
+    videos: [
+      { src: Video2024, capa: Video2024Capa, alt: "Vídeo do Carnaval 2024" },
+      { youtube: "pnQL-MMCJbU", alt: "Vídeo do Carnaval 2024" },
+    ],
     accent: "#e2231a",
   },
   {
@@ -172,6 +177,9 @@ export const CARNAVAL = [
     ],
     marcha: { tema: "Música atrás das Grades", lugar: 1 },
     publico: false,
+    videos: [
+      { youtube: "cR_qM0vOEvM", alt: "Vídeo do Carnaval 2020" },
+    ],
   },
   {
     year: 2019,
@@ -193,6 +201,10 @@ export const CARNAVAL = [
     images: [{ src: Decanos, alt: "Logótipo Viscondes Decanos" }],
     marcha: { tema: "Põe-te Fino, Os Viscondes estão no São Firmino", lugar: 1 },
     publico: true,
+    videos: [
+      { youtube: "2Lkkple_wjg", alt: "Vídeo do Carnaval 2017" },
+      { youtube: "YX0TrsiVM1o", alt: "Vídeo do Carnaval 2017" },
+    ],
   },
   {
     year: 2016,
@@ -200,6 +212,12 @@ export const CARNAVAL = [
     images: [{ src: Escociamos, alt: "Logótipo Escociamos, Bravo Visconde" }],
     marcha: { tema: "Folclore in Rio Antuã", lugar: null },
     publico: true,
+    videos: [
+      { youtube: "829PG-0CcZk", alt: "Vídeo do Carnaval 2016" },
+      { youtube: "e9wGQc14iy4", alt: "Vídeo do Carnaval 2016" },
+      { youtube: "DP-27z0Ggj4", alt: "Vídeo do Carnaval 2016" },
+      { youtube: "POobwwrdPso", vertical: true, alt: "Vídeo do Carnaval 2016" },
+    ],
   },
   {
     year: 2015,
@@ -214,6 +232,9 @@ export const CARNAVAL = [
     images: [{ src: Dakar, alt: "Logótipo Salreu-Dakar: o Visconde piloto, de capacete e com duas taças" }],
     marcha: { tema: "Discoteca Panteão - Entra Tudo", lugar: null },
     publico: true,
+    videos: [
+      { youtube: "2IFOaEf5UcY", alt: "Vídeo do Carnaval 2014" },
+    ],
   },
   {
     year: 2013,
@@ -242,6 +263,9 @@ export const CARNAVAL = [
     images: [{ src: GameOver, alt: "Logótipo Game Over Insert Coin: o Visconde musculado, com um Pac-Man numa mão e uma peça de Tetris na outra" }],
     marcha: { tema: "Casamento Gay", lugar: null },
     publico: false,
+    videos: [
+      { youtube: "9y0uTpH33Qg", alt: "Vídeo do Carnaval 2010" },
+    ],
   },
   {
     year: 2009,

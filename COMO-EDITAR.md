@@ -117,6 +117,19 @@ primeiras fotos e um botão "Ver galeria". Sem fotos, o botão não aparece.
    `alt` é uma frase curta a descrever a foto. Aparece por baixo da foto ampliada e ajuda
    quem não consegue ver a imagem.
 
+### Pôr um vídeo do YouTube
+
+No ano ou no evento certo, acrescente (ou complete) a lista `videos`:
+
+```js
+videos: [
+  { youtube: "829PG-0CcZk", alt: "Vídeo do Carnaval 2016" },
+],
+```
+
+O código é o que vem depois de `v=` no endereço do vídeo
+(`https://www.youtube.com/watch?v=829PG-0CcZk`). O vídeo aparece na galeria desse ano ou evento.
+
 Fotos muito grandes tornam o site lento. Antes de as enviar, reduza-as para cerca de 1200 píxeis de largura.
 Também pode simplesmente enviar as fotos ao Claude e dizer de que ano ou evento são.
 

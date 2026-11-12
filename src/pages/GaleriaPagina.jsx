@@ -39,8 +39,18 @@ export default function GaleriaPagina() {
       {videos.length > 0 && (
         <div className="galeria-videos">
           {videos.map((v) => (
-            <figure key={v.src}>
-              <video src={v.src} poster={v.capa} controls playsInline preload="none" aria-label={v.alt} />
+            <figure key={v.src || v.youtube} className={v.youtube ? (v.vertical ? "yt yt-vertical" : "yt") : ""}>
+              {v.youtube ? (
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${v.youtube}`}
+                  title={v.alt || "Vídeo"}
+                  loading="lazy"
+                  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                  allowFullScreen
+                />
+              ) : (
+                <video src={v.src} poster={v.capa} controls playsInline preload="none" aria-label={v.alt} />
+              )}
             </figure>
           ))}
         </div>

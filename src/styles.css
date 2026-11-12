@@ -443,3 +443,7 @@ a { color: inherit; }
 .galeria-videos figure { margin: 0; background: var(--papel); border: var(--borda); box-shadow: var(--sombra); padding: 10px; max-width: 100%; }
 .galeria-videos video { display: block; height: min(70vh, 560px); max-width: 100%; background: var(--tinta); }
 .galeria-videos figcaption { margin-top: 8px; font-weight: 600; max-width: 32ch; }
+.galeria-videos figure.yt { width: min(100%, 520px); }
+.galeria-videos figure.yt-vertical { width: min(100%, 320px); }
+.galeria-videos iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: var(--tinta); }
+.galeria-videos .yt-vertical iframe { aspect-ratio: 9 / 16; }
