@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import Galeria from "../components/Galeria";
+import VideoYouTube from "../components/VideoYouTube";
 import { DESFILES } from "../content/carnaval";
 import { EVENTOS } from "../content/eventos";
 import { CONTACTOS } from "../content/contactos";
@@ -41,13 +42,7 @@ export default function GaleriaPagina() {
           {videos.map((v) => (
             <figure key={v.src || v.youtube} className={v.youtube ? (v.vertical ? "yt yt-vertical" : "yt") : ""}>
               {v.youtube ? (
-                <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${v.youtube}`}
-                  title={v.alt || "Vídeo"}
-                  loading="lazy"
-                  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowFullScreen
-                />
+                <VideoYouTube id={v.youtube} titulo={v.alt} vertical={v.vertical} />
               ) : (
                 <video src={v.src} poster={v.capa} controls playsInline preload="none" aria-label={v.alt} />
               )}
