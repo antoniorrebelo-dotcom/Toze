@@ -143,9 +143,7 @@ export const CARNAVAL = [
     corso: { tema: "Olhó Visconde do nosso Maire", lugar: 3 },
     marcha: { tema: "Olhá Lomba", lugar: 1 },
     publico: false,
-    text:
-      "O Visconde fez-se ao mar: canastra de peixe à cabeça, camisa vermelha e " +
-      "bigode ao vento, a apregoar “Olhó Visconde do nosso Maire!”.",
+    text: "A Arte Xávega levada à avenida: o barco, as juntas de bois, as gaivotas barulhentas e as sardinhas mais sexy da costa.",
     images: [
       { src: OlhoVisconde, alt: "Logótipo “Olhó Visconde do nosso Maire”" },
       { src: OlhaLomba, alt: "Logótipo das Marchas Luminosas 2026 “Olh’á Lomba!”" },
@@ -163,9 +161,7 @@ export const CARNAVAL = [
     corso: { tema: "Os Viscondes a Turbinar", lugar: 2 },
     marcha: { tema: "Avenida São Paio", lugar: null },
     publico: false,
-    text:
-      "Boia, chapéu de palha e escorrega aquático: o Visconde trocou a cartola " +
-      "pelo parque aquático, com uma foca e um papagaio.",
+    text: "A Turbina de Salreu virou parque aquático, com escorregas, golfinhos, focas e aves, numa inauguração tão especial que até um avião teve.",
     images: [{ src: Turbinar, alt: "Logótipo Os Viscondes \u201cA Turbinar\u201d" }],
     accent: "#ef7d00",
     fotos: [
@@ -189,7 +185,7 @@ export const CARNAVAL = [
     corso: { tema: "Os Viscondes a Surrascar", lugar: 1 },
     marcha: { tema: "Os Viscondes a Magicar", lugar: null },
     publico: false,
-    text: "Crista vermelha, cara amarela e um galo musculado ao colo: um ano de brasa.",
+    text: "A vida de um frango, do nascimento até ao abate: um ciclo que se repetia sem fim, até ao dia em que rebentou a rebelião.",
     images: [{ src: Surrascar, alt: "Logótipo Os Viscondes “A Surrascar”" }],
     fotos: [
       { src: Corso2024a, alt: "Carnaval 2024" },
@@ -216,7 +212,7 @@ export const CARNAVAL = [
     corso: { tema: "Os Viscondes no K'anal", lugar: 2 },
     marcha: { tema: "Babyshower d'Os Viscondes", lugar: null },
     publico: false,
-    text: "De caneca na mão, com a proa de um barco e o Zé da Tripla ao lado.",
+    text: "O turismo na Região de Aveiro: passeios de moliceiro, o farol, as casas da Costa Nova, a tripa e os ovos moles, tudo a acabar em festa em mais um São Gonçalinho.",
     images: [
       { src: Kanal, alt: "Logótipo Os Viscondes no K'anal" },
       { src: ZeDaTripla, alt: "Personagem Zé da Tripla" },
@@ -234,13 +230,7 @@ export const CARNAVAL = [
   {
     year: 2020,
     corso: { tema: "Salreu 2020", lugar: 1 },
-    text:
-      "Nesse ano Salreu enfrentou uma frente fria de proporções gigantescas, com nevões " +
-      "constantes: as alterações climáticas aqueciam o mundo, mas arrefeciam Salreu. Houve quem " +
-      "dissesse que era “fake news”; Os Viscondes preferiram aproveitar a realidade e levaram ao " +
-      "Carnaval de Estarreja os Grandiosos Jogos Olímpicos de Inverno Salreu 2020. A Estância de " +
-      "Desportos de Neve da Nossa Senhora do Monte recebeu os espectadores do Teatro a Céu Aberto " +
-      "com modalidades pouco comuns por cá. Houve percalços, mas tudo acabou bem, com muita folia e diversão.",
+    text: "Os Jogos Olímpicos de Inverno chegaram a Salreu: a Estância de Neve da Senhora do Monte recebeu o Teatro a Céu Aberto, com muitos percalços e ainda mais folia.",
     images: [{ src: SalreuWinterGames, alt: "Logótipo Salreu 2020 Winter Games" }],
     fotos: [
       { src: Corso2020_1, alt: "Carnaval 2020" },
@@ -273,6 +263,7 @@ export const CARNAVAL = [
   {
     year: 2019,
     corso: { tema: "Bota Química 2.0", lugar: 3 },
+    text: "Um dia de trabalho na Quimicose, uma empresa do parque químico, até ao acidente que mudou tudo. A sequela da Bota Química de 2011.",
     images: [{ src: BotaQuimica, alt: "Logótipo Bota Química 2.0" }],
     marcha: { tema: "Somos todos Zé Firminio", lugar: 1 },
     publico: true,
@@ -286,6 +277,7 @@ export const CARNAVAL = [
   {
     year: 2018,
     corso: { tema: "Afunda-mos", lugar: 2 },
+    text: "Um jogo de basquetebol à moda da NBA entre Os Viscondes de Salreu e os Canelas Toiros, mas o que contou mesmo foram os intervalos, mais do que o jogo.",
     images: [{ src: AfundaMosBasket, alt: "Logótipo Salreu Os Viscondes: o Visconde jogador de basquetebol" }],
     marcha: { tema: "Baile na Favela", lugar: null },
     publico: true,
@@ -302,6 +294,7 @@ export const CARNAVAL = [
   {
     year: 2017,
     corso: { tema: "Viscondes Decanos", lugar: 1 },
+    text: "O Visconde fez 10 anos e convidou todos os seus amiguinhos para uma grande festa.",
     images: [{ src: Decanos, alt: "Logótipo Viscondes Decanos" }],
     marcha: { tema: "Põe-te Fino, Os Viscondes estão no São Firmino", lugar: 1 },
     publico: true,
@@ -330,6 +323,7 @@ export const CARNAVAL = [
   {
     year: 2016,
     corso: { tema: "Escocia-mos, Bravo Coração de Visconde", lugar: 1 },
+    text: "Inspirado num clássico do cinema, retratou a libertação de um povo, que no nosso desfile teve um desfecho bem mais feliz.",
     images: [{ src: Escociamos, alt: "Logótipo Escociamos, Bravo Visconde" }],
     marcha: { tema: "Folclore in Rio Antuã", lugar: null },
     publico: true,
@@ -343,6 +337,7 @@ export const CARNAVAL = [
   {
     year: 2015,
     corso: { tema: "Viscondes a Escacar Pedra", lugar: 2 },
+    text: "Muita pedra foi escacada pelos nossos mineiros, mas a recompensa foi grande.",
     images: [{ src: EscacarPedra, alt: "Logótipo Viscondes a Escacar Pedra: o Visconde mineiro" }],
     marcha: { tema: "Apresentação do Samba Enredo d'Os Viscondes", lugar: 2 },
     publico: false,
@@ -350,6 +345,7 @@ export const CARNAVAL = [
   {
     year: 2014,
     corso: { tema: "Salreu - Dakar - Até colas o Piston", lugar: 5 },
+    text: "Um rally de Salreu até Dakar, numa viagem muito atribulada.",
     images: [{ src: Dakar, alt: "Logótipo Salreu-Dakar: o Visconde piloto, de capacete e com duas taças" }],
     marcha: { tema: "Discoteca Panteão - Entra Tudo", lugar: null },
     publico: true,
@@ -360,6 +356,7 @@ export const CARNAVAL = [
   {
     year: 2013,
     corso: { tema: "Pic-Nic d'Os Viscondes", lugar: 2 },
+    text: "Um pic-nic visto pelos olhos das formigas, com festa rija no formigueiro.",
     images: [{ src: PicNic, alt: "Logótipo Pic-Nic d'Os Viscondes" }],
     marcha: { tema: "Ultras Viscondes", lugar: 2 },
     publico: true,
@@ -367,6 +364,7 @@ export const CARNAVAL = [
   {
     year: 2012,
     corso: { tema: "Os Des-Cobridores", lugar: 1 },
+    text: "Saídos da Torre de Belém, os Viscondes Des-Cobridores partiram em busca de novas conquistas.",
     images: [{ src: DesCobridores, alt: "Logótipo Os Des-Cobridores: o Visconde rei, com coroa, orbe e cetro" }],
     marcha: { tema: "Eleição Miss Fanny", lugar: 3 },
     publico: false,
@@ -374,6 +372,7 @@ export const CARNAVAL = [
   {
     year: 2011,
     corso: { tema: "Greda, Semeia e Bota Química", lugar: 1 },
+    text: "Agropecuária como nunca se viu: lavradores, vacas loucas, ensiladeiras e ordenhas spa.",
     images: [{ src: GredaSemeia, alt: "Logótipo Greda, Semeia e Bota Química: o Visconde agricultor, de chapéu de palha e camisa aos quadrados" }],
     marcha: { tema: "Chegada do Visconde (Ontem e Hoje)", lugar: 2 },
     publico: false,
@@ -381,6 +380,7 @@ export const CARNAVAL = [
   {
     year: 2010,
     corso: { tema: "Game Over Insert Coin", lugar: 8 },
+    text: "Nostalgia em estado puro: os videojogos dos anos 80 ganharam vida no Carnaval de Estarreja.",
     images: [{ src: GameOver, alt: "Logótipo Game Over Insert Coin: o Visconde musculado, com um Pac-Man numa mão e uma peça de Tetris na outra" }],
     marcha: { tema: "Casamento Gay", lugar: null },
     publico: false,
@@ -394,6 +394,7 @@ export const CARNAVAL = [
   {
     year: 2009,
     corso: { tema: "No Quarto com Os Viscondes", lugar: 4 },
+    text: "Um Toy Story à moda de Salreu, com outros heróis e outros vilões.",
     images: [{ src: NoQuartoLogo, alt: "Logótipo No Quarto com Os Viscondes: o Visconde vestido de soldadinho de plástico verde, com uma espingarda e uma boneca loura, num quarto de brinquedos" }],
     marcha: { tema: "Dasse Comigo", lugar: null },
     publico: false,
@@ -402,6 +403,7 @@ export const CARNAVAL = [
   {
     year: 2008,
     corso: { tema: "Rodeo d'Os Viscondes", lugar: 6 },
+    text: "A estreia d'Os Viscondes no Carnaval: um rodeo magnífico, com muitos touros, cowboys e folia.",
     images: [{ src: Rodeo, alt: "Logótipo Rodeo dos Viscondes: o Visconde cowboy, de chapéu e laço" }],
     fotos: [
       { src: Corso2008_1, alt: "Carnaval 2008" },
