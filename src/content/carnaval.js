@@ -145,6 +145,7 @@ import Corso2011_3 from "../assets/carnaval-2011-3.jpg";
 import Corso2011_4 from "../assets/carnaval-2011-4.jpg";
 import Fb2017_16 from "../assets/carnaval-2017-fb-16.jpg";
 import Corso2012_1 from "../assets/carnaval-2012-1.jpg";
+import Corso2013_1 from "../assets/carnaval-2013-1.jpg";
 
 export const CARNAVAL = [
   {
@@ -393,6 +394,7 @@ export const CARNAVAL = [
     images: [{ src: PicNic, alt: "Logótipo Pic-Nic d'Os Viscondes" }],
     marcha: { tema: "Ultras Viscondes", lugar: 2 },
     publico: true,
+    fotos: [{ src: Corso2013_1, alt: "Marchas Luminosas 2013: Ultras Viscondes" }],
   },
   {
     year: 2012,
