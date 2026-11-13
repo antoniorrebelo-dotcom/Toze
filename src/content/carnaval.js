@@ -259,6 +259,8 @@ import Corso2013_14 from "../assets/carnaval-2013-14.jpg";
 import Corso2013_15 from "../assets/carnaval-2013-15.jpg";
 import Corso2013_16 from "../assets/carnaval-2013-16.jpg";
 import Fb2025_14 from "../assets/carnaval-2025-fb-14.jpg";
+import Fb2025_15 from "../assets/carnaval-2025-fb-15.jpg";
+import Fb2020_6 from "../assets/carnaval-2020-fb-6.jpg";
 
 export const CARNAVAL = [
   {
@@ -315,6 +317,7 @@ export const CARNAVAL = [
       { src: Fb2025_12, alt: "Carnaval 2025" },
       { src: Fb2025_13, alt: "Carnaval 2025" },
       { src: Fb2025_14, alt: "Carnaval 2025" },
+      { src: Fb2025_15, alt: "Carnaval 2025" },
     ],
   },
   {
@@ -390,6 +393,7 @@ export const CARNAVAL = [
       { src: Fb2020_3, alt: "Carnaval 2020" },
       { src: Fb2020_4, alt: "Carnaval 2020" },
       { src: Fb2020_5, alt: "Carnaval 2020" },
+      { src: Fb2020_6, alt: "Carnaval 2020" },
     ],
     marcha: { tema: "Música atrás das Grades", lugar: 1 },
     publico: false,
