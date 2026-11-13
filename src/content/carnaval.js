@@ -75,6 +75,34 @@ import Corso2008_8 from "../assets/carnaval-2008-8.jpg";
 import Corso2008_9 from "../assets/carnaval-2008-9.jpg";
 import GredaSemeia from "../assets/carnaval-2011-greda-semeia-logo.webp";
 import GameOver from "../assets/carnaval-2010-game-over.webp";
+import Fb2019_1 from "../assets/carnaval-2019-fb-1.jpg";
+import Fb2019_2 from "../assets/carnaval-2019-fb-2.jpg";
+import Fb2019_3 from "../assets/carnaval-2019-fb-3.jpg";
+import Fb2019_4 from "../assets/carnaval-2019-fb-4.jpg";
+import Fb2018_1 from "../assets/carnaval-2018-fb-1.jpg";
+import Fb2018_2 from "../assets/carnaval-2018-fb-2.jpg";
+import Fb2018_3 from "../assets/carnaval-2018-fb-3.jpg";
+import Fb2018_4 from "../assets/carnaval-2018-fb-4.jpg";
+import Fb2018_5 from "../assets/carnaval-2018-fb-5.jpg";
+import Fb2018_6 from "../assets/carnaval-2018-fb-6.jpg";
+import Fb2018_7 from "../assets/carnaval-2018-fb-7.jpg";
+import Fb2017_1 from "../assets/carnaval-2017-fb-1.jpg";
+import Fb2017_2 from "../assets/carnaval-2017-fb-2.jpg";
+import Fb2017_3 from "../assets/carnaval-2017-fb-3.jpg";
+import Fb2017_4 from "../assets/carnaval-2017-fb-4.jpg";
+import Fb2017_5 from "../assets/carnaval-2017-fb-5.jpg";
+import Fb2017_6 from "../assets/carnaval-2017-fb-6.jpg";
+import Fb2017_7 from "../assets/carnaval-2017-fb-7.jpg";
+import Fb2017_8 from "../assets/carnaval-2017-fb-8.jpg";
+import Fb2017_9 from "../assets/carnaval-2017-fb-9.jpg";
+import Fb2017_10 from "../assets/carnaval-2017-fb-10.jpg";
+import Fb2017_11 from "../assets/carnaval-2017-fb-11.jpg";
+import Fb2017_12 from "../assets/carnaval-2017-fb-12.jpg";
+import Fb2017_13 from "../assets/carnaval-2017-fb-13.jpg";
+import Fb2017_14 from "../assets/carnaval-2017-fb-14.jpg";
+import Fb2017_15 from "../assets/carnaval-2017-fb-15.jpg";
+import Fb2010_1 from "../assets/carnaval-2010-fb-1.jpg";
+import Fb2008_1 from "../assets/carnaval-2008-fb-1.jpg";
 
 export const CARNAVAL = [
   {
@@ -196,6 +224,12 @@ export const CARNAVAL = [
     images: [{ src: BotaQuimica, alt: "Logótipo Bota Química 2.0" }],
     marcha: { tema: "Somos todos Zé Firminio", lugar: 1 },
     publico: true,
+    fotos: [
+      { src: Fb2019_1, alt: "Carnaval 2019" },
+      { src: Fb2019_2, alt: "Carnaval 2019" },
+      { src: Fb2019_3, alt: "Carnaval 2019" },
+      { src: Fb2019_4, alt: "Carnaval 2019" },
+    ],
   },
   {
     year: 2018,
@@ -203,6 +237,15 @@ export const CARNAVAL = [
     images: [{ src: AfundaMosBasket, alt: "Logótipo Salreu Os Viscondes: o Visconde jogador de basquetebol" }],
     marcha: { tema: "Baile na Favela", lugar: null },
     publico: true,
+    fotos: [
+      { src: Fb2018_1, alt: "Carnaval 2018" },
+      { src: Fb2018_2, alt: "Carnaval 2018" },
+      { src: Fb2018_3, alt: "Carnaval 2018" },
+      { src: Fb2018_4, alt: "Carnaval 2018" },
+      { src: Fb2018_5, alt: "Carnaval 2018" },
+      { src: Fb2018_6, alt: "Carnaval 2018" },
+      { src: Fb2018_7, alt: "Carnaval 2018" },
+    ],
   },
   {
     year: 2017,
@@ -213,6 +256,23 @@ export const CARNAVAL = [
     videos: [
       { youtube: "2Lkkple_wjg", alt: "Vídeo do Carnaval 2017" },
       { youtube: "YX0TrsiVM1o", alt: "Vídeo do Carnaval 2017" },
+    ],
+    fotos: [
+      { src: Fb2017_1, alt: "Carnaval 2017" },
+      { src: Fb2017_2, alt: "Carnaval 2017" },
+      { src: Fb2017_3, alt: "Carnaval 2017" },
+      { src: Fb2017_4, alt: "Carnaval 2017" },
+      { src: Fb2017_5, alt: "Carnaval 2017" },
+      { src: Fb2017_6, alt: "Carnaval 2017" },
+      { src: Fb2017_7, alt: "Carnaval 2017" },
+      { src: Fb2017_8, alt: "Carnaval 2017" },
+      { src: Fb2017_9, alt: "Carnaval 2017" },
+      { src: Fb2017_10, alt: "Carnaval 2017" },
+      { src: Fb2017_11, alt: "Carnaval 2017" },
+      { src: Fb2017_12, alt: "Carnaval 2017" },
+      { src: Fb2017_13, alt: "Carnaval 2017" },
+      { src: Fb2017_14, alt: "Carnaval 2017" },
+      { src: Fb2017_15, alt: "Carnaval 2017" },
     ],
   },
   {
@@ -275,6 +335,9 @@ export const CARNAVAL = [
     videos: [
       { youtube: "9y0uTpH33Qg", alt: "Vídeo do Carnaval 2010" },
     ],
+    fotos: [
+      { src: Fb2010_1, alt: "Carnaval 2010" },
+    ],
   },
   {
     year: 2009,
@@ -298,6 +361,7 @@ export const CARNAVAL = [
       { src: Corso2008_7, alt: "Carnaval 2008" },
       { src: Corso2008_8, alt: "Carnaval 2008" },
       { src: Corso2008_9, alt: "Carnaval 2008" },
+      { src: Fb2008_1, alt: "Carnaval 2008" },
     ],
     videos: [{ youtube: "dt_hwFa6sq0", alt: "Vídeo do Carnaval 2008" }],
     marcha: { tema: "Pescadores", lugar: null },
