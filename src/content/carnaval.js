@@ -144,6 +144,7 @@ import Corso2011_2 from "../assets/carnaval-2011-2.jpg";
 import Corso2011_3 from "../assets/carnaval-2011-3.jpg";
 import Corso2011_4 from "../assets/carnaval-2011-4.jpg";
 import Fb2017_16 from "../assets/carnaval-2017-fb-16.jpg";
+import Corso2012_1 from "../assets/carnaval-2012-1.jpg";
 
 export const CARNAVAL = [
   {
@@ -400,6 +401,7 @@ export const CARNAVAL = [
     images: [{ src: DesCobridores, alt: "Logótipo Os Des-Cobridores: o Visconde rei, com coroa, orbe e cetro" }],
     marcha: { tema: "Eleição Miss Fanny", lugar: 3 },
     publico: false,
+    fotos: [{ src: Corso2012_1, alt: "Marchas Luminosas 2012: Eleição Miss Fanny" }],
   },
   {
     year: 2011,
