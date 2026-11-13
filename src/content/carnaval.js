@@ -160,6 +160,9 @@ import Corso2010_2 from "../assets/carnaval-2010-2.jpg";
 import Corso2010_3 from "../assets/carnaval-2010-3.jpg";
 import Corso2010_4 from "../assets/carnaval-2010-4.jpg";
 import Corso2010_5 from "../assets/carnaval-2010-5.jpg";
+import Corso2010_6 from "../assets/carnaval-2010-6.jpg";
+import Corso2010_7 from "../assets/carnaval-2010-7.jpg";
+import Corso2010_8 from "../assets/carnaval-2010-8.jpg";
 
 export const CARNAVAL = [
   {
@@ -460,6 +463,9 @@ export const CARNAVAL = [
       { src: Corso2010_3, alt: "Carnaval 2010" },
       { src: Corso2010_4, alt: "Carnaval 2010" },
       { src: Corso2010_5, alt: "Carnaval 2010" },
+      { src: Corso2010_6, alt: "Carnaval 2010" },
+      { src: Corso2010_7, alt: "Carnaval 2010" },
+      { src: Corso2010_8, alt: "Carnaval 2010" },
       { src: Fb2010_1, alt: "Carnaval 2010" },
     ],
   },
