@@ -122,6 +122,10 @@ import Fb2025_11 from "../assets/carnaval-2025-fb-11.jpg";
 import Fb2025_12 from "../assets/carnaval-2025-fb-12.jpg";
 import Fb2025_13 from "../assets/carnaval-2025-fb-13.jpg";
 import OlhaLomba from "../assets/carnaval-2026-marcha-olha-lomba.jpg";
+import Fb2026_1 from "../assets/carnaval-2026-fb-1.jpg";
+import Fb2026_2 from "../assets/carnaval-2026-fb-2.jpg";
+import Fb2026_3 from "../assets/carnaval-2026-fb-3.jpg";
+import Fb2026_4 from "../assets/carnaval-2026-fb-4.jpg";
 
 export const CARNAVAL = [
   {
@@ -147,6 +151,12 @@ export const CARNAVAL = [
       { src: OlhaLomba, alt: "Logótipo das Marchas Luminosas 2026 “Olh’á Lomba!”" },
     ],
     accent: "#0b8fa8",
+    fotos: [
+      { src: Fb2026_1, alt: "Carnaval 2026" },
+      { src: Fb2026_2, alt: "Carnaval 2026" },
+      { src: Fb2026_3, alt: "Carnaval 2026" },
+      { src: Fb2026_4, alt: "Carnaval 2026" },
+    ],
   },
   {
     year: 2025,
