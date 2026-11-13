@@ -243,6 +243,11 @@ import Corso2011_11 from "../assets/carnaval-2011-11.jpg";
 import Corso2011_12 from "../assets/carnaval-2011-12.jpg";
 import Corso2011_13 from "../assets/carnaval-2011-13.jpg";
 import Corso2011_14 from "../assets/carnaval-2011-14.jpg";
+import Corso2013_2 from "../assets/carnaval-2013-2.jpg";
+import Corso2013_3 from "../assets/carnaval-2013-3.jpg";
+import Corso2013_4 from "../assets/carnaval-2013-4.jpg";
+import Corso2013_5 from "../assets/carnaval-2013-5.jpg";
+import Corso2013_6 from "../assets/carnaval-2013-6.jpg";
 
 export const CARNAVAL = [
   {
@@ -561,7 +566,14 @@ export const CARNAVAL = [
     images: [{ src: PicNic, alt: "Logótipo Pic-Nic d'Os Viscondes" }],
     marcha: { tema: "Ultras Viscondes", lugar: 2 },
     publico: true,
-    fotos: [{ src: Corso2013_1, alt: "Marchas Luminosas 2013: Ultras Viscondes" }],
+    fotos: [
+      { src: Corso2013_2, alt: "Carnaval 2013" },
+      { src: Corso2013_3, alt: "Carnaval 2013" },
+      { src: Corso2013_4, alt: "Carnaval 2013" },
+      { src: Corso2013_5, alt: "Carnaval 2013" },
+      { src: Corso2013_6, alt: "Carnaval 2013" },
+      { src: Corso2013_1, alt: "Marchas Luminosas 2013: Ultras Viscondes" },
+    ],
   },
   {
     year: 2012,
