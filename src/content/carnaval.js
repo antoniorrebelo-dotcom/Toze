@@ -126,6 +126,9 @@ import Fb2026_1 from "../assets/carnaval-2026-fb-1.jpg";
 import Fb2026_2 from "../assets/carnaval-2026-fb-2.jpg";
 import Fb2026_3 from "../assets/carnaval-2026-fb-3.jpg";
 import Fb2026_4 from "../assets/carnaval-2026-fb-4.jpg";
+import Fb2026_5 from "../assets/carnaval-2026-fb-5.jpg";
+import Fb2026_6 from "../assets/carnaval-2026-fb-6.jpg";
+import Fb2026_7 from "../assets/carnaval-2026-fb-7.jpg";
 
 export const CARNAVAL = [
   {
@@ -154,6 +157,9 @@ export const CARNAVAL = [
       { src: Fb2026_2, alt: "Carnaval 2026" },
       { src: Fb2026_3, alt: "Carnaval 2026" },
       { src: Fb2026_4, alt: "Carnaval 2026" },
+      { src: Fb2026_5, alt: "Carnaval 2026" },
+      { src: Fb2026_6, alt: "Carnaval 2026" },
+      { src: Fb2026_7, alt: "Carnaval 2026" },
     ],
   },
   {
