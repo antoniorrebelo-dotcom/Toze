@@ -151,6 +151,10 @@ import Corso2016_2 from "../assets/carnaval-2016-2.jpg";
 import Corso2016_3 from "../assets/carnaval-2016-3.jpg";
 import Corso2016_4 from "../assets/carnaval-2016-4.jpg";
 import Corso2016_5 from "../assets/carnaval-2016-5.jpg";
+import Corso2016_6 from "../assets/carnaval-2016-6.jpg";
+import Corso2016_7 from "../assets/carnaval-2016-7.jpg";
+import Corso2016_8 from "../assets/carnaval-2016-8.jpg";
+import Corso2016_9 from "../assets/carnaval-2016-9.jpg";
 
 export const CARNAVAL = [
   {
@@ -378,6 +382,10 @@ export const CARNAVAL = [
       { src: Corso2016_3, alt: "Carnaval 2016" },
       { src: Corso2016_4, alt: "Carnaval 2016" },
       { src: Corso2016_5, alt: "Carnaval 2016" },
+      { src: Corso2016_6, alt: "Carnaval 2016" },
+      { src: Corso2016_7, alt: "Carnaval 2016" },
+      { src: Corso2016_8, alt: "Carnaval 2016" },
+      { src: Corso2016_9, alt: "Carnaval 2016" },
     ],
   },
   {
