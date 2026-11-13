@@ -64,6 +64,15 @@ import EscacarPedra from "../assets/carnaval-2015-escacar-pedra.webp";
 import Dakar from "../assets/carnaval-2014-dakar.webp";
 import NoQuartoLogo from "../assets/carnaval-2009-no-quarto-logo.webp";
 import Rodeo from "../assets/carnaval-2008-rodeo-logo.webp";
+import Corso2008_1 from "../assets/carnaval-2008-1.jpg";
+import Corso2008_2 from "../assets/carnaval-2008-2.jpg";
+import Corso2008_3 from "../assets/carnaval-2008-3.jpg";
+import Corso2008_4 from "../assets/carnaval-2008-4.jpg";
+import Corso2008_5 from "../assets/carnaval-2008-5.jpg";
+import Corso2008_6 from "../assets/carnaval-2008-6.jpg";
+import Corso2008_7 from "../assets/carnaval-2008-7.jpg";
+import Corso2008_8 from "../assets/carnaval-2008-8.jpg";
+import Corso2008_9 from "../assets/carnaval-2008-9.jpg";
 import GredaSemeia from "../assets/carnaval-2011-greda-semeia-logo.webp";
 import GameOver from "../assets/carnaval-2010-game-over.webp";
 
@@ -273,11 +282,24 @@ export const CARNAVAL = [
     images: [{ src: NoQuartoLogo, alt: "Logótipo No Quarto com Os Viscondes: o Visconde vestido de soldadinho de plástico verde, com uma espingarda e uma boneca loura, num quarto de brinquedos" }],
     marcha: { tema: "Dasse Comigo", lugar: null },
     publico: false,
+    videos: [{ youtube: "O8Iwnn5YIUw", alt: "Vídeo do Carnaval 2009" }],
   },
   {
     year: 2008,
     corso: { tema: "Rodeo d'Os Viscondes", lugar: 6 },
     images: [{ src: Rodeo, alt: "Logótipo Rodeo dos Viscondes: o Visconde cowboy, de chapéu e laço" }],
+    fotos: [
+      { src: Corso2008_1, alt: "Carnaval 2008" },
+      { src: Corso2008_2, alt: "Carnaval 2008" },
+      { src: Corso2008_3, alt: "Carnaval 2008" },
+      { src: Corso2008_4, alt: "Carnaval 2008" },
+      { src: Corso2008_5, alt: "Carnaval 2008" },
+      { src: Corso2008_6, alt: "Carnaval 2008" },
+      { src: Corso2008_7, alt: "Carnaval 2008" },
+      { src: Corso2008_8, alt: "Carnaval 2008" },
+      { src: Corso2008_9, alt: "Carnaval 2008" },
+    ],
+    videos: [{ youtube: "dt_hwFa6sq0", alt: "Vídeo do Carnaval 2008" }],
     marcha: { tema: "Pescadores", lugar: null },
     publico: false,
   },
