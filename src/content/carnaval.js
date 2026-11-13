@@ -103,6 +103,25 @@ import Fb2017_14 from "../assets/carnaval-2017-fb-14.jpg";
 import Fb2017_15 from "../assets/carnaval-2017-fb-15.jpg";
 import Fb2010_1 from "../assets/carnaval-2010-fb-1.jpg";
 import Fb2008_1 from "../assets/carnaval-2008-fb-1.jpg";
+import Fb2020_1 from "../assets/carnaval-2020-fb-1.jpg";
+import Fb2020_2 from "../assets/carnaval-2020-fb-2.jpg";
+import Fb2020_3 from "../assets/carnaval-2020-fb-3.jpg";
+import Fb2020_4 from "../assets/carnaval-2020-fb-4.jpg";
+import Fb2020_5 from "../assets/carnaval-2020-fb-5.jpg";
+import Fb2025_1 from "../assets/carnaval-2025-fb-1.jpg";
+import Fb2025_2 from "../assets/carnaval-2025-fb-2.jpg";
+import Fb2025_3 from "../assets/carnaval-2025-fb-3.jpg";
+import Fb2025_4 from "../assets/carnaval-2025-fb-4.jpg";
+import Fb2025_5 from "../assets/carnaval-2025-fb-5.jpg";
+import Fb2025_6 from "../assets/carnaval-2025-fb-6.jpg";
+import Fb2025_7 from "../assets/carnaval-2025-fb-7.jpg";
+import Fb2025_8 from "../assets/carnaval-2025-fb-8.jpg";
+import Fb2025_9 from "../assets/carnaval-2025-fb-9.jpg";
+import Fb2025_10 from "../assets/carnaval-2025-fb-10.jpg";
+import Fb2025_11 from "../assets/carnaval-2025-fb-11.jpg";
+import Fb2025_12 from "../assets/carnaval-2025-fb-12.jpg";
+import Fb2025_13 from "../assets/carnaval-2025-fb-13.jpg";
+import OlhaLomba from "../assets/carnaval-2026-marcha-olha-lomba.jpg";
 
 export const CARNAVAL = [
   {
@@ -123,7 +142,10 @@ export const CARNAVAL = [
     text:
       "O Visconde fez-se ao mar: canastra de peixe à cabeça, camisa vermelha e " +
       "bigode ao vento, a apregoar “Olhó Visconde do nosso Maire!”.",
-    images: [{ src: OlhoVisconde, alt: "Logótipo “Olhó Visconde do nosso Maire”" }],
+    images: [
+      { src: OlhoVisconde, alt: "Logótipo “Olhó Visconde do nosso Maire”" },
+      { src: OlhaLomba, alt: "Logótipo das Marchas Luminosas 2026 “Olh’á Lomba!”" },
+    ],
     accent: "#0b8fa8",
   },
   {
@@ -136,6 +158,21 @@ export const CARNAVAL = [
       "pelo parque aquático, com uma foca e um papagaio.",
     images: [{ src: Turbinar, alt: "Logótipo Os Viscondes \u201cA Turbinar\u201d" }],
     accent: "#ef7d00",
+    fotos: [
+      { src: Fb2025_1, alt: "Carnaval 2025" },
+      { src: Fb2025_2, alt: "Carnaval 2025" },
+      { src: Fb2025_3, alt: "Carnaval 2025" },
+      { src: Fb2025_4, alt: "Carnaval 2025" },
+      { src: Fb2025_5, alt: "Carnaval 2025" },
+      { src: Fb2025_6, alt: "Carnaval 2025" },
+      { src: Fb2025_7, alt: "Carnaval 2025" },
+      { src: Fb2025_8, alt: "Carnaval 2025" },
+      { src: Fb2025_9, alt: "Carnaval 2025" },
+      { src: Fb2025_10, alt: "Carnaval 2025" },
+      { src: Fb2025_11, alt: "Carnaval 2025" },
+      { src: Fb2025_12, alt: "Carnaval 2025" },
+      { src: Fb2025_13, alt: "Carnaval 2025" },
+    ],
   },
   {
     year: 2024,
@@ -211,6 +248,11 @@ export const CARNAVAL = [
       { src: Corso2020_13, alt: "Carnaval 2020" },
       { src: Corso2020_14, alt: "Carnaval 2020" },
       { src: Corso2020_15, alt: "Carnaval 2020" },
+      { src: Fb2020_1, alt: "Carnaval 2020" },
+      { src: Fb2020_2, alt: "Carnaval 2020" },
+      { src: Fb2020_3, alt: "Carnaval 2020" },
+      { src: Fb2020_4, alt: "Carnaval 2020" },
+      { src: Fb2020_5, alt: "Carnaval 2020" },
     ],
     marcha: { tema: "Música atrás das Grades", lugar: 1 },
     publico: false,
