@@ -248,6 +248,11 @@ import Corso2013_3 from "../assets/carnaval-2013-3.jpg";
 import Corso2013_4 from "../assets/carnaval-2013-4.jpg";
 import Corso2013_5 from "../assets/carnaval-2013-5.jpg";
 import Corso2013_6 from "../assets/carnaval-2013-6.jpg";
+import Corso2013_7 from "../assets/carnaval-2013-7.jpg";
+import Corso2013_8 from "../assets/carnaval-2013-8.jpg";
+import Corso2013_9 from "../assets/carnaval-2013-9.jpg";
+import Corso2013_10 from "../assets/carnaval-2013-10.jpg";
+import Corso2013_11 from "../assets/carnaval-2013-11.jpg";
 
 export const CARNAVAL = [
   {
@@ -572,6 +577,11 @@ export const CARNAVAL = [
       { src: Corso2013_4, alt: "Carnaval 2013" },
       { src: Corso2013_5, alt: "Carnaval 2013" },
       { src: Corso2013_6, alt: "Carnaval 2013" },
+      { src: Corso2013_7, alt: "Carnaval 2013" },
+      { src: Corso2013_8, alt: "Carnaval 2013" },
+      { src: Corso2013_9, alt: "Carnaval 2013" },
+      { src: Corso2013_10, alt: "Carnaval 2013" },
+      { src: Corso2013_11, alt: "Carnaval 2013" },
       { src: Corso2013_1, alt: "Marchas Luminosas 2013: Ultras Viscondes" },
     ],
   },
