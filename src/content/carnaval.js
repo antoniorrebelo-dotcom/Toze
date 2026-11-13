@@ -258,6 +258,7 @@ import Corso2013_13 from "../assets/carnaval-2013-13.jpg";
 import Corso2013_14 from "../assets/carnaval-2013-14.jpg";
 import Corso2013_15 from "../assets/carnaval-2013-15.jpg";
 import Corso2013_16 from "../assets/carnaval-2013-16.jpg";
+import Fb2025_14 from "../assets/carnaval-2025-fb-14.jpg";
 
 export const CARNAVAL = [
   {
@@ -313,6 +314,7 @@ export const CARNAVAL = [
       { src: Fb2025_11, alt: "Carnaval 2025" },
       { src: Fb2025_12, alt: "Carnaval 2025" },
       { src: Fb2025_13, alt: "Carnaval 2025" },
+      { src: Fb2025_14, alt: "Carnaval 2025" },
     ],
   },
   {
