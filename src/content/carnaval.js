@@ -146,6 +146,11 @@ import Corso2011_4 from "../assets/carnaval-2011-4.jpg";
 import Fb2017_16 from "../assets/carnaval-2017-fb-16.jpg";
 import Corso2012_1 from "../assets/carnaval-2012-1.jpg";
 import Corso2013_1 from "../assets/carnaval-2013-1.jpg";
+import Corso2016_1 from "../assets/carnaval-2016-1.jpg";
+import Corso2016_2 from "../assets/carnaval-2016-2.jpg";
+import Corso2016_3 from "../assets/carnaval-2016-3.jpg";
+import Corso2016_4 from "../assets/carnaval-2016-4.jpg";
+import Corso2016_5 from "../assets/carnaval-2016-5.jpg";
 
 export const CARNAVAL = [
   {
@@ -366,6 +371,13 @@ export const CARNAVAL = [
       { youtube: "e9wGQc14iy4", alt: "Vídeo do Carnaval 2016" },
       { youtube: "DP-27z0Ggj4", alt: "Vídeo do Carnaval 2016" },
       { youtube: "POobwwrdPso", vertical: true, alt: "Vídeo do Carnaval 2016" },
+    ],
+    fotos: [
+      { src: Corso2016_1, alt: "Carnaval 2016" },
+      { src: Corso2016_2, alt: "Carnaval 2016" },
+      { src: Corso2016_3, alt: "Carnaval 2016" },
+      { src: Corso2016_4, alt: "Carnaval 2016" },
+      { src: Corso2016_5, alt: "Carnaval 2016" },
     ],
   },
   {
