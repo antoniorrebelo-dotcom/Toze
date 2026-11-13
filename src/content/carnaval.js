@@ -223,6 +223,11 @@ import Corso2015_16 from "../assets/carnaval-2015-16.jpg";
 import Corso2015_17 from "../assets/carnaval-2015-17.jpg";
 import Corso2015_18 from "../assets/carnaval-2015-18.jpg";
 import Corso2015_19 from "../assets/carnaval-2015-19.jpg";
+import Corso2014_6 from "../assets/carnaval-2014-6.jpg";
+import Corso2014_7 from "../assets/carnaval-2014-7.jpg";
+import Corso2014_8 from "../assets/carnaval-2014-8.jpg";
+import Corso2014_9 from "../assets/carnaval-2014-9.jpg";
+import Corso2014_10 from "../assets/carnaval-2014-10.jpg";
 
 export const CARNAVAL = [
   {
@@ -522,6 +527,11 @@ export const CARNAVAL = [
       { src: Corso2014_3, alt: "Carnaval 2014" },
       { src: Corso2014_4, alt: "Carnaval 2014" },
       { src: Corso2014_5, alt: "Carnaval 2014" },
+      { src: Corso2014_6, alt: "Carnaval 2014" },
+      { src: Corso2014_7, alt: "Carnaval 2014" },
+      { src: Corso2014_8, alt: "Carnaval 2014" },
+      { src: Corso2014_9, alt: "Carnaval 2014" },
+      { src: Corso2014_10, alt: "Carnaval 2014" },
     ],
   },
   {
