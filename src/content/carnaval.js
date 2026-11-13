@@ -173,6 +173,11 @@ import Corso2012_3 from "../assets/carnaval-2012-3.jpg";
 import Corso2012_4 from "../assets/carnaval-2012-4.jpg";
 import Corso2012_5 from "../assets/carnaval-2012-5.jpg";
 import Corso2012_6 from "../assets/carnaval-2012-6.jpg";
+import Corso2009_1 from "../assets/carnaval-2009-1.jpg";
+import Corso2009_2 from "../assets/carnaval-2009-2.jpg";
+import Corso2009_3 from "../assets/carnaval-2009-3.jpg";
+import Corso2009_4 from "../assets/carnaval-2009-4.jpg";
+import Corso2009_5 from "../assets/carnaval-2009-5.jpg";
 
 export const CARNAVAL = [
   {
@@ -501,6 +506,13 @@ export const CARNAVAL = [
     marcha: { tema: "Dasse Comigo", lugar: null },
     publico: false,
     videos: [{ youtube: "O8Iwnn5YIUw", alt: "Vídeo do Carnaval 2009" }],
+    fotos: [
+      { src: Corso2009_1, alt: "Carnaval 2009" },
+      { src: Corso2009_2, alt: "Carnaval 2009" },
+      { src: Corso2009_3, alt: "Carnaval 2009" },
+      { src: Corso2009_4, alt: "Carnaval 2009" },
+      { src: Corso2009_5, alt: "Carnaval 2009" },
+    ],
   },
   {
     year: 2008,
