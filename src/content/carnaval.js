@@ -204,6 +204,11 @@ import Fb2018_25 from "../assets/carnaval-2018-fb-25.jpg";
 import Fb2018_26 from "../assets/carnaval-2018-fb-26.jpg";
 import Fb2018_27 from "../assets/carnaval-2018-fb-27.jpg";
 import Fb2018_28 from "../assets/carnaval-2018-fb-28.jpg";
+import Corso2015_1 from "../assets/carnaval-2015-1.jpg";
+import Corso2015_2 from "../assets/carnaval-2015-2.jpg";
+import Corso2015_3 from "../assets/carnaval-2015-3.jpg";
+import Corso2015_4 from "../assets/carnaval-2015-4.jpg";
+import Corso2015_5 from "../assets/carnaval-2015-5.jpg";
 
 export const CARNAVAL = [
   {
@@ -465,6 +470,13 @@ export const CARNAVAL = [
     images: [{ src: EscacarPedra, alt: "Logótipo Viscondes a Escacar Pedra: o Visconde mineiro" }],
     marcha: { tema: "Apresentação do Samba Enredo d'Os Viscondes", lugar: 2 },
     publico: false,
+    fotos: [
+      { src: Corso2015_1, alt: "Carnaval 2015" },
+      { src: Corso2015_2, alt: "Carnaval 2015" },
+      { src: Corso2015_3, alt: "Carnaval 2015" },
+      { src: Corso2015_4, alt: "Carnaval 2015" },
+      { src: Corso2015_5, alt: "Carnaval 2015" },
+    ],
   },
   {
     year: 2014,
