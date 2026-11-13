@@ -134,6 +134,11 @@ import Fb2019_6 from "../assets/carnaval-2019-fb-6.jpg";
 import Fb2019_7 from "../assets/carnaval-2019-fb-7.jpg";
 import Fb2019_8 from "../assets/carnaval-2019-fb-8.jpg";
 import Fb2019_9 from "../assets/carnaval-2019-fb-9.jpg";
+import Fb2019_10 from "../assets/carnaval-2019-fb-10.jpg";
+import Fb2019_11 from "../assets/carnaval-2019-fb-11.jpg";
+import Fb2019_12 from "../assets/carnaval-2019-fb-12.jpg";
+import Fb2019_13 from "../assets/carnaval-2019-fb-13.jpg";
+import Fb2019_14 from "../assets/carnaval-2019-fb-14.jpg";
 
 export const CARNAVAL = [
   {
@@ -288,6 +293,11 @@ export const CARNAVAL = [
       { src: Fb2019_7, alt: "Carnaval 2019" },
       { src: Fb2019_8, alt: "Carnaval 2019" },
       { src: Fb2019_9, alt: "Carnaval 2019" },
+      { src: Fb2019_10, alt: "Carnaval 2019" },
+      { src: Fb2019_11, alt: "Carnaval 2019" },
+      { src: Fb2019_12, alt: "Carnaval 2019" },
+      { src: Fb2019_13, alt: "Carnaval 2019" },
+      { src: Fb2019_14, alt: "Carnaval 2019" },
     ],
   },
   {
