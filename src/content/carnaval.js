@@ -139,6 +139,10 @@ import Fb2019_11 from "../assets/carnaval-2019-fb-11.jpg";
 import Fb2019_12 from "../assets/carnaval-2019-fb-12.jpg";
 import Fb2019_13 from "../assets/carnaval-2019-fb-13.jpg";
 import Fb2019_14 from "../assets/carnaval-2019-fb-14.jpg";
+import Corso2011_1 from "../assets/carnaval-2011-1.jpg";
+import Corso2011_2 from "../assets/carnaval-2011-2.jpg";
+import Corso2011_3 from "../assets/carnaval-2011-3.jpg";
+import Corso2011_4 from "../assets/carnaval-2011-4.jpg";
 
 export const CARNAVAL = [
   {
@@ -402,6 +406,12 @@ export const CARNAVAL = [
     images: [{ src: GredaSemeia, alt: "Logótipo Greda, Semeia e Bota Química: o Visconde agricultor, de chapéu de palha e camisa aos quadrados" }],
     marcha: { tema: "Chegada do Visconde (Ontem e Hoje)", lugar: 2 },
     publico: false,
+    fotos: [
+      { src: Corso2011_1, alt: "Carnaval 2011" },
+      { src: Corso2011_2, alt: "Carnaval 2011" },
+      { src: Corso2011_3, alt: "Carnaval 2011" },
+      { src: Corso2011_4, alt: "Carnaval 2011" },
+    ],
   },
   {
     year: 2010,
