@@ -35,7 +35,11 @@ export default function Home() {
         <div className="container hero-inner">
           <div>
             <h1 className="sr-only">Os Viscondes de Salreu</h1>
-            <p className="hero-assinatura">Os Viscondes a rockar desde 2007</p>
+            <p className="hero-assinatura">
+              <span>Os Viscondes</span>
+              <span>a rockar</span>
+              <span>desde 2007</span>
+            </p>
             <p className="hero-links">
               <Link className="btn" to="/grupo">
                 Conhecer o grupo
