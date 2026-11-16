@@ -266,6 +266,119 @@ import Fb2026_9 from "../assets/carnaval-2026-fb-9.jpg";
 import Fb2026_10 from "../assets/carnaval-2026-fb-10.jpg";
 import Fb2026_11 from "../assets/carnaval-2026-fb-11.jpg";
 import Corso2023_1 from "../assets/carnaval-2023-1.jpg";
+import Z2024_1 from "../assets/carnaval-2024-z-1.jpg";
+import Z2024_2 from "../assets/carnaval-2024-z-2.jpg";
+import Z2024_3 from "../assets/carnaval-2024-z-3.jpg";
+import Z2024_4 from "../assets/carnaval-2024-z-4.jpg";
+import Z2024_5 from "../assets/carnaval-2024-z-5.jpg";
+import Z2018_1 from "../assets/carnaval-2018-z-1.jpg";
+import Z2018_2 from "../assets/carnaval-2018-z-2.jpg";
+import Z2018_3 from "../assets/carnaval-2018-z-3.jpg";
+import Z2018_4 from "../assets/carnaval-2018-z-4.jpg";
+import Z2018_5 from "../assets/carnaval-2018-z-5.jpg";
+import Z2018_6 from "../assets/carnaval-2018-z-6.jpg";
+import Z2018_7 from "../assets/carnaval-2018-z-7.jpg";
+import Z2018_8 from "../assets/carnaval-2018-z-8.jpg";
+import Z2018_9 from "../assets/carnaval-2018-z-9.jpg";
+import Z2018_10 from "../assets/carnaval-2018-z-10.jpg";
+import Z2018_11 from "../assets/carnaval-2018-z-11.jpg";
+import Z2018_12 from "../assets/carnaval-2018-z-12.jpg";
+import Z2018_13 from "../assets/carnaval-2018-z-13.jpg";
+import Z2018_14 from "../assets/carnaval-2018-z-14.jpg";
+import Z2018_15 from "../assets/carnaval-2018-z-15.jpg";
+import Z2018_16 from "../assets/carnaval-2018-z-16.jpg";
+import Z2018_17 from "../assets/carnaval-2018-z-17.jpg";
+import Z2018_18 from "../assets/carnaval-2018-z-18.jpg";
+import Z2018_19 from "../assets/carnaval-2018-z-19.jpg";
+import Z2018_20 from "../assets/carnaval-2018-z-20.jpg";
+import Z2017_1 from "../assets/carnaval-2017-z-1.jpg";
+import Z2017_2 from "../assets/carnaval-2017-z-2.jpg";
+import Z2017_3 from "../assets/carnaval-2017-z-3.jpg";
+import Z2017_4 from "../assets/carnaval-2017-z-4.jpg";
+import Z2017_5 from "../assets/carnaval-2017-z-5.jpg";
+import Z2017_6 from "../assets/carnaval-2017-z-6.jpg";
+import Z2017_7 from "../assets/carnaval-2017-z-7.jpg";
+import Z2017_8 from "../assets/carnaval-2017-z-8.jpg";
+import Z2017_9 from "../assets/carnaval-2017-z-9.jpg";
+import Z2017_10 from "../assets/carnaval-2017-z-10.jpg";
+import Z2017_11 from "../assets/carnaval-2017-z-11.jpg";
+import Z2017_12 from "../assets/carnaval-2017-z-12.jpg";
+import Z2017_13 from "../assets/carnaval-2017-z-13.jpg";
+import Z2017_14 from "../assets/carnaval-2017-z-14.jpg";
+import Z2017_15 from "../assets/carnaval-2017-z-15.jpg";
+import Z2017_16 from "../assets/carnaval-2017-z-16.jpg";
+import Z2017_17 from "../assets/carnaval-2017-z-17.jpg";
+import Z2017_18 from "../assets/carnaval-2017-z-18.jpg";
+import Z2017_19 from "../assets/carnaval-2017-z-19.jpg";
+import Z2017_20 from "../assets/carnaval-2017-z-20.jpg";
+import Z2017_21 from "../assets/carnaval-2017-z-21.jpg";
+import Z2017_22 from "../assets/carnaval-2017-z-22.jpg";
+import Z2017_23 from "../assets/carnaval-2017-z-23.jpg";
+import Z2017_24 from "../assets/carnaval-2017-z-24.jpg";
+import Z2017_25 from "../assets/carnaval-2017-z-25.jpg";
+import Z2017_26 from "../assets/carnaval-2017-z-26.jpg";
+import Z2017_27 from "../assets/carnaval-2017-z-27.jpg";
+import Z2017_28 from "../assets/carnaval-2017-z-28.jpg";
+import Z2017_29 from "../assets/carnaval-2017-z-29.jpg";
+import Z2017_30 from "../assets/carnaval-2017-z-30.jpg";
+import Z2025_1 from "../assets/carnaval-2025-z-1.jpg";
+import Z2025_2 from "../assets/carnaval-2025-z-2.jpg";
+import Z2025_3 from "../assets/carnaval-2025-z-3.jpg";
+import Z2025_4 from "../assets/carnaval-2025-z-4.jpg";
+import Z2025_5 from "../assets/carnaval-2025-z-5.jpg";
+import Z2025_6 from "../assets/carnaval-2025-z-6.jpg";
+import Z2025_7 from "../assets/carnaval-2025-z-7.jpg";
+import Z2025_8 from "../assets/carnaval-2025-z-8.jpg";
+import Z2025_9 from "../assets/carnaval-2025-z-9.jpg";
+import Z2025_10 from "../assets/carnaval-2025-z-10.jpg";
+import Z2025_11 from "../assets/carnaval-2025-z-11.jpg";
+import Z2025_12 from "../assets/carnaval-2025-z-12.jpg";
+import Z2025_13 from "../assets/carnaval-2025-z-13.jpg";
+import Z2025_14 from "../assets/carnaval-2025-z-14.jpg";
+import Z2025_15 from "../assets/carnaval-2025-z-15.jpg";
+import Z2025_16 from "../assets/carnaval-2025-z-16.jpg";
+import Z2025_17 from "../assets/carnaval-2025-z-17.jpg";
+import Z2026_1 from "../assets/carnaval-2026-z-1.jpg";
+import Z2026_2 from "../assets/carnaval-2026-z-2.jpg";
+import Z2026_3 from "../assets/carnaval-2026-z-3.jpg";
+import Z2026_4 from "../assets/carnaval-2026-z-4.jpg";
+import Z2026_5 from "../assets/carnaval-2026-z-5.jpg";
+import Z2026_6 from "../assets/carnaval-2026-z-6.jpg";
+import Z2026_7 from "../assets/carnaval-2026-z-7.jpg";
+import Z2026_8 from "../assets/carnaval-2026-z-8.jpg";
+import Z2026_9 from "../assets/carnaval-2026-z-9.jpg";
+import Z2026_10 from "../assets/carnaval-2026-z-10.jpg";
+import Z2026_11 from "../assets/carnaval-2026-z-11.jpg";
+import Z2026_12 from "../assets/carnaval-2026-z-12.jpg";
+import Z2026_13 from "../assets/carnaval-2026-z-13.jpg";
+import Z2026_14 from "../assets/carnaval-2026-z-14.jpg";
+import Z2026_15 from "../assets/carnaval-2026-z-15.jpg";
+import Z2026_16 from "../assets/carnaval-2026-z-16.jpg";
+import Z2026_17 from "../assets/carnaval-2026-z-17.jpg";
+import Z2026_18 from "../assets/carnaval-2026-z-18.jpg";
+import Z2026_19 from "../assets/carnaval-2026-z-19.jpg";
+import Z2026_20 from "../assets/carnaval-2026-z-20.jpg";
+import Z2023_1 from "../assets/carnaval-2023-z-1.jpg";
+import Z2023_2 from "../assets/carnaval-2023-z-2.jpg";
+import Z2023_3 from "../assets/carnaval-2023-z-3.jpg";
+import Z2023_4 from "../assets/carnaval-2023-z-4.jpg";
+import Z2023_5 from "../assets/carnaval-2023-z-5.jpg";
+import Z2023_6 from "../assets/carnaval-2023-z-6.jpg";
+import Z2023_7 from "../assets/carnaval-2023-z-7.jpg";
+import Z2023_8 from "../assets/carnaval-2023-z-8.jpg";
+import Z2023_9 from "../assets/carnaval-2023-z-9.jpg";
+import Z2023_10 from "../assets/carnaval-2023-z-10.jpg";
+import Z2023_11 from "../assets/carnaval-2023-z-11.jpg";
+import Z2023_12 from "../assets/carnaval-2023-z-12.jpg";
+import Z2023_13 from "../assets/carnaval-2023-z-13.jpg";
+import Z2023_14 from "../assets/carnaval-2023-z-14.jpg";
+import Z2023_15 from "../assets/carnaval-2023-z-15.jpg";
+import Z2023_16 from "../assets/carnaval-2023-z-16.jpg";
+import Z2023_17 from "../assets/carnaval-2023-z-17.jpg";
+import Z2023_18 from "../assets/carnaval-2023-z-18.jpg";
+import Z2023_19 from "../assets/carnaval-2023-z-19.jpg";
+import Z2023_20 from "../assets/carnaval-2023-z-20.jpg";
+import Z2023_21 from "../assets/carnaval-2023-z-21.jpg";
 
 export const CARNAVAL = [
   {
@@ -301,6 +414,26 @@ export const CARNAVAL = [
       { src: Fb2026_9, alt: "Carnaval 2026" },
       { src: Fb2026_10, alt: "Carnaval 2026" },
       { src: Fb2026_11, alt: "Carnaval 2026" },
+      { src: Z2026_1, alt: "Carnaval 2026" },
+      { src: Z2026_2, alt: "Carnaval 2026" },
+      { src: Z2026_3, alt: "Carnaval 2026" },
+      { src: Z2026_4, alt: "Carnaval 2026" },
+      { src: Z2026_5, alt: "Carnaval 2026" },
+      { src: Z2026_6, alt: "Carnaval 2026" },
+      { src: Z2026_7, alt: "Carnaval 2026" },
+      { src: Z2026_8, alt: "Carnaval 2026" },
+      { src: Z2026_9, alt: "Carnaval 2026" },
+      { src: Z2026_10, alt: "Carnaval 2026" },
+      { src: Z2026_11, alt: "Carnaval 2026" },
+      { src: Z2026_12, alt: "Carnaval 2026" },
+      { src: Z2026_13, alt: "Carnaval 2026" },
+      { src: Z2026_14, alt: "Carnaval 2026" },
+      { src: Z2026_15, alt: "Carnaval 2026" },
+      { src: Z2026_16, alt: "Carnaval 2026" },
+      { src: Z2026_17, alt: "Carnaval 2026" },
+      { src: Z2026_18, alt: "Carnaval 2026" },
+      { src: Z2026_19, alt: "Carnaval 2026" },
+      { src: Z2026_20, alt: "Carnaval 2026" },
     ],
   },
   {
@@ -327,6 +460,23 @@ export const CARNAVAL = [
       { src: Fb2025_13, alt: "Carnaval 2025" },
       { src: Fb2025_14, alt: "Carnaval 2025" },
       { src: Fb2025_15, alt: "Carnaval 2025" },
+      { src: Z2025_1, alt: "Carnaval 2025" },
+      { src: Z2025_2, alt: "Carnaval 2025" },
+      { src: Z2025_3, alt: "Carnaval 2025" },
+      { src: Z2025_4, alt: "Carnaval 2025" },
+      { src: Z2025_5, alt: "Carnaval 2025" },
+      { src: Z2025_6, alt: "Carnaval 2025" },
+      { src: Z2025_7, alt: "Carnaval 2025" },
+      { src: Z2025_8, alt: "Carnaval 2025" },
+      { src: Z2025_9, alt: "Carnaval 2025" },
+      { src: Z2025_10, alt: "Carnaval 2025" },
+      { src: Z2025_11, alt: "Carnaval 2025" },
+      { src: Z2025_12, alt: "Carnaval 2025" },
+      { src: Z2025_13, alt: "Carnaval 2025" },
+      { src: Z2025_14, alt: "Carnaval 2025" },
+      { src: Z2025_15, alt: "Carnaval 2025" },
+      { src: Z2025_16, alt: "Carnaval 2025" },
+      { src: Z2025_17, alt: "Carnaval 2025" },
     ],
   },
   {
@@ -349,6 +499,11 @@ export const CARNAVAL = [
       { src: Corso2024_10, alt: "Carnaval 2024" },
       { src: Corso2024_11, alt: "Carnaval 2024" },
       { src: Corso2024_12, alt: "Carnaval 2024" },
+      { src: Z2024_1, alt: "Carnaval 2024" },
+      { src: Z2024_2, alt: "Carnaval 2024" },
+      { src: Z2024_3, alt: "Carnaval 2024" },
+      { src: Z2024_4, alt: "Carnaval 2024" },
+      { src: Z2024_5, alt: "Carnaval 2024" },
     ],
     videos: [
       { src: Video2024, capa: Video2024Capa, alt: "Vídeo do Carnaval 2024" },
@@ -367,7 +522,30 @@ export const CARNAVAL = [
       { src: ZeDaTripla, alt: "Personagem Zé da Tripla" },
     ],
     accent: "#1e8fd6",
-    fotos: [{ src: Corso2023_1, alt: "Carnaval 2023" }],
+    fotos: [
+      { src: Corso2023_1, alt: "Carnaval 2023" },
+      { src: Z2023_1, alt: "Carnaval 2023" },
+      { src: Z2023_2, alt: "Carnaval 2023" },
+      { src: Z2023_3, alt: "Carnaval 2023" },
+      { src: Z2023_4, alt: "Carnaval 2023" },
+      { src: Z2023_5, alt: "Carnaval 2023" },
+      { src: Z2023_6, alt: "Carnaval 2023" },
+      { src: Z2023_7, alt: "Carnaval 2023" },
+      { src: Z2023_8, alt: "Carnaval 2023" },
+      { src: Z2023_9, alt: "Carnaval 2023" },
+      { src: Z2023_10, alt: "Carnaval 2023" },
+      { src: Z2023_11, alt: "Carnaval 2023" },
+      { src: Z2023_12, alt: "Carnaval 2023" },
+      { src: Z2023_13, alt: "Carnaval 2023" },
+      { src: Z2023_14, alt: "Carnaval 2023" },
+      { src: Z2023_15, alt: "Carnaval 2023" },
+      { src: Z2023_16, alt: "Carnaval 2023" },
+      { src: Z2023_17, alt: "Carnaval 2023" },
+      { src: Z2023_18, alt: "Carnaval 2023" },
+      { src: Z2023_19, alt: "Carnaval 2023" },
+      { src: Z2023_20, alt: "Carnaval 2023" },
+      { src: Z2023_21, alt: "Carnaval 2023" },
+    ],
   },
   {
     year: 2022,
@@ -471,6 +649,26 @@ export const CARNAVAL = [
       { src: Fb2018_26, alt: "Carnaval 2018" },
       { src: Fb2018_27, alt: "Carnaval 2018" },
       { src: Fb2018_28, alt: "Carnaval 2018" },
+      { src: Z2018_1, alt: "Carnaval 2018" },
+      { src: Z2018_2, alt: "Carnaval 2018" },
+      { src: Z2018_3, alt: "Carnaval 2018" },
+      { src: Z2018_4, alt: "Carnaval 2018" },
+      { src: Z2018_5, alt: "Carnaval 2018" },
+      { src: Z2018_6, alt: "Carnaval 2018" },
+      { src: Z2018_7, alt: "Carnaval 2018" },
+      { src: Z2018_8, alt: "Carnaval 2018" },
+      { src: Z2018_9, alt: "Carnaval 2018" },
+      { src: Z2018_10, alt: "Carnaval 2018" },
+      { src: Z2018_11, alt: "Carnaval 2018" },
+      { src: Z2018_12, alt: "Carnaval 2018" },
+      { src: Z2018_13, alt: "Carnaval 2018" },
+      { src: Z2018_14, alt: "Carnaval 2018" },
+      { src: Z2018_15, alt: "Carnaval 2018" },
+      { src: Z2018_16, alt: "Carnaval 2018" },
+      { src: Z2018_17, alt: "Carnaval 2018" },
+      { src: Z2018_18, alt: "Carnaval 2018" },
+      { src: Z2018_19, alt: "Carnaval 2018" },
+      { src: Z2018_20, alt: "Carnaval 2018" },
     ],
   },
   {
@@ -501,6 +699,36 @@ export const CARNAVAL = [
       { src: Fb2017_14, alt: "Carnaval 2017" },
       { src: Fb2017_15, alt: "Carnaval 2017" },
       { src: Fb2017_16, alt: "Carnaval 2017" },
+      { src: Z2017_1, alt: "Carnaval 2017" },
+      { src: Z2017_2, alt: "Carnaval 2017" },
+      { src: Z2017_3, alt: "Carnaval 2017" },
+      { src: Z2017_4, alt: "Carnaval 2017" },
+      { src: Z2017_5, alt: "Carnaval 2017" },
+      { src: Z2017_6, alt: "Carnaval 2017" },
+      { src: Z2017_7, alt: "Carnaval 2017" },
+      { src: Z2017_8, alt: "Carnaval 2017" },
+      { src: Z2017_9, alt: "Carnaval 2017" },
+      { src: Z2017_10, alt: "Carnaval 2017" },
+      { src: Z2017_11, alt: "Carnaval 2017" },
+      { src: Z2017_12, alt: "Carnaval 2017" },
+      { src: Z2017_13, alt: "Carnaval 2017" },
+      { src: Z2017_14, alt: "Carnaval 2017" },
+      { src: Z2017_15, alt: "Carnaval 2017" },
+      { src: Z2017_16, alt: "Carnaval 2017" },
+      { src: Z2017_17, alt: "Carnaval 2017" },
+      { src: Z2017_18, alt: "Carnaval 2017" },
+      { src: Z2017_19, alt: "Carnaval 2017" },
+      { src: Z2017_20, alt: "Carnaval 2017" },
+      { src: Z2017_21, alt: "Carnaval 2017" },
+      { src: Z2017_22, alt: "Carnaval 2017" },
+      { src: Z2017_23, alt: "Carnaval 2017" },
+      { src: Z2017_24, alt: "Carnaval 2017" },
+      { src: Z2017_25, alt: "Carnaval 2017" },
+      { src: Z2017_26, alt: "Carnaval 2017" },
+      { src: Z2017_27, alt: "Carnaval 2017" },
+      { src: Z2017_28, alt: "Carnaval 2017" },
+      { src: Z2017_29, alt: "Carnaval 2017" },
+      { src: Z2017_30, alt: "Carnaval 2017" },
     ],
   },
   {
