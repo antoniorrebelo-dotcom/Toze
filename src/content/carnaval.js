@@ -261,6 +261,11 @@ import Corso2013_16 from "../assets/carnaval-2013-16.jpg";
 import Fb2025_14 from "../assets/carnaval-2025-fb-14.jpg";
 import Fb2025_15 from "../assets/carnaval-2025-fb-15.jpg";
 import Fb2020_6 from "../assets/carnaval-2020-fb-6.jpg";
+import Fb2026_8 from "../assets/carnaval-2026-fb-8.jpg";
+import Fb2026_9 from "../assets/carnaval-2026-fb-9.jpg";
+import Fb2026_10 from "../assets/carnaval-2026-fb-10.jpg";
+import Fb2026_11 from "../assets/carnaval-2026-fb-11.jpg";
+import Corso2023_1 from "../assets/carnaval-2023-1.jpg";
 
 export const CARNAVAL = [
   {
@@ -292,6 +297,10 @@ export const CARNAVAL = [
       { src: Fb2026_5, alt: "Carnaval 2026" },
       { src: Fb2026_6, alt: "Carnaval 2026" },
       { src: Fb2026_7, alt: "Carnaval 2026" },
+      { src: Fb2026_8, alt: "Carnaval 2026" },
+      { src: Fb2026_9, alt: "Carnaval 2026" },
+      { src: Fb2026_10, alt: "Carnaval 2026" },
+      { src: Fb2026_11, alt: "Carnaval 2026" },
     ],
   },
   {
@@ -358,6 +367,7 @@ export const CARNAVAL = [
       { src: ZeDaTripla, alt: "Personagem Zé da Tripla" },
     ],
     accent: "#1e8fd6",
+    fotos: [{ src: Corso2023_1, alt: "Carnaval 2023" }],
   },
   {
     year: 2022,
