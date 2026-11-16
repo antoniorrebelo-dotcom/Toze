@@ -2,6 +2,7 @@
 //  EVENTOS — edite os textos, datas e locais à vontade.
 //  "when" e "where" são opcionais (deixe "" para esconder).
 //  "fotos" (opcional): lista de fotos para a galeria do evento.
+//  "videos" (opcional): vídeos para a galeria, como nos anos de Carnaval.
 // ============================================================
 import CocolotoLogo from "../assets/Logo_cocoloto.png";
 import ComedyCartaz from "../assets/evento-comedy-session.jpg";
@@ -10,6 +11,18 @@ import SunsetLogo from "../assets/evento-sunset.webp";
 import BikeTourLogo from "../assets/evento-biketour.webp";
 import RallyFoto1 from "../assets/rally-carrinhos-1.jpg";
 import RallyFoto2 from "../assets/rally-carrinhos-2.jpg";
+import RallyCartaz from "../assets/rally-carrinhos-cartaz.jpg";
+import RallyFoto3 from "../assets/rally-carrinhos-3.jpg";
+import RallyFoto4 from "../assets/rally-carrinhos-4.jpg";
+import RallyFoto5 from "../assets/rally-carrinhos-5.jpg";
+import RallyVideo1 from "../assets/rally-video-1.mp4";
+import RallyVideo1Capa from "../assets/rally-video-1-capa.jpg";
+import RallyVideo2 from "../assets/rally-video-2.mp4";
+import RallyVideo2Capa from "../assets/rally-video-2-capa.jpg";
+import RallyVideo3 from "../assets/rally-video-3.mp4";
+import RallyVideo3Capa from "../assets/rally-video-3-capa.jpg";
+import RallyVideo4 from "../assets/rally-video-4.mp4";
+import RallyVideo4Capa from "../assets/rally-video-4-capa.jpg";
 
 export const EVENTOS = [
   {
@@ -63,14 +76,24 @@ export const EVENTOS = [
     image: RallyPlaca,
     imageAlt: "Placa do 1.º Rally de Carrinhos de Mão",
     text:
-      "Em 2026 Os Viscondes organizaram o 1.º Rally de Carrinhos de Mão, na Festa " +
-      "Náutica de Salreu: equipas mascaradas a empurrar carrinhos de mão com um " +
-      "passageiro a bordo, provas pelo caminho e muito público a assistir.",
+      "A corrida de carrinhos de mão teve a 1.ª edição em 2026, coorganizada por Os Viscondes " +
+      "e pela Junta de Freguesia de Salreu, por ocasião da Festa Náutica de Salreu. Os " +
+      "participantes foram muitos, o público mais ainda, e não faltaram as gargalhadas.",
     when: "28 de junho de 2026, às 15h",
     where: "Festa Náutica de Salreu",
     fotos: [
-      { src: RallyFoto1, alt: "Prova do rally junto à vaca gigante, com o público a assistir" },
-      { src: RallyFoto2, alt: "Partida de um carrinho de mão com passageira mascarada" },
+      { src: RallyCartaz, alt: "Rally de Carrinhos de Mão" },
+      { src: RallyFoto1, alt: "Rally de Carrinhos de Mão" },
+      { src: RallyFoto2, alt: "Rally de Carrinhos de Mão" },
+      { src: RallyFoto3, alt: "Rally de Carrinhos de Mão" },
+      { src: RallyFoto4, alt: "Rally de Carrinhos de Mão" },
+      { src: RallyFoto5, alt: "Rally de Carrinhos de Mão" },
+    ],
+    videos: [
+      { src: RallyVideo1, capa: RallyVideo1Capa, alt: "Vídeo do Rally de Carrinhos de Mão" },
+      { src: RallyVideo2, capa: RallyVideo2Capa, alt: "Vídeo do Rally de Carrinhos de Mão" },
+      { src: RallyVideo3, capa: RallyVideo3Capa, alt: "Vídeo do Rally de Carrinhos de Mão" },
+      { src: RallyVideo4, capa: RallyVideo4Capa, alt: "Vídeo do Rally de Carrinhos de Mão" },
     ],
     color: "#5b2a75",
   },
