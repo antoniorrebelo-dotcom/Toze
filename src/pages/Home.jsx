@@ -34,11 +34,7 @@ export default function Home() {
         <div className="hero-veu" aria-hidden="true" />
         <div className="container hero-inner">
           <div>
-            <h1 className="hero-title">
-              <span>Cartola,</span>
-              <span className="roxo">bigode</span>
-              <span>e folia.</span>
-            </h1>
+            <h1 className="sr-only">Os Viscondes de Salreu</h1>
             <p className="hero-links">
               <Link className="btn" to="/grupo">
                 Conhecer o grupo
