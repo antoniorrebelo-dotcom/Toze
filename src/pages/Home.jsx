@@ -1,19 +1,37 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo-viscondes.png";
 import LogoAntigo from "../assets/logo-viscondes-antigo.webp";
 import { EVENTOS } from "../content/eventos";
 import { CARNAVAL } from "../content/carnaval";
 import MaquinaNodoa from "../components/MaquinaNodoa";
-import { LEMA } from "../content/grupo";
+import VideoInicio from "../assets/inicio-video.mp4";
+import VideoInicioCapa from "../assets/inicio-video-capa.jpg";
 
 export default function Home() {
   // Os três Carnavais mais recentes, incluindo o que aí vem ("Em breve").
   const comCorso = CARNAVAL.filter((c) => c.corso);
   const recentes = comCorso.slice(0, 3);
-  const temas = comCorso.slice(0, 8).map((c) => c.corso.tema);
+  // Quem tem as animações desligadas vê só a imagem parada.
+  const video = useRef(null);
+  useEffect(() => {
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) video.current?.pause();
+  }, []);
   return (
     <>
-      <section className="hero">
+      <section className="hero hero-video">
+        <video
+          ref={video}
+          className="hero-fundo"
+          src={VideoInicio}
+          poster={VideoInicioCapa}
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden="true"
+        />
+        <div className="hero-veu" aria-hidden="true" />
         <div className="container hero-inner">
           <div>
             <h1 className="hero-title">
@@ -21,7 +39,6 @@ export default function Home() {
               <span className="roxo">bigode</span>
               <span>e folia.</span>
             </h1>
-            <p className="papel lema">{LEMA}</p>
             <p className="hero-links">
               <Link className="btn" to="/grupo">
                 Conhecer o grupo
@@ -40,14 +57,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <div className="faixa" aria-hidden="true">
-        <div className="faixa-texto">
-          {[...temas, ...temas].map((t, i) => (
-            <span key={i}>{t}</span>
-          ))}
-        </div>
-      </div>
 
       <section className="bloco">
         <div className="container">
