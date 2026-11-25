@@ -5,6 +5,7 @@ import LogoAntigo from "../assets/logo-viscondes-antigo.webp";
 import { EVENTOS } from "../content/eventos";
 import { CARNAVAL } from "../content/carnaval";
 import MaquinaNodoa from "../components/MaquinaNodoa";
+import ContagemCarnaval from "../components/ContagemCarnaval";
 import VideoInicio from "../assets/inicio-video.mp4";
 import VideoInicioCapa from "../assets/inicio-video-capa.jpg";
 
@@ -58,6 +59,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ContagemCarnaval />
 
       <section className="bloco">
         <div className="container">

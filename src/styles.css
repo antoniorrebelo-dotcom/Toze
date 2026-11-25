@@ -481,3 +481,120 @@ a { color: inherit; }
   text-transform: uppercase; letter-spacing: .02em; text-shadow: 0 2px 8px rgba(0,0,0,.6);
 }
 .hero-assinatura span { display: block; }
+
+/* ---------- Rodapé: ligação para enviar fotos ---------- */
+.site-footer p a { color: var(--laranja); }
+
+/* ---------- Contagem decrescente para o Carnaval (Início) ---------- */
+.contagem { background: var(--laranja); border-bottom: var(--borda); padding: 26px 0; }
+.contagem-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px 32px; flex-wrap: wrap; }
+.contagem-texto p { margin: 0; font-weight: 600; max-width: 46ch; }
+.contagem-texto a { color: var(--tinta); font-weight: 800; }
+.contagem-texto .contagem-titulo { font: 900 clamp(34px, 5vw, 52px)/1 var(--font-display); text-transform: uppercase; margin-bottom: 6px; }
+.contagem-numeros { list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; }
+.contagem-numeros li {
+  background: var(--tinta); color: var(--papel); border: var(--borda); box-shadow: 4px 4px 0 var(--papel);
+  min-width: 78px; padding: 8px 10px 6px; text-align: center; display: flex; flex-direction: column;
+}
+.contagem-numeros strong { font: 900 44px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.contagem-numeros span { font: 700 13px/1.2 var(--font-body); text-transform: uppercase; letter-spacing: .06em; color: var(--laranja); }
+@media (max-width: 520px) {
+  .contagem-numeros { width: 100%; gap: 8px; }
+  .contagem-numeros li { flex: 1; min-width: 0; padding: 6px 4px; }
+  .contagem-numeros strong { font-size: 34px; }
+}
+
+/* ---------- Faixa dos anos (página Carnaval) ---------- */
+.faixa-anos-bloco { padding: 8px 0 4px; }
+.faixa-anos {
+  overflow-x: auto; scroll-snap-type: x proximity; padding: 6px 4px 14px; margin: 0 -4px;
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
+}
+.faixa-anos ol { list-style: none; margin: 0; padding: 0 48px 0 0; display: flex; gap: 10px; width: max-content; }
+.faixa-anos li { scroll-snap-align: start; }
+.faixa-anos button {
+  width: 104px; background: var(--papel); border: var(--borda); box-shadow: 4px 4px 0 var(--tinta);
+  padding: 8px 6px 6px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 4px;
+  font: inherit; color: var(--tinta); transition: transform .12s, box-shadow .12s;
+}
+.faixa-anos button:hover, .faixa-anos button:focus-visible { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--tinta); }
+.faixa-logo { width: 84px; height: 72px; display: grid; place-items: center; }
+.faixa-logo img { width: 84px; height: 72px; object-fit: contain; display: block; }
+.faixa-logo > span { font: 900 30px var(--font-display); color: var(--cinza); }
+.faixa-ano { font: 900 24px/1 var(--font-display); }
+.faixa-lugar { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; color: var(--roxo); }
+.faixa-anos .pausa button { background: #eee; }
+.faixa-anos .pausa .faixa-lugar { color: var(--cinza); }
+.faixa-anos .breve button { background: var(--laranja); }
+.faixa-anos .breve .faixa-lugar { color: var(--tinta); }
+.faixa-anos-enviar { margin: 6px 0 0; font-weight: 600; }
+.faixa-anos-enviar a { color: var(--tinta); font-weight: 800; }
+.ano-cartaz, .ano-pausa { scroll-margin-top: 90px; }
+
+/* ---------- Galerias: convite para enviar fotos ---------- */
+.galeria-enviar {
+  margin-top: 32px; display: flex; align-items: center; gap: 12px 18px; flex-wrap: wrap;
+  background: var(--papel); border: var(--borda); box-shadow: var(--sombra); padding: 14px 18px; width: fit-content; max-width: 100%;
+}
+.galeria-enviar p { margin: 0; font-weight: 800; }
+
+/* ---------- Enviar fotos (público) ---------- */
+.enviar .papel { max-width: 62ch; }
+.enviar-demo { background: #fff3c4; border: 2px dashed var(--tinta); padding: 8px 12px; font-weight: 700; max-width: 62ch; }
+.enviar-cartao {
+  background: var(--papel); border: var(--borda); box-shadow: var(--sombra); padding: 22px;
+  max-width: 720px; display: flex; flex-direction: column; gap: 18px; margin-top: 20px;
+}
+.enviar-cartao label { display: flex; flex-direction: column; gap: 6px; font-weight: 800; }
+.enviar-cartao small { font-weight: 500; color: var(--cinza); }
+.enviar-cartao select, .enviar-cartao input:not([type]), .enviar-cartao input[type="text"] {
+  font: 17px var(--font-body); padding: 10px 12px; border: var(--borda); border-radius: 0; background: var(--papel); width: 100%;
+}
+.enviar-zona {
+  position: relative; border: 3px dashed var(--tinta); background: #f4fbef; padding: 26px 16px; text-align: center;
+  align-items: center; cursor: pointer; font-weight: 600 !important;
+}
+.enviar-zona:hover, .enviar-zona:focus-within { background: #e6f6dc; }
+.enviar-zona input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; }
+.enviar-zona-titulo { font: 900 30px/1 var(--font-display); text-transform: uppercase; }
+.enviar-lista { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.enviar-lista li {
+  position: relative; display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 8px 10px;
+  border: 2px solid var(--tinta); overflow: hidden; font-size: 15px;
+}
+.enviar-nome { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 700; }
+.enviar-tamanho { color: var(--cinza); grid-column: 1; }
+.enviar-estado { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-weight: 800; text-align: right; max-width: 26ch; }
+.enviar-barra { position: absolute; left: 0; bottom: 0; height: 4px; background: var(--laranja); transition: width .2s; }
+.estado-ok { background: #e6f6dc; }
+.estado-erro { background: #ffe6e3; }
+.estado-erro .enviar-estado { color: #c4170f; font-size: 14px; }
+.enviar-tirar { background: none; border: 0; text-decoration: underline; font: inherit; font-weight: 700; cursor: pointer; color: var(--cinza); }
+.enviar-duas { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 620px) { .enviar-duas { grid-template-columns: 1fr; } .enviar-cartao { padding: 16px; } }
+.enviar-check { flex-direction: row !important; align-items: flex-start; gap: 10px !important; font-weight: 600 !important; }
+.enviar-check input { width: 22px; height: 22px; margin: 2px 0 0; flex: none; accent-color: var(--roxo); }
+.enviar-obrigado { margin: 0; background: #e6f6dc; border: 2px solid var(--tinta); padding: 10px 12px; font-weight: 700; }
+.enviar-obrigado a { color: var(--tinta); }
+.enviar .btn-lg { align-self: flex-start; }
+.armadilha { position: absolute !important; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+/* ---------- Gestão: fotos do público ---------- */
+.gestao-envios .bloco-topo { margin-bottom: 8px; }
+.gestao-envios .papel a { color: var(--tinta); font-weight: 800; }
+.gestao-abas { display: flex; gap: 8px; margin: 20px 0 18px; flex-wrap: wrap; }
+.gestao-abas button {
+  font: 900 22px/1 var(--font-display); text-transform: uppercase; padding: 10px 16px; cursor: pointer;
+  border: var(--borda); background: var(--papel); color: var(--tinta);
+}
+.gestao-abas button[aria-selected="true"] { background: var(--tinta); color: var(--laranja); }
+.gestao-grelha { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+.gestao-cartao { background: var(--papel); border: var(--borda); box-shadow: 4px 4px 0 var(--tinta); display: flex; flex-direction: column; }
+.gestao-media { position: relative; display: block; aspect-ratio: 4 / 3; background: var(--tinta); border-bottom: var(--borda); }
+.gestao-media img, .gestao-media video { width: 100%; height: 100%; object-fit: contain; display: block; }
+.gestao-tipo { position: absolute; top: 8px; left: 8px; background: var(--laranja); border: 2px solid var(--tinta); font-weight: 800; font-size: 13px; padding: 2px 6px; color: var(--tinta); }
+.gestao-info { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 6px; }
+.gestao-info p { margin: 0; font-size: 15px; }
+.gestao-info select { font: 15px var(--font-body); padding: 6px 8px; border: 2px solid var(--tinta); border-radius: 0; width: 100%; background: var(--papel); }
+.gestao-data { color: var(--cinza); font-size: 13px !important; }
+.gestao-botoes { display: flex; gap: 8px; margin-top: 4px; }

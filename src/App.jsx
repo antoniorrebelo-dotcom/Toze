@@ -8,6 +8,8 @@ import GaleriaPagina from "./pages/GaleriaPagina";
 import Eventos from "./pages/Eventos";
 import { CocolotoHome, CocolotoRegras, CocolotoGestao } from "./pages/Cocoloto";
 import NotFound from "./pages/NotFound";
+import Enviar from "./pages/Enviar";
+import GestaoEnvios from "./pages/GestaoEnvios";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +33,8 @@ export default function App() {
           <Route path="cocoloto" element={<CocolotoHome />} />
           <Route path="cocoloto/regras" element={<CocolotoRegras />} />
           <Route path="cocoloto/gestao" element={<CocolotoGestao />} />
+          <Route path="enviar" element={<Enviar />} />
+          <Route path="gestao/envios" element={<GestaoEnvios />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

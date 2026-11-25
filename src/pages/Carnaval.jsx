@@ -1,6 +1,8 @@
 import { CARNAVAL, PALMARES } from "../content/carnaval";
 import PreviaGaleria from "../components/PreviaGaleria";
+import { Link } from "react-router-dom";
 import MaquinaNodoa from "../components/MaquinaNodoa";
+import FaixaAnos from "../components/FaixaAnos";
 
 function Lugar({ lugar }) {
   if (!lugar) return null;
@@ -37,6 +39,15 @@ export default function Carnaval() {
         </div>
       </section>
 
+      <section className="faixa-anos-bloco">
+        <div className="container">
+          <FaixaAnos />
+          <p className="faixa-anos-enviar">
+            Tem fotos de algum destes anos? <Link to="/enviar">Envie-as aqui</Link>.
+          </p>
+        </div>
+      </section>
+
       <section className="bloco palmares-bloco">
         <div className="container palmares">
           <Podio titulo="Corso" contas={PALMARES.corsoLugares} />
@@ -52,13 +63,14 @@ export default function Carnaval() {
         <div className="container anos-grelha">
           {CARNAVAL.map((c) =>
             c.pausa ? (
-              <article key={c.year} className="ano-pausa">
+              <article key={c.year} id={`ano-${c.year}`} className="ano-pausa">
                 <span className="ano">{c.year}</span>
                 <p>{c.pausa}</p>
               </article>
             ) : (
               <article
                 key={c.year}
+                id={`ano-${c.year}`}
                 className={
                   "ano-cartaz" +
                   (c.year >= 2023 ? " recente" : "") +

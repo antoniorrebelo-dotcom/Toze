@@ -73,8 +73,13 @@ export function CocolotoGestao() {
   );
 }
 
-function Login() {
-
+export function Login({
+  voltar = "/cocoloto",
+  voltarTexto = "Cocoloto",
+  texto = "A gestão do sorteio do Cocoloto é só para a organização.",
+  logo = CocolotoLogo,
+  logoAlt = "Cocoloto Os Viscondes",
+}) {
   const { login } = useAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -93,12 +98,12 @@ function Login() {
   return (
     <section className="container section login-wrap">
       <p className="back-link">
-        <Link to="/cocoloto">← Cocoloto</Link>
+        <Link to={voltar}>← {voltarTexto}</Link>
       </p>
-      <img src={CocolotoLogo} alt="Cocoloto Os Viscondes" className="login-logo" />
+      <img src={logo} alt={logoAlt} className="login-logo" />
       <form className="login-card" onSubmit={submit}>
         <h1>Área reservada</h1>
-        <p>A gestão do sorteio do Cocoloto é só para a organização.</p>
+        <p>{texto}</p>
         <label>
           Utilizador
           <input
