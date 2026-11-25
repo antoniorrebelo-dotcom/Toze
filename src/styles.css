@@ -104,6 +104,7 @@ a { color: inherit; }
 .brand .brand-letras { height: 48px; width: auto; display: block; }
 .main-nav { display: flex; align-items: center; gap: 2px; }
 .main-nav a, .nav-logout {
+  white-space: nowrap;
   color: var(--papel);
   text-decoration: none;
   font: 900 24px/1 var(--font-display);
@@ -121,7 +122,7 @@ a { color: inherit; }
   border: 0; font: 900 26px/1 var(--font-display);
   padding: 8px 12px; cursor: pointer;
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .menu-toggle { display: block; }
   .main-nav {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
