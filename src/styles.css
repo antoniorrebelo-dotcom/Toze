@@ -601,14 +601,45 @@ a { color: inherit; }
 
 /* ---------- Contactos ---------- */
 .contactos .papel { max-width: 62ch; }
-.contactos-lista { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; max-width: 980px; }
+.contactos-lista { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; max-width: 1080px; }
 .contactos-lista a {
-  display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 18px 20px; text-decoration: none; color: var(--tinta);
+  display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 16px 14px; text-decoration: none; color: var(--tinta);
   background: var(--c, var(--papel)); border: var(--borda); box-shadow: var(--sombra); transition: transform .12s, box-shadow .12s;
 }
 .contactos-lista a:hover, .contactos-lista a:focus-visible { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--tinta); }
 .contactos-rotulo { font: 900 34px/1 var(--font-display); text-transform: uppercase; }
-.contactos-valor { font-weight: 700; overflow-wrap: anywhere; }
+.contactos-valor { font-weight: 700; font-size: 15px; overflow-wrap: anywhere; }
 .contactos + .enviar { padding-top: 8px; }
 .enviar .titulo { margin-bottom: 16px; }
 #enviar-fotos { scroll-margin-top: 80px; }
+
+/* ---------- Contactos: formulário de mensagem ---------- */
+.contactos-fotos { margin: 22px 0 0; font-weight: 600; }
+.contactos-fotos a { color: var(--tinta); font-weight: 800; }
+.contactos + .mensagem { padding-top: 8px; }
+.mensagem + .enviar { padding-top: 0; }
+#mensagem { scroll-margin-top: 80px; }
+.enviar-cartao textarea {
+  font: 17px/1.45 var(--font-body); padding: 10px 12px; border: var(--borda); border-radius: 0; width: 100%; resize: vertical; min-height: 140px;
+}
+.mensagem-assuntos { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.mensagem-assuntos legend { font-weight: 800; padding: 0; margin-bottom: 6px; }
+.mensagem-assuntos label { flex-direction: row !important; gap: 0 !important; cursor: pointer; }
+.mensagem-assuntos input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.mensagem-assuntos span {
+  display: inline-block; padding: 8px 14px; border: var(--borda); background: var(--papel);
+  font: 900 20px/1 var(--font-display); text-transform: uppercase;
+}
+.mensagem-assuntos input:checked + span { background: var(--tinta); color: var(--laranja); }
+.mensagem-assuntos input:focus-visible + span { outline: 4px solid var(--roxo); outline-offset: 2px; }
+.mensagem .enviar-cartao > .btn-ghost { align-self: flex-start; }
+
+/* ---------- Gestão: mensagens ---------- */
+.gestao-mensagens { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; max-width: 860px; }
+.gestao-mensagens li { background: var(--papel); border: var(--borda); box-shadow: 4px 4px 0 var(--tinta); padding: 14px 16px; }
+.gestao-mensagens li.por-ler { border-left: 10px solid var(--laranja); }
+.gestao-mensagens li.lida { opacity: .82; }
+.gestao-msg-topo { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.gestao-msg-topo a { color: var(--tinta); font-weight: 700; }
+.gestao-msg-assunto { background: var(--tinta); color: var(--laranja); font: 900 16px/1 var(--font-display); text-transform: uppercase; padding: 4px 8px; }
+.gestao-msg-texto { margin: 10px 0 12px; white-space: pre-wrap; overflow-wrap: anywhere; }

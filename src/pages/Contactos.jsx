@@ -3,12 +3,13 @@ import { Link, useSearchParams } from "react-router-dom";
 import { DESTINOS } from "../content/destinos";
 import { DEMO, enviarFicheiro, prepararFoto } from "../envios";
 import { CONTACTOS } from "../content/contactos";
+import { ASSUNTOS, enviarMensagem } from "../mensagens";
 
 const VIDEO_MAX = 300 * 1024 * 1024;
 const mb = (n) => (n / 1024 / 1024).toFixed(n < 10 * 1024 * 1024 ? 1 : 0) + " MB";
 
-// /contactos — contactos do grupo e envio de fotos e vídeos pelo público
-// (só aparecem no site depois de aprovados na gestão).
+// /contactos — contactos do grupo, formulário de mensagem e envio de fotos e vídeos pelo público
+// (as mensagens e as fotos ficam na gestão; as fotos só aparecem no site depois de aprovadas).
 export default function Contactos() {
   const [params] = useSearchParams();
   // vindo de uma galeria ("Enviar as minhas fotos"), salta logo para o formulário
@@ -27,7 +28,13 @@ export default function Contactos() {
         </p>
         <ul className="contactos-lista">
           <li>
-            <a href={`mailto:${CONTACTOS.email}`} style={{ "--c": "var(--laranja)" }}>
+            <a href="#mensagem" onClick={irPara("mensagem")} style={{ "--c": "var(--laranja)" }}>
+              <span className="contactos-rotulo">Mensagem</span>
+              <span className="contactos-valor">Escreva-nos aqui mesmo, no site</span>
+            </a>
+          </li>
+          <li>
+            <a href={`mailto:${CONTACTOS.email}`} style={{ "--c": "var(--papel)" }}>
               <span className="contactos-rotulo">Email</span>
               <span className="contactos-valor">{CONTACTOS.email}</span>
             </a>
@@ -45,9 +52,107 @@ export default function Contactos() {
             </a>
           </li>
         </ul>
+        <p className="contactos-fotos">
+          Tem fotos ou vídeos d'Os Viscondes?{" "}
+          <a href="#enviar-fotos" onClick={irPara("enviar-fotos")}>
+            Envie-as mais abaixo
+          </a>
+          .
+        </p>
       </section>
+      <FormMensagem />
       <FormEnvio params={params} />
     </>
+  );
+}
+
+// Com o HashRouter, "#mensagem" mudaria de página: em vez disso, desliza até à secção.
+const irPara = (id) => (e) => {
+  e.preventDefault();
+  const reduzido = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  document.getElementById(id)?.scrollIntoView({ behavior: reduzido ? "auto" : "smooth", block: "start" });
+};
+
+function FormMensagem() {
+  const [nome, setNome] = useState("");
+  const [resposta, setResposta] = useState("");
+  const [assunto, setAssunto] = useState("");
+  const [texto, setTexto] = useState("");
+  const [armadilha, setArmadilha] = useState("");
+  const [estado, setEstado] = useState(""); // "" | "a enviar" | "ok"
+  const [erro, setErro] = useState("");
+  useEffect(() => setErro(""), [nome, resposta, assunto, texto]);
+
+  const enviar = async (e) => {
+    e.preventDefault();
+    const r = resposta.trim();
+    if (!nome.trim()) return setErro("Falta o seu nome.");
+    if (!/^\S+@\S+\.\S+$/.test(r) && !/^\+?[0-9 ()-]{9,20}$/.test(r)) {
+      return setErro("Indique um email ou um telefone para lhe respondermos.");
+    }
+    if (!assunto) return setErro("Escolha o assunto.");
+    if (texto.trim().length < 5) return setErro("Escreva a sua mensagem.");
+    setErro("");
+    setEstado("a enviar");
+    const res = await enviarMensagem({ nome: nome.trim(), resposta: r, assunto, texto: texto.trim(), site: armadilha });
+    if (res.ok) {
+      setEstado("ok");
+      setTexto("");
+    } else {
+      setEstado("");
+      setErro(res.error);
+    }
+  };
+
+  return (
+    <section className="container section enviar mensagem" id="mensagem">
+      <h2 className="titulo">Mandar mensagem</h2>
+      {estado === "ok" ? (
+        <div className="enviar-cartao">
+          <p className="enviar-obrigado" role="status">
+            Obrigado, {nome.trim().split(" ")[0]}! Recebemos a sua mensagem e respondemos assim que pudermos.
+          </p>
+          <button type="button" className="btn btn-ghost" onClick={() => setEstado("")}>
+            Escrever outra mensagem
+          </button>
+        </div>
+      ) : (
+        <form className="enviar-cartao" onSubmit={enviar} noValidate>
+          <div className="enviar-duas">
+            <label>
+              O seu nome
+              <input value={nome} onChange={(e) => setNome(e.target.value)} maxLength={80} autoComplete="name" required />
+            </label>
+            <label>
+              Email ou telefone <small>(para lhe respondermos)</small>
+              <input value={resposta} onChange={(e) => setResposta(e.target.value)} maxLength={120} autoComplete="email" required />
+            </label>
+          </div>
+          <fieldset className="mensagem-assuntos">
+            <legend>Assunto</legend>
+            {ASSUNTOS.map((a) => (
+              <label key={a}>
+                <input type="radio" name="assunto" value={a} checked={assunto === a} onChange={() => setAssunto(a)} />
+                <span>{a}</span>
+              </label>
+            ))}
+          </fieldset>
+          <label>
+            Mensagem
+            <textarea value={texto} onChange={(e) => setTexto(e.target.value)} rows={6} maxLength={4000} required />
+          </label>
+          <input className="armadilha" tabIndex={-1} autoComplete="off" value={armadilha} onChange={(e) => setArmadilha(e.target.value)} aria-hidden="true" />
+          {erro && (
+            <p className="form-error" role="alert">
+              {erro}
+            </p>
+          )}
+          <button className="btn btn-lg" disabled={estado === "a enviar"}>
+            {estado === "a enviar" ? "A enviar…" : "Enviar mensagem"}
+          </button>
+        </form>
+      )}
+    </section>
   );
 }
 
