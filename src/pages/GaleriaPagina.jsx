@@ -1,12 +1,24 @@
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Galeria from "../components/Galeria";
 import VideoYouTube from "../components/VideoYouTube";
 import { DESFILES } from "../content/carnaval";
 import { EVENTOS } from "../content/eventos";
-import { CONTACTOS } from "../content/contactos";
+import { envioPublicos, urlFicheiro } from "../envios";
 
 export default function GaleriaPagina() {
   const { tipo, id } = useParams();
+  const destino = tipo === "carnaval" ? `carnaval-${id}` : `evento-${id}`;
+  // fotos e vídeos enviados pelo público e já aprovados
+  const [publico, setPublico] = useState([]);
+  useEffect(() => {
+    let ativo = true;
+    setPublico([]);
+    envioPublicos(destino).then((l) => ativo && setPublico(l));
+    return () => {
+      ativo = false;
+    };
+  }, [destino]);
   let titulo, sub, fotos, videos = [], voltar, voltarTexto;
   if (tipo === "carnaval") {
     const c = DESFILES.find((d) => String(d.year) === id);
@@ -27,6 +39,11 @@ export default function GaleriaPagina() {
     }
     voltar = `/eventos#${id}`;
     voltarTexto = "Eventos";
+  }
+  if (titulo) {
+    const alt = (p) => (p.nome ? `Enviada por ${p.nome}` : "Enviada pelo público");
+    fotos = [...fotos, ...publico.filter((p) => p.tipo === "foto").map((p) => ({ src: urlFicheiro(p.id), alt: alt(p) }))];
+    videos = [...videos, ...publico.filter((p) => p.tipo === "video").map((p) => ({ src: urlFicheiro(p.id), alt: alt(p) }))];
   }
 
   return (
@@ -52,11 +69,16 @@ export default function GaleriaPagina() {
       )}
       {fotos?.length ? (
         <Galeria fotos={fotos} />
-      ) : videos.length ? null : (
-        <p className="papel galeria-vazia">
-          Ainda não há fotos aqui. Tem fotos deste momento? Envie-as para{" "}
-          <strong>{CONTACTOS.email}</strong>.
-        </p>
+      ) : videos.length || !titulo ? null : (
+        <p className="papel galeria-vazia">Ainda não há fotos aqui.</p>
+      )}
+      {titulo && (
+        <div className="galeria-enviar">
+          <p>Tem fotos ou vídeos deste momento?</p>
+          <Link className="btn" to={`/contactos?para=${destino}`}>
+            Enviar as minhas fotos
+          </Link>
+        </div>
       )}
     </section>
   );
