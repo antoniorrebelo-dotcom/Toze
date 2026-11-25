@@ -1,14 +1,57 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { DESTINOS } from "../content/destinos";
 import { DEMO, enviarFicheiro, prepararFoto } from "../envios";
+import { CONTACTOS } from "../content/contactos";
 
 const VIDEO_MAX = 300 * 1024 * 1024;
 const mb = (n) => (n / 1024 / 1024).toFixed(n < 10 * 1024 * 1024 ? 1 : 0) + " MB";
 
-// /enviar — o público envia fotos e vídeos dos Viscondes; só aparecem depois de aprovados.
-export default function Enviar() {
+// /contactos — contactos do grupo e envio de fotos e vídeos pelo público
+// (só aparecem no site depois de aprovados na gestão).
+export default function Contactos() {
   const [params] = useSearchParams();
+  // vindo de uma galeria ("Enviar as minhas fotos"), salta logo para o formulário
+  useEffect(() => {
+    if (params.get("para") || params.get("fotos") !== null) {
+      document.getElementById("enviar-fotos")?.scrollIntoView({ block: "start" });
+    }
+  }, [params]);
+  return (
+    <>
+      <section className="container section contactos">
+        <h1 className="titulo-pagina">Contactos</h1>
+        <p className="papel">
+          Quer falar com Os Viscondes, convidar o grupo para alguma coisa ou saber mais sobre o Cocoloto e os
+          eventos? Escreva-nos ou fale connosco nas redes sociais.
+        </p>
+        <ul className="contactos-lista">
+          <li>
+            <a href={`mailto:${CONTACTOS.email}`} style={{ "--c": "var(--laranja)" }}>
+              <span className="contactos-rotulo">Email</span>
+              <span className="contactos-valor">{CONTACTOS.email}</span>
+            </a>
+          </li>
+          <li>
+            <a href={CONTACTOS.facebook} target="_blank" rel="noopener noreferrer" style={{ "--c": "var(--papel)" }}>
+              <span className="contactos-rotulo">Facebook</span>
+              <span className="contactos-valor">Os Viscondes de Salreu</span>
+            </a>
+          </li>
+          <li>
+            <a href={CONTACTOS.instagram} target="_blank" rel="noopener noreferrer" style={{ "--c": "var(--papel)" }}>
+              <span className="contactos-rotulo">Instagram</span>
+              <span className="contactos-valor">@osviscondesdesalreu</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <FormEnvio params={params} />
+    </>
+  );
+}
+
+function FormEnvio({ params }) {
   const inicial = DESTINOS.some((d) => d.codigo === params.get("para")) ? params.get("para") : "";
   const [destino, setDestino] = useState(inicial);
   const [nome, setNome] = useState("");
@@ -59,8 +102,8 @@ export default function Enviar() {
   };
 
   return (
-    <section className="container section enviar">
-      <h1 className="titulo-pagina">Envie as suas fotos</h1>
+    <section className="container section enviar" id="enviar-fotos">
+      <h2 className="titulo">Envie as suas fotos</h2>
       <p className="papel">
         Tem fotos ou vídeos d'Os Viscondes guardados no telemóvel? Ajude-nos a completar a história do grupo
         a caminho dos 20 anos. Tudo o que receber é visto pela organização antes de aparecer no site.

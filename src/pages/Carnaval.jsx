@@ -43,7 +43,7 @@ export default function Carnaval() {
         <div className="container">
           <FaixaAnos />
           <p className="faixa-anos-enviar">
-            Tem fotos de algum destes anos? <Link to="/enviar">Envie-as aqui</Link>.
+            Tem fotos de algum destes anos? <Link to="/contactos?fotos">Envie-as aqui</Link>.
           </p>
         </div>
       </section>

@@ -75,7 +75,7 @@ export default function GaleriaPagina() {
       {titulo && (
         <div className="galeria-enviar">
           <p>Tem fotos ou vídeos deste momento?</p>
-          <Link className="btn" to={`/enviar?para=${destino}`}>
+          <Link className="btn" to={`/contactos?para=${destino}`}>
             Enviar as minhas fotos
           </Link>
         </div>

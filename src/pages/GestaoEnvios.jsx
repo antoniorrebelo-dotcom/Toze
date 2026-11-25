@@ -69,7 +69,7 @@ function Painel({ sair }) {
       </div>
       <p className="papel">
         Só aparece no site o que for aprovado. Pode mudar a galeria antes de aprovar, se a pessoa se enganou no ano.
-        {" "}Ligação para partilhar: <Link to="/enviar">osviscondes.com/#/enviar</Link>
+        {" "}Ligação para partilhar: <Link to="/enviar">osviscondes.com/#/enviar</Link> (leva ao formulário na página Contactos)
       </p>
 
       <div className="gestao-abas" role="tablist">

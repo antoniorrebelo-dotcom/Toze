@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -8,7 +8,7 @@ import GaleriaPagina from "./pages/GaleriaPagina";
 import Eventos from "./pages/Eventos";
 import { CocolotoHome, CocolotoRegras, CocolotoGestao } from "./pages/Cocoloto";
 import NotFound from "./pages/NotFound";
-import Enviar from "./pages/Enviar";
+import Contactos from "./pages/Contactos";
 import GestaoEnvios from "./pages/GestaoEnvios";
 
 function ScrollToTop() {
@@ -17,6 +17,12 @@ function ScrollToTop() {
     window.scrollTo(0, 0);
   }, [pathname]);
   return null;
+}
+
+// endereço antigo/curto para partilhar: /enviar -> formulário na página Contactos
+function IrParaEnvio() {
+  const { search } = useLocation();
+  return <Navigate to={`/contactos${search || "?fotos"}`} replace />;
 }
 
 export default function App() {
@@ -33,7 +39,8 @@ export default function App() {
           <Route path="cocoloto" element={<CocolotoHome />} />
           <Route path="cocoloto/regras" element={<CocolotoRegras />} />
           <Route path="cocoloto/gestao" element={<CocolotoGestao />} />
-          <Route path="enviar" element={<Enviar />} />
+          <Route path="contactos" element={<Contactos />} />
+          <Route path="enviar" element={<IrParaEnvio />} />
           <Route path="gestao/envios" element={<GestaoEnvios />} />
           <Route path="*" element={<NotFound />} />
         </Route>

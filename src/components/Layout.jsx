@@ -11,6 +11,7 @@ const LINKS = [
   { to: "/carnaval", label: "Carnaval" },
   { to: "/eventos", label: "Eventos" },
   { to: "/cocoloto", label: "Cocoloto" },
+  { to: "/contactos", label: "Contactos" },
 ];
 
 export default function Layout() {
@@ -77,7 +78,7 @@ export default function Layout() {
           </li>
         </ul>
         <p>
-          <strong>Os Viscondes</strong> · Salreu · fundado em 2007 · <Link to="/enviar">Enviar fotos</Link>
+          <strong>Os Viscondes</strong> · Salreu · fundado em 2007 · <Link to="/contactos">Contactos e envio de fotos</Link>
         </p>
       </footer>
     </div>

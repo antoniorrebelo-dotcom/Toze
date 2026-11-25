@@ -598,3 +598,17 @@ a { color: inherit; }
 .gestao-info select { font: 15px var(--font-body); padding: 6px 8px; border: 2px solid var(--tinta); border-radius: 0; width: 100%; background: var(--papel); }
 .gestao-data { color: var(--cinza); font-size: 13px !important; }
 .gestao-botoes { display: flex; gap: 8px; margin-top: 4px; }
+
+/* ---------- Contactos ---------- */
+.contactos .papel { max-width: 62ch; }
+.contactos-lista { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; max-width: 980px; }
+.contactos-lista a {
+  display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 18px 20px; text-decoration: none; color: var(--tinta);
+  background: var(--c, var(--papel)); border: var(--borda); box-shadow: var(--sombra); transition: transform .12s, box-shadow .12s;
+}
+.contactos-lista a:hover, .contactos-lista a:focus-visible { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--tinta); }
+.contactos-rotulo { font: 900 34px/1 var(--font-display); text-transform: uppercase; }
+.contactos-valor { font-weight: 700; overflow-wrap: anywhere; }
+.contactos + .enviar { padding-top: 8px; }
+.enviar .titulo { margin-bottom: 16px; }
+#enviar-fotos { scroll-margin-top: 80px; }
