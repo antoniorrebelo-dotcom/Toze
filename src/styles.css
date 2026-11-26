@@ -644,3 +644,11 @@ a { color: inherit; }
 .gestao-msg-topo a { color: var(--tinta); font-weight: 700; }
 .gestao-msg-assunto { background: var(--tinta); color: var(--laranja); font: 900 16px/1 var(--font-display); text-transform: uppercase; padding: 4px 8px; }
 .gestao-msg-texto { margin: 10px 0 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* Faixa dos anos: o cartão de destino pisca a laranja ao chegar */
+.ano-destino { animation: ano-destino 2.4s ease-out; }
+@keyframes ano-destino {
+  0%, 30% { box-shadow: 0 0 0 8px var(--laranja), var(--sombra); }
+  100% { box-shadow: 0 0 0 0 var(--laranja), var(--sombra); }
+}
+@media (prefers-reduced-motion: reduce) { .ano-destino { animation: none; outline: 6px solid var(--laranja); } }
