@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 // Contagem decrescente para o próximo Carnaval, a começar nas Marchas Luminosas
 // (quarta-feira antes do fim de semana de Carnaval). Para outro ano, muda-se só esta data.
 // Hora de Portugal continental: em fevereiro é igual a UTC ("Z").
 const INICIO = new Date("2027-02-03T21:30:00Z");
 const FIM = new Date("2027-02-10T00:00:00Z"); // quarta-feira de Cinzas: a contagem desaparece
-const DATA_TEXTO = "quarta-feira, 3 de fevereiro de 2027";
+const DATA_CURTA = "3 de fevereiro";
 
 const partes = (ms) => {
   const s = Math.max(0, Math.floor(ms / 1000));
@@ -33,15 +32,7 @@ export default function ContagemCarnaval() {
       <div className="container contagem-inner">
         <div className="contagem-texto">
           <p className="contagem-titulo">{comecou ? "É Carnaval!" : "Carnaval 2027"}</p>
-          <p>
-            {comecou ? (
-              "Os Viscondes estão na rua. Até já, no Teatro a Céu Aberto!"
-            ) : (
-              <>
-                Começa nas Marchas Luminosas, {DATA_TEXTO}. <Link to="/carnaval">20 anos d'Os Viscondes</Link>
-              </>
-            )}
-          </p>
+          {!comecou && <p className="contagem-data">{DATA_CURTA} · Marchas Luminosas</p>}
         </div>
         {!comecou && (
           <ol className="contagem-numeros" role="timer" aria-live="off">
